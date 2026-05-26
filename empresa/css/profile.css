@@ -1,0 +1,501 @@
+.empresa-perfil-da-empresa {
+  	width: 100%;
+  	height: 1080px;
+  	position: relative;
+  	background-color: #f7f7fb;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 30px;
+  	color: #171927;
+  	font-family: Inter;
+}
+.base-fundo {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #f7f7fb;
+  	width: 1920px;
+  	height: 1080px;
+}
+.navegao-barra-superior {
+  	position: absolute;
+  	top: 0px;
+  	left: 272px;
+  	background-color: #fff;
+  	width: 1648px;
+  	height: 92px;
+  	font-size: 21.12px;
+  	color: #8c8c8c;
+}
+.divisor {
+  	position: absolute;
+  	top: 91px;
+  	left: 0px;
+  	background-color: #e8e7f1;
+  	width: 1648px;
+  	height: 1px;
+}
+.pesquisa {
+  	position: absolute;
+  	top: 23px;
+  	left: 46px;
+  	width: 595.3px;
+  	height: 44.9px;
+}
+.pesquisa-child {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	border-radius: 23.1px;
+  	background-color: #f3f3f3;
+}
+.encontre-uma-vaga {
+  	position: absolute;
+  	height: 89.76%;
+  	width: 32.03%;
+  	top: 5.88%;
+  	left: 10.53%;
+  	display: flex;
+  	font-weight: 300;
+  	align-items: center;
+}
+.icone-lupa {
+  	position: absolute;
+  	width: 4.22%;
+  	top: 9.9px;
+  	right: 91.68%;
+  	left: 4.1%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 25.1px;
+  	opacity: 0.4;
+}
+.icone-filtro {
+  	position: absolute;
+  	width: 5.54%;
+  	top: 5.94px;
+  	right: 18.84%;
+  	left: 75.61%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 33px;
+}
+.filtrar {
+  	position: absolute;
+  	height: 30.96%;
+  	width: 16.63%;
+  	top: 35.28%;
+  	left: 82.15%;
+  	display: flex;
+  	font-weight: 500;
+  	color: #790ce6;
+  	align-items: center;
+}
+.seta-selecao-icon {
+  	position: absolute;
+  	height: 35.19%;
+  	width: 2.65%;
+  	top: 32.34%;
+  	right: 3.77%;
+  	bottom: 32.47%;
+  	left: 93.57%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.rea {
+  	position: absolute;
+  	top: 25px;
+  	left: 1120px;
+  	font-size: 12px;
+  	color: #687385;
+}
+.papel {
+  	position: absolute;
+  	top: 47px;
+  	left: 1120px;
+  	font-size: 14px;
+  	font-weight: 600;
+  	color: #171927;
+}
+.avatar-icon {
+  	position: absolute;
+  	top: 22px;
+  	left: 1510px;
+  	width: 48px;
+  	height: 48px;
+}
+.navegao-menu-lateral {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 272px;
+  	height: 1080px;
+  	font-size: 14px;
+  	color: #687385;
+}
+.divisor2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 271px;
+  	background-color: #e8e7f1;
+  	width: 1px;
+  	height: 1px;
+}
+.logo-hirly {
+  	position: absolute;
+  	top: 25px;
+  	left: 55px;
+  	width: 54px;
+  	height: 54px;
+}
+.item-dashboard {
+  	position: absolute;
+  	top: 128px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 220px;
+  	height: 48px;
+  	cursor: pointer;
+}
+.icon-dashboard {
+  	position: absolute;
+  	top: 13px;
+  	left: 14px;
+  	width: 22px;
+  	height: 22px;
+}
+.label {
+  	position: absolute;
+  	top: 15px;
+  	left: 50px;
+}
+.item-recrutadores {
+  	position: absolute;
+  	top: 184px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 220px;
+  	height: 48px;
+  	cursor: pointer;
+}
+.item-validar-vagas {
+  	position: absolute;
+  	top: 240px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 220px;
+  	height: 48px;
+  	cursor: pointer;
+}
+.item-dados-da-empresa {
+  	position: absolute;
+  	top: 296px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 220px;
+  	height: 48px;
+  	cursor: pointer;
+}
+.item-perfil {
+  	position: absolute;
+  	top: 376px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background: linear-gradient(90deg, #7c3aed 61%, rgba(71, 33, 135, 0) 84%);
+  	width: 220px;
+  	height: 48px;
+  	color: #fff;
+}
+.label5 {
+  	position: absolute;
+  	top: 15px;
+  	left: 50px;
+  	font-weight: 600;
+}
+.item-configuraes {
+  	position: absolute;
+  	top: 432px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 220px;
+  	height: 48px;
+  	cursor: pointer;
+}
+.conta-sesso {
+  	position: absolute;
+  	top: 976px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #f0eafb;
+  	width: 220px;
+  	height: 70px;
+  	font-size: 13px;
+  	color: #171927;
+}
+.nome {
+  	position: absolute;
+  	top: 13px;
+  	left: 16px;
+  	font-weight: 600;
+}
+.ao {
+  	position: absolute;
+  	top: 38px;
+  	left: 16px;
+  	font-size: 12px;
+  	font-weight: 600;
+  	color: #7117d8;
+}
+.contedo-cabealho {
+  	position: absolute;
+  	top: 124px;
+  	left: 312px;
+  	width: 1558px;
+  	height: 78px;
+}
+.ttulo {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.descrio {
+  	position: absolute;
+  	top: 44px;
+  	left: 0px;
+  	font-size: 14px;
+  	color: #687385;
+}
+.contedo-identidade {
+  	position: absolute;
+  	top: 228px;
+  	left: 312px;
+  	box-shadow: 0px 8px 22px -4px rgba(24, 16, 46, 0.08);
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #e8e7f1;
+  	box-sizing: border-box;
+  	width: 1558px;
+  	height: 184px;
+  	color: #fff;
+}
+.marca {
+  	position: absolute;
+  	top: 28px;
+  	left: 28px;
+  	border-radius: 14px;
+  	background-color: rgba(124, 58, 237, 0.8);
+  	width: 110px;
+  	height: 110px;
+}
+.monograma {
+  	position: absolute;
+  	top: 65px;
+  	left: 54px;
+}
+.nome2 {
+  	position: absolute;
+  	top: 36px;
+  	left: 170px;
+  	font-size: 26px;
+  	color: #171927;
+}
+.segmento {
+  	position: absolute;
+  	top: 74px;
+  	left: 170px;
+  	font-size: 14px;
+  	color: #687385;
+}
+.status {
+  	position: absolute;
+  	top: 110px;
+  	left: 170px;
+  	border-radius: 14px;
+  	background-color: #e8f7f1;
+  	width: 156px;
+  	height: 28px;
+  	font-size: 11px;
+  	color: #078e68;
+}
+.label7 {
+  	position: absolute;
+  	top: calc(50% - 6px);
+  	left: calc(50% - 55px);
+  	font-weight: 600;
+}
+.ao-editar {
+  	position: absolute;
+  	top: 50px;
+  	left: 1370px;
+  	border-radius: 10px;
+  	background-color: #7c3aed;
+  	width: 150px;
+  	height: 42px;
+  	font-size: 13px;
+}
+.label8 {
+  	position: absolute;
+  	top: calc(50% - 8px);
+  	left: calc(50% - 37px);
+  	font-weight: 600;
+}
+.contedo-cadastro {
+  	position: absolute;
+  	top: 446px;
+  	left: 312px;
+  	box-shadow: 0px 8px 22px -4px rgba(24, 16, 46, 0.08);
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #e8e7f1;
+  	box-sizing: border-box;
+  	width: 840px;
+  	height: 438px;
+  	font-size: 13px;
+}
+.ttulo2 {
+  	position: absolute;
+  	top: 21px;
+  	left: 22px;
+  	font-size: 19px;
+  	font-weight: 600;
+}
+.linha-cnpj {
+  	position: absolute;
+  	top: 82px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 800px;
+  	height: 62px;
+}
+.detalhe {
+  	position: absolute;
+  	top: 37px;
+  	left: 16px;
+  	font-size: 12px;
+  	color: #687385;
+}
+.linha-e-mail {
+  	position: absolute;
+  	top: 160px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 800px;
+  	height: 62px;
+}
+.linha-site {
+  	position: absolute;
+  	top: 238px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 800px;
+  	height: 62px;
+}
+.linha-segmento {
+  	position: absolute;
+  	top: 316px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 800px;
+  	height: 62px;
+}
+.contedo-verificaes {
+  	position: absolute;
+  	top: 446px;
+  	left: 1184px;
+  	box-shadow: 0px 8px 22px -4px rgba(24, 16, 46, 0.08);
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #e8e7f1;
+  	box-sizing: border-box;
+  	width: 686px;
+  	height: 438px;
+  	font-size: 13px;
+}
+.linha-identidade-fiscal {
+  	position: absolute;
+  	top: 82px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 646px;
+  	height: 62px;
+}
+.estado {
+  	position: absolute;
+  	top: 17px;
+  	left: 498px;
+  	border-radius: 14px;
+  	background-color: #e8f7f1;
+  	width: 126px;
+  	height: 28px;
+  	font-size: 11px;
+  	color: #078e68;
+}
+.label9 {
+  	position: absolute;
+  	top: 7px;
+  	left: 12px;
+  	font-weight: 600;
+}
+.linha-domnio {
+  	position: absolute;
+  	top: 160px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 646px;
+  	height: 62px;
+}
+.linha-endereo {
+  	position: absolute;
+  	top: 238px;
+  	left: 20px;
+  	border-radius: 9px;
+  	background-color: #f7f7fb;
+  	width: 646px;
+  	height: 62px;
+}
+.estado3 {
+  	position: absolute;
+  	top: 17px;
+  	left: 498px;
+  	border-radius: 14px;
+  	background-color: #fff4e4;
+  	width: 126px;
+  	height: 28px;
+  	font-size: 11px;
+  	color: #d48718;
+}
+.ao-dados {
+  	position: absolute;
+  	top: 366px;
+  	left: 22px;
+  	border-radius: 10px;
+  	background-color: #7c3aed;
+  	width: 164px;
+  	height: 42px;
+  	cursor: pointer;
+  	color: #fff;
+}
+.label12 {
+  	position: absolute;
+  	top: calc(50% - 8px);
+  	left: calc(50% - 52px);
+  	font-weight: 600;
+}
+

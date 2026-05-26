@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="../css/settings.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,300;1,500&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="empresa-configuraes">
+    		<div class="base-fundo">
+    		</div>
+    		<div class="navegao-barra-superior">
+      			<div class="divisor">
+      			</div>
+      			<div class="pesquisa">
+        				<div class="pesquisa-child">
+        				</div>
+        				<i class="encontre-uma-vaga">Encontre uma vaga</i>
+        				<img class="icone-lupa" alt="">
+        				
+        				<img class="icone-filtro" alt="">
+        				
+        				<i class="filtrar">Filtrar</i>
+        				<img class="seta-selecao-icon" alt="">
+        				
+      			</div>
+      			<div class="rea">Painel de operações</div>
+      			<div class="papel">Perfil ativo: Empresa</div>
+      			<img class="avatar-icon" alt="">
+      			
+    		</div>
+    		<div class="navegao-menu-lateral">
+      			<div class="divisor2">
+      			</div>
+      			<img class="logo-hirly" alt="">
+      			
+      			<div class="item-dashboard" id="dashboardContainer">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label">Dashboard</div>
+      			</div>
+      			<div class="item-recrutadores" id="recrutadoresContainer">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label">Recrutadores</div>
+      			</div>
+      			<div class="item-validar-vagas" id="validarVagasContainer">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label">Validar vagas</div>
+      			</div>
+      			<div class="item-dados-da-empresa" id="dadosDaEmpresa">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label">Dados da empresa</div>
+      			</div>
+      			<div class="item-perfil" id="perfilContainer">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label">Perfil</div>
+      			</div>
+      			<div class="item-configuraes">
+        				<img class="icon-dashboard" alt="">
+        				
+        				<div class="label6">Configurações</div>
+      			</div>
+      			<div class="conta-sesso">
+        				<div class="nome">TechWave Brasil</div>
+        				<div class="ao">Encerrar sessão</div>
+      			</div>
+    		</div>
+    		<div class="contedo-cabealho">
+      			<b class="ttulo">Configurações</b>
+      			<div class="descrio">Controle permissões e regras internas de validação.</div>
+    		</div>
+    		<div class="contedo-regras">
+      			<div class="ttulo2">Regras de validação</div>
+      			<div class="descrio2">Aplicadas antes da liberação da vaga</div>
+      			<div class="linha-aprovao-obrigatria">
+        				<div class="nome">Aprovação obrigatória</div>
+        				<div class="detalhe">Ativa</div>
+        				<div class="estado">
+          					<div class="label7">ATIVA</div>
+        				</div>
+      			</div>
+      			<div class="linha-faixa-salarial">
+        				<div class="nome">Faixa salarial</div>
+        				<div class="detalhe">Obrigatória</div>
+        				<div class="estado">
+          					<div class="label7">ATIVA</div>
+        				</div>
+      			</div>
+      			<div class="linha-descrio-incompleta">
+        				<div class="nome">Descrição incompleta</div>
+        				<div class="detalhe">Bloquear</div>
+        				<div class="estado">
+          					<div class="label7">ATIVA</div>
+        				</div>
+      			</div>
+      			<div class="linha-portflio-em-design">
+        				<div class="nome">Portfólio em design</div>
+        				<div class="detalhe">Opcional</div>
+        				<div class="estado4">
+          					<div class="label10">OPCIONAL</div>
+        				</div>
+      			</div>
+      			<div class="ao-salvar">
+        				<div class="label11">Salvar alterações</div>
+      			</div>
+    		</div>
+    		<div class="contedo-acesso">
+      			<div class="ttulo2">Equipe e acesso</div>
+      			<div class="descrio2">Responsáveis pelas análises</div>
+      			<div class="linha-gestor-principal">
+        				<div class="nome">Gestor principal</div>
+        				<div class="detalhe">Marina Lopes</div>
+      			</div>
+      			<div class="linha-recrutadores">
+        				<div class="nome">Recrutadores</div>
+        				<div class="detalhe">08 membros autorizados</div>
+      			</div>
+      			<div class="linha-auditoria">
+        				<div class="nome">Auditoria</div>
+        				<div class="detalhe">Relatório mensal</div>
+      			</div>
+      			<div class="ao-recrutadores" id="recrutadoresContainer1">
+        				<div class="label12">Gerenciar recrutadores</div>
+      			</div>
+      			<div class="ao-dados" id="dadosContainer">
+        				<div class="label13">Dados da empresa</div>
+      			</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+  	
+  	<script>
+    		var dashboardContainer = document.getElementById("dashboardContainer");
+    		if(dashboardContainer) {
+      			dashboardContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var recrutadoresContainer = document.getElementById("recrutadoresContainer");
+    		if(recrutadoresContainer) {
+      			recrutadoresContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var validarVagasContainer = document.getElementById("validarVagasContainer");
+    		if(validarVagasContainer) {
+      			validarVagasContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var dadosDaEmpresa = document.getElementById("dadosDaEmpresa");
+    		if(dadosDaEmpresa) {
+      			dadosDaEmpresa.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var perfilContainer = document.getElementById("perfilContainer");
+    		if(perfilContainer) {
+      			perfilContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var recrutadoresContainer1 = document.getElementById("recrutadoresContainer1");
+    		if(recrutadoresContainer1) {
+      			recrutadoresContainer1.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var dadosContainer = document.getElementById("dadosContainer");
+    		if(dadosContainer) {
+      			dadosContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
+</html>
