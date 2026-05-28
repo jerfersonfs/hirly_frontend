@@ -1,0 +1,57 @@
+.btn-entrar {
+  background: rgba(121, 12, 230, 0.05);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-entrar:hover {
+  background: rgba(121, 12, 230, 0.1);
+}
+
+
+.btn-explorar {
+  background: #790ce6;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 40px;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background: #6a0cc0;
+}
+
+.btn-login {
+  background: #790ce6;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 40px;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background: #6a0cc0;
+  transform: translateY(-2px);
+}
+
+.btn-login:active {
+  transform: translateY(0);
+}

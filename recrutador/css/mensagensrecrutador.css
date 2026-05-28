@@ -1,0 +1,802 @@
+.recrutador-mensagens {
+  	width: 100%;
+  	height: 1080px;
+  	position: relative;
+  	background-color: #f4f6fb;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 36px;
+  	color: #111827;
+  	font-family: Inter;
+}
+.base-fundo {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1920px;
+  	height: 1080px;
+  	flex-shrink: 0;
+}
+.base-background {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #f4f6fb;
+  	width: 1920px;
+  	height: 1080px;
+}
+.contedo-cabealho {
+  	position: absolute;
+  	top: 128px;
+  	left: 312px;
+  	width: 1530px;
+  	height: 80px;
+  	flex-shrink: 0;
+}
+.cabealho-ao-bg {
+  	position: absolute;
+  	top: 8px;
+  	left: 1340px;
+  	border-radius: 10px;
+  	background-color: #7c3aed;
+  	width: 190px;
+  	height: 46px;
+}
+.cabealho-titulo {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	line-height: 48px;
+  	display: inline-block;
+  	width: 620px;
+}
+.cabealho-descrio {
+  	position: absolute;
+  	top: 48px;
+  	left: 0px;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 820px;
+  	height: 32px;
+}
+.cabealho-ao {
+  	position: absolute;
+  	top: 21px;
+  	left: 1360px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 600;
+  	color: #fff;
+  	display: inline-block;
+  	width: 150px;
+  	height: 20px;
+}
+.contedo-conversas-e-chat {
+  	position: absolute;
+  	top: 236px;
+  	left: 312px;
+  	width: 1528px;
+  	height: 650px;
+  	flex-shrink: 0;
+  	font-size: 15px;
+}
+.conversas-lista-base {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 22px;
+  	background-color: #fff;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 430px;
+  	height: 650px;
+}
+.conversas-item-marina-costa {
+  	position: absolute;
+  	top: 84px;
+  	left: 28px;
+  	border-radius: 16px;
+  	background-color: #f8fafc;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 374px;
+  	height: 74px;
+}
+.conversas-avatar-marina-cost {
+  	position: absolute;
+  	top: 102px;
+  	left: 48px;
+  	border-radius: 19px;
+  	background-color: #10b981;
+  	width: 38px;
+  	height: 38px;
+}
+.conversas-item-lucas-ferreir {
+  	position: absolute;
+  	top: 176px;
+  	left: 28px;
+  	border-radius: 16px;
+  	background-color: #f8fafc;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 374px;
+  	height: 74px;
+}
+.conversas-avatar-lucas-ferre {
+  	position: absolute;
+  	top: 194px;
+  	left: 48px;
+  	border-radius: 19px;
+  	background-color: #2563eb;
+  	width: 38px;
+  	height: 38px;
+}
+.conversas-item-beatriz-rocha {
+  	position: absolute;
+  	top: 268px;
+  	left: 28px;
+  	border-radius: 16px;
+  	background-color: #f8fafc;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 374px;
+  	height: 74px;
+}
+.conversas-avatar-beatriz-roc {
+  	position: absolute;
+  	top: 286px;
+  	left: 48px;
+  	border-radius: 19px;
+  	background-color: #f59e0b;
+  	width: 38px;
+  	height: 38px;
+}
+.conversas-item-rafael-lima {
+  	position: absolute;
+  	top: 360px;
+  	left: 28px;
+  	border-radius: 16px;
+  	background-color: #f8fafc;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 374px;
+  	height: 74px;
+}
+.conversas-avatar-rafael-lima {
+  	position: absolute;
+  	top: 378px;
+  	left: 48px;
+  	border-radius: 19px;
+  	background-color: #6d5df6;
+  	width: 38px;
+  	height: 38px;
+}
+.chat-base {
+  	position: absolute;
+  	top: 0px;
+  	left: 460px;
+  	border-radius: 22px;
+  	background-color: #fff;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 1068px;
+  	height: 650px;
+}
+.chat-linha {
+  	position: absolute;
+  	top: 107.5px;
+  	left: 499.5px;
+  	border-top: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 989px;
+  	height: 1px;
+}
+.chat-msg-1 {
+  	position: absolute;
+  	top: 148px;
+  	left: 500px;
+  	border-radius: 18px;
+  	background-color: #f3f6ff;
+  	width: 540px;
+  	height: 78px;
+}
+.chat-msg-2 {
+  	position: absolute;
+  	top: 256px;
+  	left: 952px;
+  	border-radius: 18px;
+  	background-color: #7102e0;
+  	width: 536px;
+  	height: 78px;
+}
+.chat-campo {
+  	position: absolute;
+  	top: 576px;
+  	left: 500px;
+  	border-radius: 14px;
+  	background-color: #f8fafc;
+  	border: 1px solid #d7ddec;
+  	box-sizing: border-box;
+  	width: 988px;
+  	height: 48px;
+}
+.conversas-titulo {
+  	position: absolute;
+  	top: 30px;
+  	left: 28px;
+  	font-size: 22px;
+  	line-height: 29px;
+  	display: inline-block;
+  	width: 180px;
+  	height: 30px;
+}
+.conversas-nome {
+  	position: absolute;
+  	top: 100px;
+  	left: 102px;
+  	line-height: 20px;
+  	display: inline-block;
+  	width: 170px;
+}
+.conversas-ultima {
+  	position: absolute;
+  	top: 124px;
+  	left: 102px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 190px;
+  	height: 18px;
+}
+.conversas-nome2 {
+  	position: absolute;
+  	top: 192px;
+  	left: 102px;
+  	line-height: 20px;
+  	display: inline-block;
+  	width: 170px;
+}
+.conversas-ultima2 {
+  	position: absolute;
+  	top: 216px;
+  	left: 102px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 190px;
+  	height: 18px;
+}
+.conversas-nome3 {
+  	position: absolute;
+  	top: 284px;
+  	left: 102px;
+  	line-height: 20px;
+  	display: inline-block;
+  	width: 170px;
+}
+.conversas-ultima3 {
+  	position: absolute;
+  	top: 308px;
+  	left: 102px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 190px;
+  	height: 18px;
+}
+.conversas-nome4 {
+  	position: absolute;
+  	top: 376px;
+  	left: 102px;
+  	line-height: 20px;
+  	display: inline-block;
+  	width: 170px;
+}
+.conversas-ultima4 {
+  	position: absolute;
+  	top: 400px;
+  	left: 102px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 190px;
+  	height: 18px;
+}
+.chat-nome {
+  	position: absolute;
+  	top: 34px;
+  	left: 500px;
+  	font-size: 24px;
+  	line-height: 32px;
+  	display: inline-block;
+  	width: 260px;
+  	height: 34px;
+}
+.chat-vaga {
+  	position: absolute;
+  	top: 68px;
+  	left: 500px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	color: #667085;
+  	display: inline-block;
+  	width: 300px;
+  	height: 20px;
+}
+.chat-msg {
+  	position: absolute;
+  	top: 168px;
+  	left: 524px;
+  	line-height: 20px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 490px;
+  	height: 42px;
+}
+.chat-msg2 {
+  	position: absolute;
+  	top: 276px;
+  	left: 978px;
+  	line-height: 20px;
+  	font-weight: 500;
+  	color: #fff;
+  	display: inline-block;
+  	width: 480px;
+  	height: 42px;
+}
+.chat-placeholder {
+  	position: absolute;
+  	top: 589px;
+  	left: 524px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	color: #98a2b3;
+  	display: inline-block;
+  	width: 220px;
+  	height: 20px;
+}
+.navegao-barra-superior {
+  	position: absolute;
+  	top: 1px;
+  	left: 278px;
+  	border-radius: 5px;
+  	background-color: #7102e0;
+  	width: 1648px;
+  	height: 100px;
+  	flex-shrink: 0;
+  	font-size: 32px;
+  	color: #8c8c8c;
+}
+.pesquisa {
+  	position: absolute;
+  	top: 16px;
+  	left: calc(50% - 794px);
+  	width: 902px;
+  	height: 68px;
+  	flex-shrink: 0;
+}
+.pesquisa-child {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	border-radius: 35px;
+  	background-color: #f3f3f3;
+}
+.encontre-uma-vaga {
+  	position: absolute;
+  	top: 22.06%;
+  	left: 10.53%;
+  	font-weight: 300;
+}
+.icone-lupa {
+  	position: absolute;
+  	width: 4.21%;
+  	top: 15px;
+  	right: 91.69%;
+  	left: 4.1%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 38px;
+  	opacity: 0.4;
+}
+.icone-filtro {
+  	position: absolute;
+  	width: 5.54%;
+  	top: 9px;
+  	right: 18.85%;
+  	left: 75.61%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 50px;
+}
+.filtrar {
+  	position: absolute;
+  	height: 30.88%;
+  	width: 150px;
+  	top: 35.29%;
+  	left: 82.15%;
+  	display: flex;
+  	font-weight: 500;
+  	color: #790ce6;
+  	align-items: center;
+}
+.seta-selecao-icon {
+  	position: absolute;
+  	height: 35.29%;
+  	width: 2.66%;
+  	top: 32.35%;
+  	right: 3.77%;
+  	bottom: 32.35%;
+  	left: 93.57%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.card-usu {
+  	position: absolute;
+  	top: 23px;
+  	left: 1475px;
+  	width: 200px;
+  	height: 46px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.usuario-foto-icon {
+  	height: 58px;
+  	width: 64px;
+  	position: relative;
+  	border-radius: 5px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.navegao-menu-lateral {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 272px;
+  	height: 1080px;
+  	flex-shrink: 0;
+  	font-size: 30px;
+}
+.sidebar-base {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #eee9fa;
+  	width: 272px;
+  	height: 1080px;
+}
+.sidebar-linha-1 {
+  	position: absolute;
+  	top: 115.5px;
+  	left: 21.5px;
+  	border-top: 1px solid rgba(107, 114, 128, 0.55);
+  	box-sizing: border-box;
+  	width: 215px;
+  	height: 1px;
+}
+.sidebar-linha-servios {
+  	position: absolute;
+  	top: 433.5px;
+  	left: 21.5px;
+  	border-top: 1px solid rgba(107, 114, 128, 0.55);
+  	box-sizing: border-box;
+  	width: 215px;
+  	height: 1px;
+}
+.sidebar-ativo-mensagens {
+  	position: absolute;
+  	top: 460px;
+  	left: 16px;
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #d8d1ec;
+  	box-sizing: border-box;
+  	width: 224px;
+  	height: 48px;
+}
+.sidebar-linha-outros {
+  	position: absolute;
+  	top: 753.5px;
+  	left: 21.5px;
+  	border-top: 1px solid rgba(107, 114, 128, 0.55);
+  	box-sizing: border-box;
+  	width: 215px;
+  	height: 1px;
+}
+.sidebar-linha-user {
+  	position: absolute;
+  	top: 947.5px;
+  	left: 21.5px;
+  	border-top: 1px solid rgba(107, 114, 128, 0.55);
+  	box-sizing: border-box;
+  	width: 215px;
+  	height: 1px;
+}
+.sidebar-user-foto {
+  	position: absolute;
+  	top: 986px;
+  	left: 24px;
+  	border-radius: 4px;
+  	background-color: #d9e2f2;
+  	width: 30px;
+  	height: 30px;
+}
+.logo-icon {
+  	position: absolute;
+  	top: 15px;
+  	left: 98px;
+  	width: 76.8px;
+  	height: 77px;
+}
+.sidebar-principal {
+  	position: absolute;
+  	top: 124px;
+  	left: 22px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 80px;
+}
+.sidebar-icone {
+  	position: absolute;
+  	top: 150px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item {
+  	position: absolute;
+  	top: 157px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone2 {
+  	position: absolute;
+  	top: 218px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item2 {
+  	position: absolute;
+  	top: 225px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone3 {
+  	position: absolute;
+  	top: 286px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item3 {
+  	position: absolute;
+  	top: 293px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone4 {
+  	position: absolute;
+  	top: 354px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item4 {
+  	position: absolute;
+  	top: 361px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-servios {
+  	position: absolute;
+  	top: 442px;
+  	left: 22px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 80px;
+}
+.sidebar-icone5 {
+  	position: absolute;
+  	top: 466px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	color: #7c3aed;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item5 {
+  	position: absolute;
+  	top: 473px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone6 {
+  	position: absolute;
+  	top: 534px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item6 {
+  	position: absolute;
+  	top: 541px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone7 {
+  	position: absolute;
+  	top: 602px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item7 {
+  	position: absolute;
+  	top: 609px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone8 {
+  	position: absolute;
+  	top: 670px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item8 {
+  	position: absolute;
+  	top: 677px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-outros {
+  	position: absolute;
+  	top: 762px;
+  	left: 22px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 80px;
+}
+.sidebar-icone9 {
+  	position: absolute;
+  	top: 786px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item9 {
+  	position: absolute;
+  	top: 793px;
+  	left: 74px;
+  	font-size: 20px;
+  	line-height: 26px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-icone10 {
+  	position: absolute;
+  	top: 854px;
+  	left: 28px;
+  	line-height: 40px;
+  	display: inline-block;
+  	width: 38px;
+  	height: 38px;
+}
+.sidebar-item10 {
+  	position: absolute;
+  	top: 861px;
+  	left: 74px;
+  	font-size: 19px;
+  	line-height: 25px;
+  	display: inline-block;
+  	width: 160px;
+  	height: 28px;
+}
+.sidebar-user {
+  	position: absolute;
+  	top: 992px;
+  	left: 64px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	display: inline-block;
+  	width: 122px;
+  	height: 18px;
+}
+.sidebar-logout {
+  	position: absolute;
+  	top: 1034px;
+  	left: 24px;
+  	font-size: 22px;
+  	line-height: 29px;
+  	display: inline-block;
+  	width: 24px;
+  	height: 24px;
+}
+.sidebar-logout2 {
+  	position: absolute;
+  	top: 1038px;
+  	left: 58px;
+  	font-size: 12px;
+  	line-height: 16px;
+  	display: inline-block;
+  	width: 70px;
+  	height: 18px;
+}
+
