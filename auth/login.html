@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Hirly</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="login-page">
         <!-- Left Decorative Side -->
         <div class="login-left">
-            <img class="logo-topo" src="logo-rodape0.svg" alt="decoration" />
+            <img class="logo-topo" src="images/logodecoleft.png" alt="decoration" />
         </div>
 
         <!-- Center Content -->
@@ -34,7 +34,7 @@
 
                 <a href="#" class="forgot-password">Esqueceu o nome de usuário</a>
 
-                <button type="submit" class="btn-login">Explorar</button>
+                <button type="button" class="btn-login" onclick="redirectLogin()">Explorar</button>
             </form>
 
             <div class="divider">ou</div>
@@ -46,8 +46,15 @@
 
         <!-- Right Decorative Side -->
         <div class="login-right">
-            <img class="logo-rodape" src="logo-rodape1.svg" alt="decoration" />
+            <img class="logo-rodape" src="images/logodecoght.png" alt="decoration" />
         </div>
     </div>
+
+    <script>
+        function redirectLogin() {
+            // Redirect to candidate home by default, can be customized based on user role
+            window.location.href = "../cadidato/principais/home.html";
+        }
+    </script>
 </body>
 </html>

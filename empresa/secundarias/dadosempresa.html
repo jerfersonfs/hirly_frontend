@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Dados da Empresa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/dadosempresa.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="../principais/homeempresa.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
+                </a>
+                <a href="atribuirrecrutadores.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Recrutadores" /> <span>Recrutadores</span>
+                </a>
+                <a href="validarvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Validar vagas" /> <span>Validar vagas</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/Dadosdaempresa.png" alt="Dados da empresa" /> <span>Dados da empresa</span>
+                </a>
+                
+                <div class="menu-divider-empresa"></div>
+                
+                <a href="../principais/perfilempresa.html" class="menu-item">
+                    <img src="images/icons/Avatarempresa.png" alt="Perfil" /> <span>Perfil</span>
+                </a>
+                <a href="../principais/configuracoesempresa.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer-empresa">
+                <div class="footer-empresa-info">
+                    <span class="empresa-nome-rodape">TechWave Brasil</span>
+                    <button class="btn-encerrar-sessao">Encerrar sessão</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar-white">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                
+                <div class="top-right-info">
+                    <div class="perfil-textos-top">
+                        <span class="top-label-light">Painel de operações</span>
+                        <span class="top-label-bold">Perfil ativo: Empresa</span>
+                    </div>
+                    <img class="usuario-foto-top" src="images/icons/Avatarempresa.png" alt="Avatar Empresa" />
+                </div>
+            </header>
+
+            <div class="dados-empresa-wrapper">
+                
+                <div class="page-header">
+                    <h1 class="page-title">Dados da empresa</h1>
+                    <p class="page-subtitle">Atualize as informações cadastrais e fiscais.</p>
+                </div>
+
+                <div class="dados-grid">
+                    
+                    <div class="card-painel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Informações cadastrais</h3>
+                        </div>
+                        
+                        <div class="panel-list">
+                            <div class="dado-item-bloco">
+                                <span class="dado-label">CNPJ</span>
+                                <span class="dado-valor">00.000.000/0001-00</span>
+                            </div>
+                            <div class="dado-item-bloco">
+                                <span class="dado-label">Razão social</span>
+                                <span class="dado-valor">TechWave Serviços Digitais LTDA</span>
+                            </div>
+                            <div class="dado-item-bloco">
+                                <span class="dado-label">Domínio</span>
+                                <span class="dado-valor">www.techwave.com</span>
+                            </div>
+                            <div class="dado-item-bloco">
+                                <span class="dado-label">Endereço</span>
+                                <span class="dado-valor">Avenida Paulista, 1000 - SP</span>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer-btn-left mt-auto">
+                            <button class="btn-primary">Salvar dados</button>
+                        </div>
+                    </div>
+
+                    <div class="card-painel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Documentos</h3>
+                        </div>
+                        
+                        <div class="panel-list gap-large">
+                            <div class="documento-item">
+                                <div class="doc-textos">
+                                    <span class="dado-label">Contrato social</span>
+                                    <span class="dado-valor">Documento aprovado</span>
+                                </div>
+                                <span class="badge badge-verificado">VERIFICADO</span>
+                            </div>
+                            <div class="documento-item">
+                                <div class="doc-textos">
+                                    <span class="dado-label">Domínio</span>
+                                    <span class="dado-valor">Comprovante aprovado</span>
+                                </div>
+                                <span class="badge badge-verificado">VERIFICADO</span>
+                            </div>
+                            <div class="documento-item">
+                                <div class="doc-textos">
+                                    <span class="dado-label">Endereço</span>
+                                    <span class="dado-valor">Arquivo pendente</span>
+                                </div>
+                                <span class="badge badge-revisar">REVISAR</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

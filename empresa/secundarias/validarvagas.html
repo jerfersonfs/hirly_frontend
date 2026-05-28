@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Validar Vagas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/validarvagas.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="../principais/homeempresa.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
+                </a>
+                <a href="atribuirrecrutadores.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Recrutadores" /> <span>Recrutadores</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/Validarvagas.png" alt="Validar vagas" /> <span>Validar vagas</span>
+                </a>
+                <a href="dadosempresa.html" class="menu-item">
+                    <img src="images/icons/Dadosdaempresa.png" alt="Dados da empresa" /> <span>Dados da empresa</span>
+                </a>
+                
+                <div class="menu-divider-empresa"></div>
+                
+                <a href="../principais/perfilempresa.html" class="menu-item">
+                    <img src="images/icons/Avatarempresa.png" alt="Perfil" /> <span>Perfil</span>
+                </a>
+                <a href="../principais/configuracoesempresa.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer-empresa">
+                <div class="footer-empresa-info">
+                    <span class="empresa-nome-rodape">TechWave Brasil</span>
+                    <button class="btn-encerrar-sessao">Encerrar sessão</button>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar-white">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                
+                <div class="top-right-info">
+                    <div class="perfil-textos-top">
+                        <span class="top-label-light">Painel de operações</span>
+                        <span class="top-label-bold">Perfil ativo: Empresa</span>
+                    </div>
+                    <img class="usuario-foto-top" src="images/icons/Avatarempresa.png" alt="Avatar Empresa" />
+                </div>
+            </header>
+
+            <div class="validar-vagas-wrapper">
+                
+                <div class="page-header">
+                    <h1 class="page-title">Validar vagas</h1>
+                    <p class="page-subtitle">Revise os detalhes antes de publicar para os candidatos.</p>
+                </div>
+
+                <div class="validar-grid">
+                    
+                    <div class="card-painel col-esquerda">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Fila de análise</h3>
+                        </div>
+                        
+                        <div class="panel-list">
+                            <div class="fila-item active">
+                                <div class="fila-textos">
+                                    <h4 class="item-title">UX Designer Pleno</h4>
+                                    <p class="item-desc">Enviado por Camila</p>
+                                </div>
+                                <span class="badge badge-warning">EM ANÁLISE</span>
+                            </div>
+                            <div class="fila-item">
+                                <div class="fila-textos">
+                                    <h4 class="item-title">Dev Front-end Jr.</h4>
+                                    <p class="item-desc">Enviado por Carlos</p>
+                                </div>
+                                <span class="badge badge-neutral">PENDENTE</span>
+                            </div>
+                            <div class="fila-item">
+                                <div class="fila-textos">
+                                    <h4 class="item-title">Suporte de TI</h4>
+                                    <p class="item-desc">Enviado por Beatriz</p>
+                                </div>
+                                <span class="badge badge-neutral">PENDENTE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-painel col-direita">
+                        
+                        <div class="detalhes-header">
+                            <div class="detalhes-title-row">
+                                <h2 class="detalhes-title">UX Designer Pleno</h2>
+                                <span class="badge badge-warning">REVISÃO NECESSÁRIA</span>
+                            </div>
+                            <p class="detalhes-meta">Produto • Híbrido • São Paulo</p>
+                        </div>
+                        
+                        <div class="checklist-list">
+                            <div class="checklist-item">
+                                <div class="check-textos">
+                                    <span class="dado-label">Descrição</span>
+                                    <span class="dado-valor">Completa e alinhada</span>
+                                </div>
+                                <span class="badge badge-success">OK</span>
+                            </div>
+                            <div class="checklist-item erro-destaque">
+                                <div class="check-textos">
+                                    <span class="dado-label">Faixa salarial</span>
+                                    <span class="dado-valor">Não informada</span>
+                                </div>
+                                <span class="badge badge-danger">CORRIGIR</span>
+                            </div>
+                            <div class="checklist-item">
+                                <div class="check-textos">
+                                    <span class="dado-label">Requisitos</span>
+                                    <span class="dado-valor">6 habilidades listadas</span>
+                                </div>
+                                <span class="badge badge-success">OK</span>
+                            </div>
+                            <div class="checklist-item">
+                                <div class="check-textos">
+                                    <span class="dado-label">Inclusão</span>
+                                    <span class="dado-valor">Texto verificado</span>
+                                </div>
+                                <span class="badge badge-success">OK</span>
+                            </div>
+                        </div>
+
+                        <div class="comentario-section">
+                            <label class="comentario-label">Comentário ao recrutador</label>
+                            <textarea class="comentario-input" placeholder="Descreva o que precisa ser ajustado na faixa salarial..."></textarea>
+                        </div>
+
+                        <div class="panel-footer-btn-row">
+                            <button class="btn-light-purple">Devolver para ajuste</button>
+                            <button class="btn-primary">Aprovar vaga</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

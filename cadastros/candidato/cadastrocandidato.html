@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Candidato - Hirly</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="cadastro-page-candidato">
         <!-- Left Decorative Side -->
-        <div class="cadastro-left"></div>
+        <div class="cadastro-left">
+            <img src="images/logo/hirly/logodecoleft.png" alt="Logo">
+        </div>
 
         <!-- Center Content -->
         <div class="cadastro-center">
-            <img class="logo-cadastro" src="logo0.svg" alt="Hirly" />
+            <img class="logo-cadastro" src="images/logo/hirly/logo.png" alt="Hirly" />
 
             <div class="cadastro-header">
                 <h1 class="cadastro-title">Crie sua conta de candidato</h1>
@@ -42,18 +44,26 @@
 
                 <a href="#" class="terms-link">Aceito aos Termos de Uso e Política de privacidade</a>
 
-                <button type="submit" class="btn-cadastro">Criar conta de candidato →</button>
+                <button type="submit" class="btn-cadastro" onclick="submitCadastro(event)">Criar conta de candidato →</button>
             </form>
         </div>
 
         <!-- Right Decorative Side -->
-        <div class="cadastro-right"></div>
+        <div class="cadastro-right">
+            <img src="images/logo/hirly/logodecoght.png" alt="Logo">
+        </div>
     </div>
 
     <script>
         function togglePassword(fieldId) {
             const field = document.getElementById(fieldId);
             field.type = field.type === 'password' ? 'text' : 'password';
+        }
+
+        function submitCadastro(event) {
+            event.preventDefault();
+            // After form validation, redirect to candidato home
+            window.location.href = "../../cadidato/principais/home.html";
         }
     </script>
 </body>

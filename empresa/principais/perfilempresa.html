@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Perfil da Empresa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/perfilempresa.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- SIDEBAR DA EMPRESA -->
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="homeempresa.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
+                </a>
+                <a href="../secundarias/atribuirrecrutadores.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Recrutadores" /> <span>Recrutadores</span>
+                </a>
+                <a href="../secundarias/validarvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Validar vagas" /> <span>Validar vagas</span>
+                </a>
+                <a href="../secundarias/dadosempresa.html" class="menu-item">
+                    <img src="images/icons/Dadosdaempresa.png" alt="Dados da empresa" /> <span>Dados da empresa</span>
+                </a>
+                
+                <div class="menu-divider-empresa"></div>
+                
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/Avatarempresa.png" alt="Perfil" /> <span>Perfil</span>
+                </a>
+                <a href="configuracoesempresa.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer-empresa">
+                <div class="footer-empresa-info">
+                    <span class="empresa-nome-rodape">TechWave Brasil</span>
+                    <button class="btn-encerrar-sessao">Encerrar sessão</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+            
+            <!-- BARRA SUPERIOR (BRANCA) -->
+            <header class="top-bar-white">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                
+                <div class="top-right-info">
+                    <div class="perfil-textos-top">
+                        <span class="top-label-light">Painel de operações</span>
+                        <span class="top-label-bold">Perfil ativo: Empresa</span>
+                    </div>
+                    <img class="usuario-foto-top" src="images/icons/Avatarempresa.png" alt="Avatar Empresa" />
+                </div>
+            </header>
+
+            <!-- ÁREA DO PERFIL DA EMPRESA -->
+            <div class="perfil-empresa-wrapper">
+                
+                <!-- Cabeçalho da Página -->
+                <div class="page-header">
+                    <h1 class="page-title">Perfil da empresa</h1>
+                    <p class="page-subtitle">Informações públicas e credenciais institucionais.</p>
+                </div>
+
+                <!-- CARD 1: Identidade da Empresa -->
+                <div class="card-identidade">
+                    <div class="identidade-left">
+                        <div class="logo-monograma">TW</div>
+                        <div class="identidade-textos">
+                            <h2 class="empresa-nome-destaque">TechWave Brasil</h2>
+                            <p class="empresa-segmento-destaque">Tecnologia para pessoas e negócios</p>
+                            <span class="badge badge-validada">EMPRESA VALIDADA</span>
+                        </div>
+                    </div>
+                    <div class="identidade-right">
+                        <button class="btn-primary">Editar perfil</button>
+                    </div>
+                </div>
+
+                <!-- GRID 2 COLUNAS: Dados e Verificações -->
+                <div class="perfil-grid">
+                    
+                    <!-- COLUNA ESQUERDA: Dados institucionais -->
+                    <div class="card-painel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Dados institucionais</h3>
+                        </div>
+                        <div class="panel-list">
+                            <div class="dado-item">
+                                <span class="dado-label">CNPJ</span>
+                                <span class="dado-valor">00.000.000/0001-00</span>
+                            </div>
+                            <div class="dado-item">
+                                <span class="dado-label">E-mail</span>
+                                <span class="dado-valor">contato@techwave.com</span>
+                            </div>
+                            <div class="dado-item">
+                                <span class="dado-label">Site</span>
+                                <span class="dado-valor">www.techwave.com</span>
+                            </div>
+                            <div class="dado-item">
+                                <span class="dado-label">Segmento</span>
+                                <span class="dado-valor">Tecnologia e talentos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COLUNA DIREITA: Verificações -->
+                    <div class="card-painel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Verificações</h3>
+                        </div>
+                        <div class="panel-list gap-large">
+                            <!-- Item 1 -->
+                            <div class="verificacao-item">
+                                <div class="verificacao-textos">
+                                    <span class="dado-label">Identidade fiscal</span>
+                                    <span class="dado-valor">Documento aprovado</span>
+                                </div>
+                                <span class="badge badge-aprovado">APROVADO</span>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="verificacao-item">
+                                <div class="verificacao-textos">
+                                    <span class="dado-label">Domínio</span>
+                                    <span class="dado-valor">Confirmado</span>
+                                </div>
+                                <span class="badge badge-aprovado">APROVADO</span>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="verificacao-item">
+                                <div class="verificacao-textos">
+                                    <span class="dado-label">Endereço</span>
+                                    <span class="dado-valor">Revisão necessária</span>
+                                </div>
+                                <span class="badge badge-revisar">REVISAR</span>
+                            </div>
+                        </div>
+                        <div class="panel-footer-btn-left mt-20">
+                            <button class="btn-primary">Gerenciar dados</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
