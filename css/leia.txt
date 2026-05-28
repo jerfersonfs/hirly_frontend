@@ -1,0 +1,2 @@
+O arquivo de css tem o código para todas as páginas criadas por mim.
+Tem que separar ele.

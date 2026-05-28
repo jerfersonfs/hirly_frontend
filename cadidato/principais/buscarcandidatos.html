@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Buscar Vagas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="logo0.svg" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <span class="menu-title">Principal</span>
+                <a href="home.html" class="menu-item">
+                    <img src="home1.svg" alt="Início" /> <span>Início</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="icone-lupa0.svg" alt="Pesquisar" /> <span>Pesquisar</span>
+                </a>
+                <a href="insightscadidato.html" class="menu-item">
+                    <img src="icone-dashboard0.svg" alt="Insights" /> <span>Insights</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Serviços</span>
+                <a href="#" class="menu-item">
+                    <img src="icone-mensagem0.svg" alt="Mensagem" /> <span>Mensagem</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="icone-pasta0.svg" alt="Documento" /> <span>Documento</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Outros</span>
+                <a href="#" class="menu-item">
+                    <img src="icone-ajuda0.svg" alt="Ajuda" /> <span>Ajuda</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="gear0.svg" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="card-usu">
+                    <img class="usuario-foto" src="usuario-foto0.png" alt="Foto do Usuário" />
+                    <div class="nome-usuario">{Nome usuario}</div>
+                </div>
+                <button class="log-out-btn">
+                    <img src="sign-out0.svg" alt="Sair" /> <span>Log out</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-search-bar">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="icone-lupa1.svg" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="icone-filtro0.svg" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="seta-selecao0.svg" alt="Seta" />
+                    </button>
+                </div>
+                <div class="user-avatar-top">
+                    <img class="usuario-foto-top" src="usuario-foto1.png" alt="Avatar Usuário" />
+                </div>
+            </header>
+
+            <div class="buscar-vagas-container">
+                
+                <section class="lista-vagas-coluna">
+                    
+                    <div class="card-vaga-busca active">
+                        <img class="logo-empresa-busca" src="logo2.png" alt="Logo Empresa" />
+                        <div class="info-vaga-busca">
+                            <h3 class="titulo-vaga-busca">Product Designer</h3>
+                            <span class="nome-empresa-busca">Nubank</span>
+                            <div class="tags-vaga-busca">
+                                <span class="tag-item">Remoto</span>
+                                <span class="tag-item">R$ 2300-2800</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-vaga-busca">
+                        <img class="logo-empresa-busca" src="logo3.png" alt="Logo Empresa" />
+                        <div class="info-vaga-busca">
+                            <h3 class="titulo-vaga-busca">Product Designer</h3>
+                            <span class="nome-empresa-busca">Nubank</span>
+                            <div class="tags-vaga-busca">
+                                <span class="tag-item">Remoto</span>
+                                <span class="tag-item">R$ 2300-2800</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-vaga-busca">
+                        <img class="logo-empresa-busca" src="logo4.png" alt="Logo Empresa" />
+                        <div class="info-vaga-busca">
+                            <h3 class="titulo-vaga-busca">Product Designer</h3>
+                            <span class="nome-empresa-busca">Nubank</span>
+                            <div class="tags-vaga-busca">
+                                <span class="tag-item">Remoto</span>
+                                <span class="tag-item">R$ 2300-2800</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-vaga-busca">
+                        <img class="logo-empresa-busca" src="logo5.png" alt="Logo Empresa" />
+                        <div class="info-vaga-busca">
+                            <h3 class="titulo-vaga-busca">Product Designer</h3>
+                            <span class="nome-empresa-busca">Nubank</span>
+                            <div class="tags-vaga-busca">
+                                <span class="tag-item">Remoto</span>
+                                <span class="tag-item">R$ 2300-2800</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="detalhes-vaga-coluna">
+                    <div class="detalhes-header">
+                        <img class="logo-detalhe-principal" src="logo2.png" alt="Empresa Grande" />
+                        <div class="detalhes-header-textos">
+                            <h2 class="detalhe-titulo-vaga">Product Designer</h2>
+                            <p class="detalhe-sub-info">Nubank • São Paulo, Brasil (Remoto)</p>
+                        </div>
+                    </div>
+
+                    <div class="detalhe-divisor"></div>
+
+                    <div class="detalhe-bloco-texto">
+                        <h4 class="detalhe-secao-titulo">Sobre a Vaga</h4>
+                        <p class="detalhe-texto-p">
+                            Estamos em busca de um Product Designer talentoso para se juntar à nossa equipe. Você será responsável por criar experiências digitais incríveis, centradas no usuário, trabalhando em estreita colaboração com engenheiros e gerentes de produto para transformar ideias complexas em interfaces intuitivas e elegantes.
+                        </p>
+                    </div>
+
+                    <div class="detalhe-divisor"></div>
+
+                    <div class="detalhe-bloco-texto">
+                        <h4 class="detalhe-secao-titulo">Requisitos</h4>
+                        <p class="detalhe-texto-p">
+                            Experiência comprovada como Product Designer ou UI/UX Designer. Portfólio sólido demonstrando soluções de design complexas e focadas no usuário. Proficiência em ferramentas de design como Figma. Boa comunicação e capacidade de trabalhar de forma colaborativa em ambientes ágeis.
+                        </p>
+                    </div>
+
+                    <div class="area-botao-candidatar">
+                        <button class="btn-candidatar-agora">
+                            <span>Candidatar-se Agora</span>
+                            <img src="seta0.svg" alt="Seta" class="seta-btn-icon" />
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

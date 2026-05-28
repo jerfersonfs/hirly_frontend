@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Candidato - Hirly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cadastro-page-candidato">
+        <!-- Left Decorative Side -->
+        <div class="cadastro-left"></div>
+
+        <!-- Center Content -->
+        <div class="cadastro-center">
+            <img class="logo-cadastro" src="logo0.svg" alt="Hirly" />
+
+            <div class="cadastro-header">
+                <h1 class="cadastro-title">Crie sua conta de candidato</h1>
+                <p class="cadastro-subtitle">Preencha seus dados para explorar oportunidades</p>
+            </div>
+
+            <form class="cadastro-form">
+                <input type="text" class="form-input" placeholder="Nome completo" required />
+                <input type="email" class="form-input" placeholder="Email" required />
+                <input type="tel" class="form-input" placeholder="Celular" required />
+                <input type="text" class="form-input" placeholder="CPF" required />
+
+                <div class="password-input-group">
+                    <div class="password-field">
+                        <input type="password" class="form-input" id="senha" placeholder="Senha" required />
+                        <img class="toggle-password" src="mostrar-senha0.svg" alt="toggle" onclick="togglePassword('senha')" />
+                    </div>
+                </div>
+
+                <div class="password-input-group">
+                    <div class="password-field">
+                        <input type="password" class="form-input" id="confirmar-senha" placeholder="Confirmar senha" required />
+                        <img class="toggle-password" src="mostrar-senha1.svg" alt="toggle" onclick="togglePassword('confirmar-senha')" />
+                    </div>
+                </div>
+
+                <a href="#" class="terms-link">Aceito aos Termos de Uso e Política de privacidade</a>
+
+                <button type="submit" class="btn-cadastro">Criar conta de candidato →</button>
+            </form>
+        </div>
+
+        <!-- Right Decorative Side -->
+        <div class="cadastro-right"></div>
+    </div>
+
+    <script>
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.type = field.type === 'password' ? 'text' : 'password';
+        }
+    </script>
+</body>
+</html>

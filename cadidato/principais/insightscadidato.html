@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Insights</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="logo0.svg" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <span class="menu-title">Principal</span>
+                <a href="home.html" class="menu-item">
+                    <img src="home1.svg" alt="Início" /> <span>Início</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="icone-lupa0.svg" alt="Pesquisar" /> <span>Pesquisar</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="icone-dashboard0.svg" alt="Insights" /> <span>Insights</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Serviços</span>
+                <a href="#" class="menu-item">
+                    <img src="icone-mensagem0.svg" alt="Mensagem" /> <span>Mensagem</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="icone-pasta0.svg" alt="Documento" /> <span>Documento</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Outros</span>
+                <a href="#" class="menu-item">
+                    <img src="icone-ajuda0.svg" alt="Ajuda" /> <span>Ajuda</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="gear0.svg" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="card-usu">
+                    <img class="usuario-foto" src="usuario-foto0.png" alt="Foto do Usuário" />
+                    <div class="nome-usuario">{Nome usuario}</div>
+                </div>
+                <button class="log-out-btn">
+                    <img src="sign-out0.svg" alt="Sair" /> <span>Log out</span>
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content grid-main-layout">
+            
+            <header class="top-search-bar">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="icone-lupa1.svg" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="icone-filtro0.svg" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="seta-selecao0.svg" alt="Seta" />
+                    </button>
+                </div>
+                <div class="user-avatar-top">
+                    <img class="usuario-foto-top" src="usuario-foto1.png" alt="Avatar" />
+                </div>
+            </header>
+
+            <div class="insights-content-wrapper">
+                
+                <div class="insights-left-panel">
+                    <div class="cabecalho-insights">
+                        <h1 class="insights-main-title">Insights</h1>
+                        <p class="insights-subtitle">Acompanhe seus dados e evolua sua jornada profissional</p>
+                    </div>
+
+                    <div class="insights-cards-grid">
+                        
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-purple">
+                                    <img src="paper-plane-tilt0.svg" alt="Candidaturas" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Candidaturas</span>
+                                    <h2 class="card-number">20</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">8 novas essa semana</span>
+                                <img src="trend-up5.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-orange">
+                                    <img src="star0.svg" alt="Feedback" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Feedback Recebido</span>
+                                    <h2 class="card-number">13</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">5 novas essa semana</span>
+                                <img src="trend-up0.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-blue">
+                                    <img src="pulse0.svg" alt="Processos" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Processos Ativos</span>
+                                    <h2 class="card-number">7</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">7 novas essa semana</span>
+                                <img src="trend-up3.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-green">
+                                    <img src="relogio0.svg" alt="Tempo Resposta" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Tempo Médio de<br>Resposta</span>
+                                    <h2 class="card-number">4</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">Tempo Médio: X dias</span>
+                                <img src="trend-up1.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-darkgreen">
+                                    <img src="calendar-dots0.svg" alt="Entrevistas" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Entrevistas</span>
+                                    <h2 class="card-number">2</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">1 para essa semana</span>
+                                <img src="trend-up2.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                        <div class="insight-card">
+                            <div class="card-top-row">
+                                <div class="card-icon-wrapper bg-lightpurple">
+                                    <img src="archive0.svg" alt="Vagas Salvas" />
+                                </div>
+                                <div class="card-header-texts">
+                                    <span class="card-label">Vagas Salvas</span>
+                                    <h2 class="card-number">20</h2>
+                                </div>
+                            </div>
+                            <div class="card-bottom-row">
+                                <span class="card-trend-text">8 novas essa semana</span>
+                                <img src="trend-up6.svg" class="trend-arrow-icon" alt="Subindo" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside class="insights-right-panel">
+                    <h2 class="eventos-title">Próximos Eventos</h2>
+                    <div class="eventos-list">
+                        <div class="evento-item-row">
+                            <img src="calendar-dots1.svg" alt="Calendário" class="calendar-icon">
+                            <p class="evento-desc-text">Amanhã, 14:00 - Entrevista<br><span class="sub-tech">(Empresa Tech)</span></p>
+                        </div>
+                        <div class="evento-item-row">
+                            <img src="calendar-dots2.svg" alt="Calendário" class="calendar-icon">
+                            <p class="evento-desc-text">Amanhã, 14:00 - Entrevista<br><span class="sub-tech">(Empresa Tech)</span></p>
+                        </div>
+                        <div class="evento-item-row">
+                            <img src="calendar-dots3.svg" alt="Calendário" class="calendar-icon">
+                            <p class="evento-desc-text">Amanhã, 14:00 - Entrevista<br><span class="sub-tech">(Empresa Tech)</span></p>
+                        </div>
+                        <div class="evento-item-row">
+                            <img src="calendar-dots4.svg" alt="Calendário" class="calendar-icon">
+                            <p class="evento-desc-text">Amanhã, 14:00 - Entrevista<br><span class="sub-tech">(Empresa Tech)</span></p>
+                        </div>
+                        <div class="evento-item-row">
+                            <img src="calendar-dots5.svg" alt="Calendário" class="calendar-icon">
+                            <p class="evento-desc-text">Amanhã, 14:00 - Entrevista<br><span class="sub-tech">(Empresa Tech)</span></p>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
