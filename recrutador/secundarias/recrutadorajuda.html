@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hirly - Mensagens</title>
+    <title>Hirly - Ajuda</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mensagensrecrutador.css">
+    <link rel="stylesheet" href="css/recrutadorajuda.css">
 </head>
 <body>
     <div class="app-container">
@@ -33,7 +33,7 @@
             
             <div class="menu-group">
                 <div class="menu-title">Serviços</div>
-                <a href="#" class="menu-item">
+                <a href="mensagensrecrutador.html" class="menu-item">
                     <img src="images/icons/icone_Mensagem.png" alt="Mensagens"> Mensagens
                 </a>
                 <a href="recrutadordocumento.html" class="menu-item">
@@ -49,7 +49,7 @@
             
             <div class="menu-group">
                 <div class="menu-title">Outros</div>
-                <a href="recrutadorajuda.html" class="menu-item">
+                <a href="#" class="menu-item">
                     <img src="images/icons/icone_Ajuda.png" alt="Ajuda"> Ajuda
                 </a>
                 <a href="condiguracoesrecrutador.html" class="menu-item">
@@ -87,73 +87,88 @@
                 
                 <div class="page-title-row">
                     <div>
-                        <h1>Mensagens</h1>
-                        <p>Converse com candidatos e acompanhe respostas prioritárias.</p>
+                        <h1>Ajuda</h1>
+                        <p>Guias rápidos e materiais para melhorar o processo seletivo.</p>
                     </div>
-                    <button class="btn-primary">Nova mensagem</button>
+                    <button class="btn-primary">Abrir suporte</button>
                 </div>
 
-                <div class="chat-container">
+                <div class="hero-banner">
+                    <div class="hero-left">
+                        <h2>Central de conhecimento do recrutador</h2>
+                        <p>Encontre modelos de mensagem, checklists e boas práticas para entrevistas e documentação.</p>
+                    </div>
+                    <div class="hero-right">
+                        <a href="#" class="hero-link">Ver guias</a>
+                    </div>
+                </div>
+
+                <div class="help-grid">
                     
-                    <div class="conversas-col">
-                        <h3 class="conversas-title">Conversas</h3>
-                        
-                        <div class="conversa-item active-chat">
-                            <div class="conversa-avatar bg-green-solid"></div>
-                            <div class="conversa-info">
-                                <h4 class="conversa-name">Marina Costa</h4>
-                                <span class="conversa-last">Confirmou entrevista</span>
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-purple-solid"></div>
+                            <div class="help-titles">
+                                <h3>Shortlist eficiente</h3>
+                                <p>Critérios para priorizar perfis</p>
                             </div>
                         </div>
-
-                        <div class="conversa-item">
-                            <div class="conversa-avatar bg-blue-solid"></div>
-                            <div class="conversa-info">
-                                <h4 class="conversa-name">Lucas Ferreira</h4>
-                                <span class="conversa-last">Enviou portfolio</span>
-                            </div>
-                        </div>
-
-                        <div class="conversa-item">
-                            <div class="conversa-avatar bg-orange-solid"></div>
-                            <div class="conversa-info">
-                                <h4 class="conversa-name">Beatriz Rocha</h4>
-                                <span class="conversa-last">Aguardando horário</span>
-                            </div>
-                        </div>
-
-                        <div class="conversa-item">
-                            <div class="conversa-avatar bg-purple-solid"></div>
-                            <div class="conversa-info">
-                                <h4 class="conversa-name">Rafael Lima</h4>
-                                <span class="conversa-last">Dúvida sobre contrato</span>
-                            </div>
-                        </div>
+                        <button class="btn-secondary">Abrir artigo</button>
                     </div>
 
-                    <div class="chat-col">
-                        
-                        <div class="chat-header">
-                            <h2 class="chat-contact-name">Marina Costa</h2>
-                            <span class="chat-contact-role">Front-end Junior | entrevista técnica</span>
-                        </div>
-                        
-                        <hr class="chat-divider">
-                        
-                        <div class="chat-messages-area">
-                            <div class="msg-bubble msg-left">
-                                Oi, Pedro! Tenho disponibilidade amanhã às 10h para a conversa técnica.
-                            </div>
-                            
-                            <div class="msg-bubble msg-right">
-                                Perfeito, Marina. Vou reservar o horário e enviar o convite ainda hoje.
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-blue-solid"></div>
+                            <div class="help-titles">
+                                <h3>Mensagem inicial</h3>
+                                <p>Template de primeiro contato</p>
                             </div>
                         </div>
-                        
-                        <div class="chat-input-area">
-                            <input type="text" class="chat-input" placeholder="Escrever mensagem...">
+                        <button class="btn-secondary">Abrir artigo</button>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-green-solid"></div>
+                            <div class="help-titles">
+                                <h3>Entrevista técnica</h3>
+                                <p>Checklist de perguntas</p>
+                            </div>
                         </div>
-                        
+                        <button class="btn-secondary">Abrir artigo</button>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-orange-solid"></div>
+                            <div class="help-titles">
+                                <h3>Documentos obrigatórios</h3>
+                                <p>Arquivos por etapa</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Abrir artigo</button>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-cyan-solid"></div>
+                            <div class="help-titles">
+                                <h3>Feedback claro</h3>
+                                <p>Modelo de devolutiva</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Abrir artigo</button>
+                    </div>
+
+                    <div class="help-card">
+                        <div class="help-card-header">
+                            <div class="help-icon-square bg-red-solid"></div>
+                            <div class="help-titles">
+                                <h3>Permissões</h3>
+                                <p>Controle da equipe</p>
+                            </div>
+                        </div>
+                        <button class="btn-secondary">Abrir artigo</button>
                     </div>
 
                 </div>

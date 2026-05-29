@@ -1,312 +1,344 @@
-<div class="_00-recrutador-in-cio">
-  <img class="_10-conte-do-boas-vindas" src="_10-conte-do-boas-vindas0.svg" />
-  <div class="middle">
-    <div class="cards">
-      <div class="carddash">
-        <div class="conteudo">
-          <div class="icone-bag">
-            <img class="bag-simple" src="bag-simple0.svg" />
-          </div>
-          <div class="frame-10">
-            <div class="vagas-ativas">Vagas ativas</div>
-            <div class="_20">20</div>
-          </div>
-          <div class="frame-11">
-            <div class="_5-novas-essa-semana">5 novas essa semana</div>
-            <img class="trend-up" src="trend-up0.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="carddash">
-        <div class="conteudo">
-          <div class="icone-bag2">
-            <img class="users" src="users0.svg" />
-          </div>
-          <div class="frame-10">
-            <div class="vagas-ativas">Candidatos</div>
-            <div class="_20">130</div>
-          </div>
-          <div class="frame-11">
-            <div class="_5-novas-essa-semana">30 novos essa semana</div>
-            <img class="trend-up2" src="trend-up1.svg" />
-          </div>
-        </div>
-      </div>
-      <div class="carddash">
-        <div class="conteudo">
-          <div class="icone-bag3">
-            <img class="star" src="star0.svg" />
-          </div>
-          <div class="frame-10">
-            <div class="vagas-ativas">Contratados</div>
-            <div class="_20">40</div>
-          </div>
-          <div class="frame-11">
-            <div class="_5-novas-essa-semana">25 nesse mês</div>
-            <div class="seta"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="center">
-      <div class="_20-conte-do-pr-ximos-eventos">
-        <img class="rectangle-25" src="rectangle-250.svg" />
-        <div class="list-item-3">
-          <img class="calendar-dots" src="calendar-dots0.svg" />
-          <div class="_25-05-08-00-fechamento-de-dados">
-            25/05, 08:00 - Fechamento de dados
-          </div>
-        </div>
-        <div class="list-item-2">
-          <div class="card-eventos">
-            <div class="frame-16">
-              <div class="frame-15">
-                <div class="amanh-14-00-entrevista-empresa-tech">
-                  20/05, 09:00 - Feedback ao candidato Giovani
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Painel do Recrutador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/homerecrutador.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo/hirly/logo.png" alt="Hirly Logo">
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Principal</div>
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/Home.png" alt="Início"> Início
+                </a>
+                <a href="buscarrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar"> Buscar
+                </a>
+                <a href="candidatosrecrutador.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Candidatos"> Candidatos
+                </a>
+                <a href="recrutadorvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Vagas"> Vagas
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Serviços</div>
+                <a href="../secundarias/mensagensrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagens"> Mensagens
+                </a>
+                <a href="../secundarias/recrutadordocumento.html" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento"> Documento
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_amarela.png" alt="Feedbacks"> Feedbacks
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_vazia.png" alt="Avaliações"> Avaliações
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Outros</div>
+                <a href="../secundarias/recrutadorajuda.html" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda"> Ajuda
+                </a>
+                <a href="../secundarias/condiguracoesrecrutador.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações"> Configurações
+                </a>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="images/user/Usuario foto.png" alt="Foto do Usuário" class="user-avatar">
+                    <span class="user-name">Pedro</span>
                 </div>
-              </div>
+                <a href="#" class="logout-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair"> Log out
+                </a>
             </div>
-          </div>
-          <img class="calendar-dots2" src="calendar-dots1.svg" />
-        </div>
-        <div class="list-item-1">
-          <div class="card-eventos">
-            <div class="frame-16">
-              <div class="frame-15">
-                <div class="amanh-14-00-entrevista-empresa-tech">
-                  Amanhã, 14:00 - Entrevista (Empresa Tech)
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="header">
+                <div class="search-container">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar" class="search-icon">
+                    <input type="text" class="search-input" placeholder="Encontre um candidato">
+                    <button class="filter-btn">
+                        <img src="images/icons/filtro.png" alt="Filtro" class="filter-icon">
+                        Filtrar
+                        <img src="images/icons/seta_selecao.png" alt="Seta" class="arrow-icon">
+                    </button>
                 </div>
-              </div>
+                <img src="images/user/Usuario foto.png" alt="User" class="header-user-avatar">
+            </header>
+
+            <div class="dashboard-wrapper">
+                <div class="welcome-header">
+                    <h1>Olá, Pedro !</h1>
+                    <p>Aqui está um resumo de suas atividades e processos seletivos</p>
+                </div>
+
+                <div class="metrics-row">
+                    <div class="metric-card card-vagas">
+                        <div class="metric-icon"><img src="images/icons/Validarvagas.png" alt="Vagas"></div>
+                        <div class="metric-info">
+                            <div class="metric-title">Vagas ativas</div>
+                            <div class="metric-value">20</div>
+                            <div class="metric-trend">5 novas essa semana <span class="trend-arrow">↗</span></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card card-candidatos">
+                        <div class="metric-icon"><img src="images/icons/Recrutadores.png" alt="Candidatos"></div>
+                        <div class="metric-info">
+                            <div class="metric-title">Candidatos</div>
+                            <div class="metric-value">130</div>
+                            <div class="metric-trend">30 novos essa semana <span class="trend-arrow">↗</span></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card card-contratados">
+                        <div class="metric-icon"><img src="images/icons/Star.png" alt="Contratados"></div>
+                        <div class="metric-info">
+                            <div class="metric-title">Contratados</div>
+                            <div class="metric-value">40</div>
+                            <div class="metric-trend">25 nesse mês <span class="trend-arrow">↑</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-grid">
+                    <div class="left-col">
+                        
+                        <div class="left-top-row">
+                            <div class="card card-eventos">
+                                <div class="card-header">
+                                    <span class="card-title">Próximos Eventos</span>
+                                </div>
+                                <div class="evento-item">
+                                    <div class="evento-icon"><img src="images/icons/CalendarDots.png" alt="Calendário"></div>
+                                    <div class="evento-text">Amanhã, 14:00 - Entrevista<br>(Empresa Tech)</div>
+                                </div>
+                                <div class="evento-item">
+                                    <div class="evento-icon"><img src="images/icons/CalendarDots.png" alt="Calendário"></div>
+                                    <div class="evento-text">20/05, 09:00 - Feedback ao<br>candidato Giovani</div>
+                                </div>
+                                <div class="evento-item">
+                                    <div class="evento-icon"><img src="images/icons/CalendarDots.png" alt="Calendário"></div>
+                                    <div class="evento-text">25/05, 08:00 - Fechamento<br>de dados</div>
+                                </div>
+                            </div>
+                            
+                            <div class="central-logo">
+                                <div class="logo-text">
+                                    <img src="images/logo/hirly/logo.png" alt="Hirly Logo">
+                                    Hirly
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-top: 10px;">
+                            <div class="card-header">
+                                <span class="card-title">Candidatos em destaque</span>
+                                <a href="#" class="card-link">Ver todos candidatos</a>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Candidato</th>
+                                        <th>Vaga</th>
+                                        <th>Etapa</th>
+                                        <th>Avaliação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="candidato-info">
+                                                <div class="cand-avatar c-blue"><img src="images/icons/Avatarempresa.png" alt="User"></div>
+                                                <div>
+                                                    <div class="cand-name">Jerferson</div>
+                                                    <div class="cand-email">jerferson.dsm@gmail.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="vaga-name">Front - end</span></td>
+                                        <td><span class="badge badge-entrevista">Entrevista</span></td>
+                                        <td>
+                                            <div class="stars">★ ★ ★ ★ <span class="empty">★</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="candidato-info">
+                                                <div class="cand-avatar c-green"><img src="images/icons/Avatarempresa.png" alt="User"></div>
+                                                <div>
+                                                    <div class="cand-name">Enzo</div>
+                                                    <div class="cand-email">enzo.dev@gmail.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="vaga-name">Sistemas</span></td>
+                                        <td><span class="badge badge-candidatura">Candidatura</span></td>
+                                        <td>
+                                            <div class="stars">★ ★ ★ <span class="empty">★</span> <span class="empty">★</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="candidato-info">
+                                                <div class="cand-avatar c-orange"><img src="images/icons/Avatarempresa.png" alt="User"></div>
+                                                <div>
+                                                    <div class="cand-name">Marcelo</div>
+                                                    <div class="cand-email">marcelo.mont@gmail.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="stars-text">Back - end</span></td>
+                                        <td><span class="badge badge-feedback">Feedback</span></td>
+                                        <td>
+                                            <div class="stars">★ ★ ★ ★ <span class="empty">★</span></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="right-col">
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Vagas ativas</span>
+                                <a href="#" class="card-link">Ver todas</a>
+                            </div>
+                            
+                            <div class="vaga-list-item">
+                                <div class="vaga-list-left">
+                                    <div class="vaga-list-icon c-orange"><img src="images/icons/Gear.png" alt="Hardware"></div>
+                                    <div>
+                                        <div class="vaga-list-title">Manutenção de hardware</div>
+                                        <div class="vaga-list-dept">Computadores</div>
+                                    </div>
+                                </div>
+                                <div class="vaga-list-right">
+                                    <div class="vaga-list-cands">15 candidatos</div>
+                                    <div class="status-ativa">Ativa</div>
+                                </div>
+                            </div>
+
+                            <div class="vaga-list-item">
+                                <div class="vaga-list-left">
+                                    <div class="vaga-list-icon c-red"><img src="images/icons/antena.png" alt="Redes"></div>
+                                    <div>
+                                        <div class="vaga-list-title">Técnico de redes</div>
+                                        <div class="vaga-list-dept">Redes</div>
+                                    </div>
+                                </div>
+                                <div class="vaga-list-right">
+                                    <div class="vaga-list-cands">10 candidatos</div>
+                                    <div class="status-ativa">Ativa</div>
+                                </div>
+                            </div>
+
+                            <div class="vaga-list-item">
+                                <div class="vaga-list-left">
+                                    <div class="vaga-list-icon c-green"><img src="images/icons/Validarvagas.png" alt="Marketing"></div>
+                                    <div>
+                                        <div class="vaga-list-title">Analista de marketing</div>
+                                        <div class="vaga-list-dept">Design</div>
+                                    </div>
+                                </div>
+                                <div class="vaga-list-right">
+                                    <div class="vaga-list-cands">50 candidatos</div>
+                                    <div class="status-ativa">Ativa</div>
+                                </div>
+                            </div>
+
+                            <div class="vaga-list-item">
+                                <div class="vaga-list-left">
+                                    <div class="vaga-list-icon c-blue"><img src="images/icons/Recrutadores.png" alt="RH"></div>
+                                    <div>
+                                        <div class="vaga-list-title">Aprendiz de RH</div>
+                                        <div class="vaga-list-dept">Administrativo</div>
+                                    </div>
+                                </div>
+                                <div class="vaga-list-right">
+                                    <div class="vaga-list-cands">25 candidatos</div>
+                                    <div class="status-ativa">Ativa</div>
+                                </div>
+                            </div>
+
+                            <div class="vaga-list-item">
+                                <div class="vaga-list-left">
+                                    <div class="vaga-list-icon c-purple"><img src="images/icons/CurrencyBtc.png" alt="Financeiro"></div>
+                                    <div>
+                                        <div class="vaga-list-title">Analista financeiro</div>
+                                        <div class="vaga-list-dept">Financeiro</div>
+                                    </div>
+                                </div>
+                                <div class="vaga-list-right">
+                                    <div class="vaga-list-cands">30 candidatos</div>
+                                    <div class="status-ativa">Ativa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="card-title">Atividades recentes</span>
+                                <a href="#" class="card-link">Ver todas</a>
+                            </div>
+                            
+                            <div class="atividade-item">
+                                <div class="atividade-left">
+                                    <div class="atividade-dot c-pink"></div>
+                                    <div>
+                                        <div class="atividade-text">Entrevista marcada com</div>
+                                        <div class="atividade-sub">Pedro Pinheiro</div>
+                                    </div>
+                                </div>
+                                <div class="atividade-time">Há 10min</div>
+                            </div>
+                            
+                            <div class="atividade-item">
+                                <div class="atividade-left">
+                                    <div class="atividade-dot c-light-green"></div>
+                                    <div>
+                                        <div class="atividade-text">Nova mensagem de</div>
+                                        <div class="atividade-sub">Marcelo Monteiro</div>
+                                    </div>
+                                </div>
+                                <div class="atividade-time">Há 55min</div>
+                            </div>
+                            
+                            <div class="atividade-item">
+                                <div class="atividade-left">
+                                    <div class="atividade-dot c-cyan"></div>
+                                    <div>
+                                        <div class="atividade-text">Novo candidato escrito</div>
+                                        <div class="atividade-sub">Analista financeiro</div>
+                                    </div>
+                                </div>
+                                <div class="atividade-time">Há 2 dias</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-          </div>
-          <img class="calendar-dots3" src="calendar-dots2.svg" />
-        </div>
-        <div class="pr-ximos-eventos">Próximos Eventos</div>
-      </div>
-      <img class="logo-texto" src="logo-texto0.svg" />
+        </main>
     </div>
-  </div>
-  <div class="card-list-vagas">
-    <div class="conteudo2">
-      <div class="tittle">
-        <div class="vagas-ativas2">Vagas ativas</div>
-        <div class="ver-todas">Ver todas</div>
-      </div>
-      <div class="vagas-list">
-        <div class="vaga-0">
-          <div class="icon-1">
-            <img class="gear" src="gear0.svg" />
-          </div>
-          <div class="conteudo3">
-            <div class="labels">
-              <div class="tittle2">
-                <div class="manuten-o-de-hardware">Manutenção de hardware</div>
-                <div class="computadores">Computadores</div>
-              </div>
-              <div class="_15-candidatos">15 candidatos</div>
-            </div>
-            <div class="right">
-              <div class="ellipse-9"></div>
-              <div class="ativa">Ativa</div>
-            </div>
-          </div>
-        </div>
-        <div class="line-13"></div>
-        <div class="vaga-1">
-          <div class="icon-2">
-            <img class="vector" src="vector0.svg" />
-          </div>
-          <div class="conteudo4">
-            <div class="labels2">
-              <div class="tittle3">
-                <div class="t-cnico-de-redes">Técnico de redes</div>
-                <div class="redes">Redes</div>
-              </div>
-              <div class="_10-candidatos">10 candidatos</div>
-            </div>
-            <div class="right">
-              <div class="ellipse-5"></div>
-              <div class="ativa">Ativa</div>
-            </div>
-          </div>
-        </div>
-        <div class="line-9"></div>
-        <div class="vaga-2">
-          <div class="icon-3">
-            <img class="vector2" src="vector1.svg" />
-          </div>
-          <div class="conteudo5">
-            <div class="labels3">
-              <div class="design">Design</div>
-              <div class="tittle4">
-                <div class="analista-de-marketing">Analista de marketing</div>
-                <div class="_50-candidatos">50 candidatos</div>
-              </div>
-            </div>
-            <div class="right">
-              <div class="ellipse-6"></div>
-              <div class="ativa">Ativa</div>
-            </div>
-          </div>
-        </div>
-        <div class="line-10"></div>
-        <div class="vaga-3">
-          <div class="icon-32">
-            <img class="users2" src="users1.svg" />
-          </div>
-          <div class="conteudo4">
-            <div class="labels4">
-              <div class="titlle">
-                <div class="aprendiz-de-rh">Aprendiz de RH</div>
-                <div class="administrativo">Administrativo</div>
-              </div>
-              <div class="_25-candidatos">25 candidatos</div>
-            </div>
-            <div class="right2">
-              <div class="ellipse-7"></div>
-              <div class="ativa">Ativa</div>
-            </div>
-          </div>
-        </div>
-        <div class="line-11"></div>
-        <div class="vaga-4">
-          <div class="conteudo6">
-            <div class="icon-4">
-              <img class="currency-btc" src="currency-btc0.svg" />
-            </div>
-            <div class="labels5">
-              <div class="tittle5">
-                <div class="analista-financeiro">Analista financeiro</div>
-                <div class="financeiro">Financeiro</div>
-              </div>
-              <div class="_30-candidatos">30 candidatos</div>
-            </div>
-          </div>
-          <div class="right">
-            <div class="ellipse-8"></div>
-            <div class="ativa">Ativa</div>
-          </div>
-        </div>
-        <div class="line-12"></div>
-      </div>
-    </div>
-  </div>
-  <div class="line-15"></div>
-  <div class="line-17"></div>
-  <div class="line-16"></div>
-  <img class="rectangle-24" src="rectangle-240.svg" />
-  <div class="descricao">
-    <div class="candidatos-em-destaque">Candidatos em destaque</div>
-    <div class="ver-todos-candidatos">Ver todos candidatos</div>
-  </div>
-  <div class="frame-152">
-    <img class="usuario-circulo" src="usuario-circulo0.svg" />
-  </div>
-  <div class="frame-162">
-    <img class="usuario-circulo2" src="usuario-circulo1.svg" />
-  </div>
-  <div class="frame-17">
-    <img class="usuario-circulo3" src="usuario-circulo2.svg" />
-  </div>
-  <div class="informa-o-1">
-    <div class="jerferson">Jerferson</div>
-    <div class="jerferson-dsm-gmail-com">jerferson.dsm@gmail.com</div>
-  </div>
-  <div class="informa-o-2">
-    <div class="enzo">Enzo</div>
-    <div class="enzo-dev-gmail-com">enzo.dev@gmail.com</div>
-  </div>
-  <div class="botao-etapa">
-    <div class="entrevista">Entrevista</div>
-  </div>
-  <div class="botao-etapa2">
-    <div class="candidatura">Candidatura</div>
-  </div>
-  <img class="avaliacao" src="avaliacao0.svg" />
-  <img class="avaliacao2" src="avaliacao1.svg" />
-  <div class="user-destaque-1">
-    <div class="informa-o-3">
-      <div class="marcelo">Marcelo</div>
-      <div class="marcelo-mont-gmail-com">marcelo.mont@gmail.com</div>
-    </div>
-    <div class="botao-etapa3">
-      <div class="feedback">Feedback</div>
-    </div>
-    <img class="avaliacao3" src="avaliacao2.svg" />
-    <div class="back-end">Back - end</div>
-  </div>
-  <div class="candidato">Candidato</div>
-  <div class="front-end">Front - end</div>
-  <div class="sistemas">Sistemas</div>
-  <div class="vaga">Vaga</div>
-  <div class="etapa">Etapa</div>
-  <div class="avalia-o">Avaliação</div>
-  <div class="rectangle-15"></div>
-  <div class="rectangle-16"></div>
-  <div class="rectangle-17"></div>
-  <div class="rectangle-18"></div>
-  <div class="atividades-recentes">Atividades recentes</div>
-  <div class="ver-todas2">Ver todas</div>
-  <div class="novo-candidato-escrito">Novo candidato escrito</div>
-  <div class="nova-mensagem-de">Nova mensagem de</div>
-  <div class="entrevista-marcada-com">Entrevista marcada com</div>
-  <div class="analista-financeiro2">Analista financeiro</div>
-  <div class="marcelo-monteiro">Marcelo Monteiro</div>
-  <div class="pedro-pinheiro">Pedro Pinheiro</div>
-  <div class="h-10-min">Há 10min</div>
-  <div class="h-55-min">Há 55min</div>
-  <div class="h-2-dias">Há 2 dias</div>
-  <div class="barra-pesquisa-2">
-    <div class="pesquisa">
-      <div class="rectangle-8"></div>
-      <div class="encontre-uma-vaga">Encontre um candidato</div>
-      <img class="icone-lupa" src="icone-lupa0.svg" />
-      <img class="icone-filtro" src="icone-filtro0.svg" />
-      <div class="filtrar">Filtrar</div>
-      <img class="seta-selecao" src="seta-selecao0.svg" />
-    </div>
-    <div class="card-usu">
-      <img class="usuario-foto" src="usuario-foto0.png" />
-    </div>
-  </div>
-  <div class="bem-vindo">
-    <div class="ol-pedro">Olá, Pedro !</div>
-    <div class="aqui-est-um-resumo-de-suas-atividades-e-processos-seletivos">
-      Aqui está um resumo de suas atividades e processos seletivos
-    </div>
-  </div>
-  <div class="sidebar-base"></div>
-  <div class="sidebar-linha-1"></div>
-  <div class="sidebar-ativo-in-cio"></div>
-  <div class="sidebar-linha-servi-os"></div>
-  <div class="sidebar-linha-outros"></div>
-  <div class="sidebar-linha-user"></div>
-  <div class="sidebar-user-foto"></div>
-  <img class="logo" src="logo0.svg" />
-  <div class="sidebar-principal">Principal</div>
-  <div class="sidebar-icone-in-cio">⌂</div>
-  <div class="sidebar-item-in-cio">Início</div>
-  <div class="sidebar-icone-buscar">⌕</div>
-  <div class="sidebar-item-buscar">Buscar</div>
-  <div class="sidebar-icone-candidatos">♧</div>
-  <div class="sidebar-item-candidatos">Candidatos</div>
-  <div class="sidebar-icone-vagas">□</div>
-  <div class="sidebar-item-vagas">Vagas</div>
-  <div class="sidebar-servi-os">Serviços</div>
-  <div class="sidebar-icone-mensagens">✉</div>
-  <div class="sidebar-item-mensagens">Mensagens</div>
-  <div class="sidebar-icone-documento">▭</div>
-  <div class="sidebar-item-documento">Documento</div>
-  <div class="sidebar-icone-feedbacks">★</div>
-  <div class="sidebar-item-feedbacks">Feedbacks</div>
-  <div class="sidebar-icone-avalia-es">☆</div>
-  <div class="sidebar-item-avalia-es">Avaliações</div>
-  <div class="sidebar-outros">Outros</div>
-  <div class="sidebar-icone-ajuda">?</div>
-  <div class="sidebar-item-ajuda">Ajuda</div>
-  <div class="sidebar-icone-configura-es">⚙</div>
-  <div class="sidebar-item-configura-es">Configurações</div>
-  <div class="sidebar-user-nome">&lcub;Nome usuario&rcub;</div>
-  <div class="sidebar-logout-icon">↪</div>
-  <div class="sidebar-logout">Log out</div>
-</div>
+</body>
+</html>

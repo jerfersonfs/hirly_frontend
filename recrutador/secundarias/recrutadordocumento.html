@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Documentos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/recrutadordocumento.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo/hirly/logo.png" alt="Hirly Logo">
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Principal</div>
+                <a href="../principais/homerecrutador.html" class="menu-item active">
+                    <img src="images/icons/Home.png" alt="Início"> Início
+                </a>
+                <a href="../principais/buscarrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar"> Buscar
+                </a>
+                <a href="../principais/candidatosrecrutador.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Candidatos"> Candidatos
+                </a>
+                <a href="../principais/recrutadorvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Vagas"> Vagas
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Serviços</div>
+                <a href="mensagensrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagens"> Mensagens
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento"> Documento
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_amarela.png" alt="Feedbacks"> Feedbacks
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_vazia.png" alt="Avaliações"> Avaliações
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Outros</div>
+                <a href="recrutadorajuda.html" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda"> Ajuda
+                </a>
+                <a href="condiguracoesrecrutador.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações"> Configurações
+                </a>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="images/user/Usuario foto.png" alt="Foto do Usuário" class="user-avatar">
+                    <span class="user-name">Pedro</span>
+                </div>
+                <a href="#" class="logout-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair"> Log out
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="header">
+                <div class="search-container">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar" class="search-icon">
+                    <input type="text" class="search-input" placeholder="Encontre um candidato">
+                    <button class="filter-btn">
+                        <img src="images/icons/filtro.png" alt="Filtro" class="filter-icon">
+                        Filtrar
+                        <img src="images/icons/seta_selecao.png" alt="Seta" class="arrow-icon">
+                    </button>
+                </div>
+                <img src="images/user/Usuario foto.png" alt="User" class="header-user-avatar">
+            </header>
+
+            <div class="dashboard-wrapper">
+                
+                <div class="page-title-row">
+                    <div>
+                        <h1>Documentos</h1>
+                        <p>Currículos, contratos e avaliações organizados por etapa.</p>
+                    </div>
+                    <button class="btn-primary">Enviar arquivo</button>
+                </div>
+
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <div class="metric-square bg-purple-solid"></div>
+                        <div class="metric-info">
+                            <div class="metric-val">184</div>
+                            <div class="metric-label">Arquivos</div>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-square bg-orange-solid"></div>
+                        <div class="metric-info">
+                            <div class="metric-val">31</div>
+                            <div class="metric-label">Pendentes</div>
+                        </div>
+                    </div>
+                    
+                    <div class="metric-card">
+                        <div class="metric-square bg-green-solid"></div>
+                        <div class="metric-info">
+                            <div class="metric-val">18</div>
+                            <div class="metric-label">Contratos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="documents-grid">
+                    
+                    <div class="biblioteca-col">
+                        <div class="card card-white">
+                            <h2 class="section-title">Biblioteca recente</h2>
+                            
+                            <div class="doc-item">
+                                <div class="doc-info-left">
+                                    <div class="doc-icon-square bg-green-solid"></div>
+                                    <div class="doc-titles">
+                                        <h3 class="doc-title">Currículo - Marina Costa</h3>
+                                        <span class="doc-meta">PDF aprovado</span>
+                                    </div>
+                                </div>
+                                <button class="btn-abrir-doc">Abrir</button>
+                            </div>
+
+                            <div class="doc-item">
+                                <div class="doc-info-left">
+                                    <div class="doc-icon-square bg-orange-solid"></div>
+                                    <div class="doc-titles">
+                                        <h3 class="doc-title">Teste técnico - Lucas Ferreira</h3>
+                                        <span class="doc-meta">Revisar anexo</span>
+                                    </div>
+                                </div>
+                                <button class="btn-abrir-doc">Abrir</button>
+                            </div>
+
+                            <div class="doc-item">
+                                <div class="doc-info-left">
+                                    <div class="doc-icon-square bg-blue-solid"></div>
+                                    <div class="doc-titles">
+                                        <h3 class="doc-title">Contrato - Beatriz Rocha</h3>
+                                        <span class="doc-meta">Assinatura digital</span>
+                                    </div>
+                                </div>
+                                <button class="btn-abrir-doc">Abrir</button>
+                            </div>
+
+                            <div class="doc-item">
+                                <div class="doc-info-left">
+                                    <div class="doc-icon-square bg-purple-solid"></div>
+                                    <div class="doc-titles">
+                                        <h3 class="doc-title">Avaliação - Rafael Lima</h3>
+                                        <span class="doc-meta">Feedback recebido</span>
+                                    </div>
+                                </div>
+                                <button class="btn-abrir-doc">Abrir</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="pendencias-col">
+                        <div class="card card-purple">
+                            <h2 class="pend-title">Pendências críticas</h2>
+                            <p class="pend-desc">Revise documentos que travam entrevista, proposta ou contratação.</p>
+                            
+                            <div class="pend-stats">
+                                <div class="pend-number">31</div>
+                                <div class="pend-label">arquivos pendentes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
