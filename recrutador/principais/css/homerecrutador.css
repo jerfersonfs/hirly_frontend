@@ -1,5 +1,6 @@
 /* ================= Reset e Base ================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
 body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; overflow-x: hidden; }
 .app-container { display: flex; min-height: 100vh; }
 
@@ -11,6 +12,9 @@ body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333;
     padding: 30px 20px; position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
     z-index: 10;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 .sidebar-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 35px; }
 .sidebar-logo img { width: 50px; object-fit: contain; }
@@ -185,3 +189,100 @@ body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333;
 .c-green { background-color: #22c55e; } .c-blue { background-color: #3b82f6; }
 .c-purple { background-color: #a855f7; } .c-pink { background-color: #ec4899; }
 .c-light-green { background-color: #84cc16; } .c-cyan { background-color: #06b6d4; }
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar */
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Empilha a coluna esquerda (eventos/candidatos) e a coluna direita (vagas) */
+  .main-grid {
+    flex-direction: column;
+  }
+
+  /* Permite que os cards de métricas (Vagas, Candidatos, Contratados) quebrem linha */
+  .metrics-row {
+    flex-wrap: wrap;
+  }
+  
+  .metric-card {
+    min-width: 250px; /* Garante que os cards não fiquem espremidos */
+  }
+
+  /* Faz o conteúdo principal ocupar toda a tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes do Header */
+  .header {
+    padding: 0 20px;
+  }
+
+  .search-container {
+    padding: 5px 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  /* Esconde a palavra "Filtrar" e a seta no mobile para poupar espaço */
+  .filter-btn {
+    font-size: 0; 
+    padding-left: 10px;
+  }
+  
+  .filter-btn .arrow-icon {
+    display: none;
+  }
+
+  .welcome-header h1 {
+    font-size: 24px;
+  }
+
+  /* Força os cards de métricas a ficarem um embaixo do outro */
+  .metrics-row {
+    flex-direction: column;
+  }
+
+  /* Empilha o bloco de 'Próximos Eventos' e a 'Logo Central' */
+  .left-top-row {
+    flex-direction: column;
+  }
+
+  .card-eventos {
+    width: 100%; /* Tira a largura fixa de 300px */
+  }
+
+  /* Reduz o tamanho da logo central e do texto para caber no celular */
+  .central-logo {
+    padding: 20px 0;
+  }
+  
+  .logo-text {
+    font-size: 45px;
+  }
+  
+  .logo-text img {
+    width: 55px;
+  }
+
+  /* --- Tratamento da Tabela de Candidatos --- */
+  /* Cria uma rolagem horizontal apenas dentro do card da tabela */
+  .card {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 500px; /* Força a tabela a manter tamanho legível, ativando o scroll no card */
+  }
+}

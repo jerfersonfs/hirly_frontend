@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +35,9 @@ body {
   left: 0;
   top: 0;
   z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-top {
@@ -539,4 +547,76 @@ body {
 
 .sub-tech {
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .insights-content-wrapper {
+    flex-direction: column; /* Joga a lista de 'Próximos Eventos' para baixo dos cards */
+    padding: 30px;
+  }
+  
+  .insights-right-panel {
+    width: 100%; /* Faz a lista de eventos usar toda a largura disponível */
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  /* Ajusta o grid para os cards preencherem o espaço de forma flexível */
+  .insights-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+  }
+  
+  .insight-card {
+    width: 100%; /* Remove a trava fixa de 286px */
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar lateral na esquerda */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar 100% da tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra de pesquisa roxa */
+  .top-search-bar {
+    padding: 0 20px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde o texto "Filtrar" */
+  }
+
+  /* Ajuste de espaçamentos gerais do miolo da página */
+  .insights-content-wrapper {
+    padding: 20px;
+  }
+
+  /* Diminui os títulos para não quebrarem linhas desnecessárias */
+  .insights-main-title {
+    font-size: 28px;
+  }
+  
+  .insights-subtitle {
+    font-size: 16px;
+  }
+
+  /* Força os cards a ficarem em 1 única coluna perfeita */
+  .insights-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }

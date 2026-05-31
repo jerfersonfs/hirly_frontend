@@ -1,10 +1,12 @@
 /* Base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
 body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; }
 .app-container { display: flex; min-height: 100vh; }
 
 /* Layout principal */
-.sidebar { width: 220px; background-color: #f6f3fc; padding: 25px 15px; position: fixed; height: 100vh; border-right: 1px solid rgba(0,0,0,0.03); overflow-y: auto; }
+.sidebar { width: 220px; background-color: #f6f3fc; padding: 25px 15px; position: fixed; height: 100vh; border-right: 1px solid rgba(0,0,0,0.03); 
+  overflow-y: auto; display: flex; flex-direction: column;}
 .sidebar-logo { margin-bottom: 30px; }
 .sidebar-logo img { width: 50px; height: 50px; }
 
@@ -16,18 +18,18 @@ body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; }
 .menu-item:hover { background: #f0f0f0; }
 .menu-item.active:hover { background: #8338ec; }
 
-.sidebar-footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1); }
-.user-info { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
-.user-avatar { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; }
-.user-name { font-size: 14px; font-weight: 600; color: #111; }
-.logout-btn { display: flex; align-items: center; gap: 8px; color: #111; text-decoration: none; font-size: 14px; transition: color 0.2s; }
-.logout-btn:hover { color: #8338ec; }
-.logout-btn img { width: 16px; height: 16px; }
+.sidebar-footer { margin-top: auto;padding-top: 25px; padding-bottom: 25px;border-top: 1px solid rgba(0, 0, 0, 0.08);display: flex; flex-direction: column; gap: 18px;}
+.user-info { display: flex; align-items: center; gap: 12px; padding-left: 10px;margin-bottom: 0; }
+.user-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.user-name { font-size: 15px; font-weight: 700; color: #000000; }
+.logout-btn { display: flex; align-items: center; gap: 12px; padding-left: 10px;color: #000000; text-decoration: none; font-size: 14px; font-weight: 400; transition: color 0.2s ease; }
+.logout-btn:hover { color: #8338ec;}
+.logout-btn img { width: 18px; height: 18px; object-fit: contain; opacity: 0.8;}
 
 .main-content { margin-left: 220px; flex: 1; }
 .header { background: linear-gradient(90deg, #8338ec 0%, #9d4edd 100%); height: 80px; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; }
 
-.search-container { display: flex; align-items: center; gap: 10px; flex: 1; background: rgba(255,255,255,0.95); border-radius: 24px; padding: 0 20px; max-width: 400px; }
+.search-container { display: flex; align-items: center; gap: 10px; flex: 1; background: rgba(255,255,255,0.95); border-radius: 24px; padding: 0 20px; max-width: 600px; height: 46px;}
 .search-icon { width: 18px; height: 18px; opacity: 0.7; }
 .search-input { background: none; border: none; outline: none; flex: 1; font-size: 14px; color: #333; }
 .search-input::placeholder { color: #a0aec0; font-style: italic; }
@@ -74,5 +76,82 @@ body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; }
 .stat-label { font-size: 13px; opacity: 0.9; }
 
 @media (max-width: 1024px) {
-    .settings-content { grid-template-columns: 1fr; }
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Transforma a grelha de configurações de 2 colunas para 1 */
+  .settings-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Esconde a Sidebar */
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Ajustes do Cabeçalho Superior */
+  .header {
+    padding: 0 20px;
+  }
+
+  .search-container {
+    padding: 5px 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .filter-btn {
+    font-size: 0; 
+    padding-left: 10px;
+  }
+  
+  .filter-btn img,
+  .header-user-avatar {
+    display: none;
+  }
+
+  /* Título da página */
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .page-title-section h1 {
+    font-size: 24px;
+  }
+  
+  .btn-save-settings {
+    width: 100%;
+  }
+
+  /* Ajustes nas Abas (Tabs) para quebrarem linha */
+  .tabs-container {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+  
+  .tab {
+    width: 50%; /* 2 abas por linha */
+    text-align: center;
+    border-bottom: 2px solid #e5e7eb;
+    padding: 12px 10px;
+  }
+
+  .settings-card {
+    padding: 20px 15px;
+  }
 }

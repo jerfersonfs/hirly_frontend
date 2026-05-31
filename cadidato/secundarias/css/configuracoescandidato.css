@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +37,9 @@ body {
   left: 0;
   top: 0;
   z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-top { display: flex; justify-content: center; margin-bottom: 30px; }
@@ -283,4 +291,106 @@ body {
 
 .btn-danger-outline:hover {
   background-color: #fff0f0;
+}
+
+/* Telas Médias (Tablets) - Abaixo de 1024px */
+@media (max-width: 1024px) {
+  .perfil-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Reduz o espaço entre a foto e os dados */
+  .perfil-header-section {
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .configuracoes-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .config-body {
+    padding: 30px 20px; /* Reduz o preenchimento interno do card */
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar toda a tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes do cabeçalho de pesquisa */
+  .top-search-bar {
+    padding: 0 20px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde o texto "Filtrar" */
+  }
+
+  /* Ajustes da Tela de Configurações */
+  .page-title {
+    font-size: 26px;
+  }
+  
+  .page-subtitle {
+    font-size: 15px;
+  }
+
+  /* Ajuste das Abas (Tabs) para não espremer no celular */
+  .config-tabs {
+    flex-wrap: wrap; /* Permite quebrar linha */
+  }
+  
+  .tab-item {
+    font-size: 15px;
+    padding: 15px 5px;
+    flex: 1 1 50%; /* Faz com que fiquem 2 abas por linha (50% de largura cada) */
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+
+  /* Remove a borda inferior das duas últimas abas para não duplicar com o card */
+  .tab-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  /* Corpo do Formulário */
+  .config-body {
+    padding: 20px 15px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* Ajuste dos botões de ação para ficarem um em cima do outro */
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
 }

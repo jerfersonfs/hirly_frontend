@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +37,11 @@ body {
   left: 0;
   top: 0;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; margin-top: 10px; }
@@ -314,3 +324,100 @@ body {
   transition: 0.2s;
 }
 .btn-white-purple:hover { background-color: #f0f0f0; }
+
+@media (max-width: 1024px) {
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Permite que as métricas superiores quebrem para 2 linhas (2 em cima, 2 em baixo) */
+  .metrics-row {
+    flex-wrap: wrap;
+  }
+  
+  .metric-card {
+    min-width: 200px; /* Garante tamanho mínimo para o texto respirar */
+  }
+
+  /* Empilha o bloco de Prioridade Imediata em cima e as Ações de Segurança em baixo */
+  .dash-grid {
+    flex-direction: column;
+  }
+  
+  /* Ajusta o padding da barra branca */
+  .top-bar-white {
+    padding: 0 20px;
+  }
+}
+
+/* Ecrãs Pequenos (Telemóveis) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde a Sidebar na lateral */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar todo o ecrã */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra de pesquisa e topo */
+  .top-bar-white {
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  /* Esconde o texto "Filtrar" no botão do mobile */
+  .btn-filtrar span {
+    display: none; 
+  }
+
+  /* Esconde os textos do perfil no topo para liberar espaço (deixa só o avatar) */
+  .perfil-textos-top {
+    display: none;
+  }
+
+  /* Ajustes de tipografia do cabeçalho */
+  .dash-title {
+    font-size: 24px;
+  }
+  
+  .dash-subtitle {
+    font-size: 14px;
+  }
+
+  /* Força os cards de métricas a ocuparem toda a largura no mobile */
+  .metrics-row {
+    flex-direction: column;
+  }
+
+  /* Ajustes nos painéis e botões */
+  .card-painel,
+  .card-painel-dark {
+    padding: 20px 15px;
+  }
+
+  /* Painel Escuro (Ações de Segurança): Força os botões a ficarem um por baixo do outro */
+  .dark-btn-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary, 
+  .btn-light-purple,
+  .btn-danger-solid,
+  .btn-white-purple {
+    width: 100%;
+    text-align: center;
+  }
+}

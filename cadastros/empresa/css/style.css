@@ -1,3 +1,8 @@
+html {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
 /* Cadastro Page Empresa */
 .cadastro-page-empresa {
   background: linear-gradient(135deg, rgba(121, 12, 230, 0.05) 0%, rgba(121, 12, 230, 0.02) 100%);
@@ -171,4 +176,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 480px) {
+  /* Ajustes finos de texto e botões para telas muito pequenas */
+  .cadastro-title {
+    font-size: 24px;
+  }
+  
+  .cadastro-subtitle {
+    font-size: 14px;
+  }
+  
+  .btn-cadastro {
+    padding: 14px 20px;
+    font-size: 16px;
+    width: 100%;
+  }
 }

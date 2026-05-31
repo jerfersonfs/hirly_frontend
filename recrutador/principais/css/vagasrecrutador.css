@@ -1,5 +1,6 @@
 /* ================= Reset e Base ================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
 body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; color: #333; overflow-x: hidden; }
 .app-container { display: flex; min-height: 100vh; }
 
@@ -17,6 +18,9 @@ img:not([src]), img[src=""] { background-color: #d1d5db; border-radius: 4px; dis
     position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
     z-index: 10; overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-logo { display: flex; align-items: center; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; }
@@ -101,3 +105,109 @@ img:not([src]), img[src=""] { background-color: #d1d5db; border-radius: 4px; dis
 .bg-blue { background-color: #eff6ff; } .c-blue-text { color: #2563eb; } .bg-blue-solid { background-color: #3b82f6; }
 .bg-orange { background-color: #fffbeb; } .c-orange-text { color: #d97706; } .bg-orange-solid { background-color: #f59e0b; }
 .bg-purple { background-color: #f5f3ff; } .c-purple-text { color: #7c3aed; } .bg-purple-solid { background-color: #8b5cf6; }
+
+/* Telas Médias (Tablets) - Abaixo de 1024px */
+@media (max-width: 1024px) {
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Transforma o grid de vagas em 1 coluna para os cards não ficarem espremidos */
+  .vagas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Diminui o espaçamento dos números do banner */
+  .hero-right {
+    gap: 20px;
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Força a sobrescrita das regras !important da sidebar e main content */
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Ajustes da barra superior (Header) */
+  .header {
+    padding: 0 20px;
+  }
+
+  .search-container {
+    padding: 5px 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .filter-btn {
+    font-size: 0; 
+    padding-left: 10px;
+  }
+  
+  .filter-btn .arrow-icon {
+    display: none;
+  }
+
+  /* Cabeçalho da página e Botão "Criar vaga" */
+  .page-title-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .page-title-row h1 {
+    font-size: 24px;
+  }
+  
+  .page-title-row .btn-primary {
+    width: 100%;
+  }
+
+  /* Banner Roxo Escuro (Hero Banner) */
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 25px;
+  }
+
+  .hero-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .stat-item {
+    align-items: center; /* Centraliza o texto dos status */
+  }
+
+  /* Cards de Vagas individuais */
+  .vaga-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .vaga-card-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .vaga-card .btn-primary {
+    width: 100%;
+  }
+}

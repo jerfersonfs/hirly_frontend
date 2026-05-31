@@ -1,5 +1,6 @@
 /* ================= Reset e Base ================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
 body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; color: #333; overflow-x: hidden; }
 .app-container { display: flex; min-height: 100vh; }
 
@@ -17,6 +18,9 @@ img:not([src]), img[src=""] { background-color: #d1d5db; border-radius: 4px; dis
     position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
     z-index: 10; overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-logo { display: flex; align-items: center; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; }
@@ -141,3 +145,91 @@ img:not([src]), img[src=""] { background-color: #d1d5db; border-radius: 4px; dis
 .bg-blue-solid { background-color: #3b82f6; }
 .bg-orange-solid { background-color: #f59e0b; }
 .bg-purple-solid { background-color: #8b5cf6; }
+
+@media (max-width: 1024px) {
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .chat-container {
+    gap: 15px;
+  }
+  
+  /* Reduz a largura da lista de contactos para dar mais espaço ao chat */
+  .conversas-col {
+    min-width: 220px;
+  }
+}
+
+/* Ecrãs Pequenos (Telemóveis) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Força a sobrescrita das regras !important da sidebar e main content */
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Ajustes da barra superior (Header) */
+  .header {
+    padding: 0 20px;
+  }
+
+  .search-container {
+    padding: 5px 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .filter-btn {
+    font-size: 0; 
+    padding-left: 10px;
+  }
+  
+  .filter-btn .arrow-icon,
+  .header-user-avatar {
+    display: none;
+  }
+
+  /* Título da página e Botão Nova Mensagem */
+  .page-title-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .page-title-row h1 {
+    font-size: 24px;
+  }
+  
+  .page-title-row .btn-primary {
+    width: 100%;
+  }
+
+  /* --- Estrutura do Chat no Mobile --- */
+  .chat-container {
+    flex-direction: column;
+    height: auto; /* Remove a altura fixa de 600px no mobile */
+  }
+
+  .conversas-col {
+    max-width: 100%; /* Ocupa a largura total */
+    max-height: 250px; /* Limita a altura para que a lista não empurre o chat para fora do ecrã */
+  }
+
+  .chat-col {
+    height: 500px; /* Dá uma altura fixa à janela de chat para forçar o scroll interno nas mensagens */
+  }
+  
+  .msg-bubble {
+    max-width: 90%; /* Expande os balões de texto para aproveitarem melhor o ecrã pequeno */
+  }
+}

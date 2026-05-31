@@ -1,5 +1,6 @@
 /* ================= Reset e Base ================= */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
 body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; color: #333; overflow-x: hidden; }
 .app-container { display: flex; min-height: 100vh; }
 
@@ -23,7 +24,9 @@ img:not([src]), img[src=""] {
     height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
     z-index: 10;
-    overflow-x: hidden; /* Impede que imagens vazem para fora da barra */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 /* Força o tamanho do LOGO independentemente da classe */
@@ -210,3 +213,89 @@ img:not([src]), img[src=""] {
 .bg-blue { background-color: #3b82f6; } .c-blue-text { color: #3b82f6; }
 .bg-green { background-color: #10b981; } .c-green-text { color: #10b981; }
 .bg-orange { background-color: #f59e0b; } .c-orange-text { color: #f59e0b; }
+
+/* Telas Médias (Tablets) - Abaixo de 1024px */
+@media (max-width: 1024px) {
+  .dashboard-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Permite que os cards de métricas quebrem linha e preencham o espaço */
+  .metrics-row {
+    flex-wrap: wrap;
+  }
+  
+  .metric-card {
+    max-width: none;
+    min-width: 200px;
+  }
+
+  /* Transforma o Kanban num carrossel horizontal */
+  .kanban-board {
+    overflow-x: auto;
+    padding-bottom: 15px; /* Espaço para a barra de rolagem não cortar os cards */
+    scroll-snap-type: x mandatory; /* Suaviza a rolagem horizontal no mobile */
+  }
+  
+  .kanban-col {
+    scroll-snap-align: start; /* Faz as colunas "encaixarem" ao deslizar */
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Força a sobrescrita das regras !important da sidebar e main content */
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Ajustes da barra superior (Header) */
+  .header {
+    padding: 0 20px;
+  }
+
+  .search-container {
+    padding: 5px 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .filter-btn {
+    font-size: 0; 
+    padding-left: 10px;
+  }
+  
+  .filter-btn .arrow-icon {
+    display: none;
+  }
+
+  /* Cabeçalho da página e Botão Novo Candidato */
+  .page-title-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .page-title-row h1 {
+    font-size: 24px;
+  }
+  
+  .page-title-row .btn-primary {
+    width: 100%;
+  }
+
+  /* Empilha os cards de métricas um embaixo do outro */
+  .metrics-row {
+    flex-direction: column;
+  }
+}

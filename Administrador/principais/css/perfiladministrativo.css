@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +37,9 @@ body {
   left: 0;
   top: 0;
   z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
 .sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; margin-top: 10px; }
@@ -288,3 +296,107 @@ body {
   transition: 0.2s;
 }
 .btn-light-purple:hover { background-color: #e9d5ff; }
+
+@media (max-width: 1024px) {
+  .perfil-admin-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Empilha os painéis lado a lado, caso existam colunas */
+  .admin-grid-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-bar-white {
+    padding: 0 20px;
+  }
+}
+
+/* Ecrãs Pequenos (Telemóveis) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde a Sidebar na lateral */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar a totalidade do ecrã */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra superior e de pesquisa */
+  .top-bar-white {
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde a palavra "Filtrar" para poupar espaço */
+  }
+
+  /* Esconde o texto do cargo no topo (deixa apenas a foto de perfil) */
+  .perfil-textos-top {
+    display: none;
+  }
+
+  /* Ajustes do Título da Página */
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  /* Cartão Principal do Perfil */
+  .perfil-header-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  /* Ajusta a zona dos botões de ação do perfil para ocuparem a largura total */
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .btn-primary, 
+  .btn-secondary, 
+  .btn-light-purple, 
+  .btn-danger-outline {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Cartões Inferiores e Lista de Atividades */
+  .card-painel {
+    padding: 20px 15px;
+  }
+
+  .atividade-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Ajusta a largura dos botões do rodapé dos painéis */
+  .panel-footer-btn-left {
+    flex-direction: column;
+    width: 100%;
+  }
+}
