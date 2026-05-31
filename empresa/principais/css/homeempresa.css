@@ -1,25 +1,8 @@
-/* --- Reset Global --- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #f4f5f7; /* Fundo cinza bem claro idêntico à imagem */
-}
-
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* =========================================
@@ -43,7 +26,6 @@ body {
 }
 
 .sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 40px; margin-top: 10px; }
-.side-bar .logo { width: 45px; object-fit: contain; }
 
 .sidebar-menu { display: flex; flex-direction: column; flex: 1; gap: 8px; }
 
@@ -66,16 +48,6 @@ body {
   opacity: 0.6;
 }
 
-.menu-item:hover {
-  background-color: rgba(121, 12, 230, 0.05);
-  color: #790ce6;
-}
-
-/* O item ativo no painel da empresa fica preenchido de roxo */
-.menu-item.active {
-  background: linear-gradient(90deg, #790ce6 0%, #a252f5 100%);
-  color: #ffffff;
-}
 .menu-item.active img {
   opacity: 1;
   filter: brightness(0) invert(1); /* Deixa o ícone branco */
@@ -118,7 +90,6 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-.btn-encerrar-sessao:hover { color: #5a07ad; text-decoration: underline; }
 
 /* =========================================
    BARRA SUPERIOR E CONTEÚDO
@@ -145,29 +116,10 @@ body {
 }
 
 .pesquisa-wrapper { display: flex; align-items: center; background-color: #f5f5f5; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 500px; height: 48px; justify-content: space-between; }
-.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
-.icone-lupa-input { width: 18px; opacity: 0.4; }
+
 .input-busca-real { border: none; background: transparent; font-size: 15px; color: #333; width: 100%; font-style: italic; }
-.input-busca-real:focus { outline: none; }
+
 .btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 15px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
-.icone-filtro { width: 18px; }
-.seta-selecao { width: 10px; }
-
-.top-right-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.perfil-textos-top {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.top-label-light { font-size: 12px; color: #888; }
-.top-label-bold { font-size: 13px; font-weight: 700; color: #000; }
-.usuario-foto-top { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
 
 /* =========================================
    DASHBOARD / PAINEL GOVERNANÇA
@@ -178,7 +130,9 @@ body {
 }
 
 .dash-header { margin-bottom: 30px; }
+
 .dash-title { font-size: 28px; font-weight: 800; color: #000; margin: 0 0 8px 0; }
+
 .dash-subtitle { font-size: 16px; color: #666; margin: 0; }
 
 /* ROW 1: Métricas (Cards pequenos no topo) */
@@ -200,12 +154,16 @@ body {
 }
 
 .metric-value { font-size: 32px; font-weight: 800; color: #000; margin: 0 0 5px 0; line-height: 1; }
+
 .metric-label { font-size: 14px; color: #888; font-weight: 500; }
 
 /* As barrinhas coloridas na lateral de cada card */
 .line-yellow { border-left: 6px solid #eab308; }
+
 .line-blue   { border-left: 6px solid #3b82f6; }
+
 .line-green  { border-left: 6px solid #22c55e; }
+
 .line-red    { border-left: 6px solid #ef4444; }
 
 /* ROW 2: Grid Inferior */
@@ -215,6 +173,7 @@ body {
 }
 
 .dash-col-left { flex: 1.8; }
+
 .dash-col-right { flex: 1; display: flex; flex-direction: column; gap: 25px; }
 
 /* Painéis Brancos Padrão */
@@ -228,7 +187,9 @@ body {
 }
 
 .panel-header { margin-bottom: 25px; }
+
 .panel-title { font-size: 18px; font-weight: 700; color: #000; margin: 0 0 4px 0; }
+
 .panel-subtitle { font-size: 13px; color: #888; margin: 0; }
 
 .panel-list {
@@ -237,6 +198,7 @@ body {
   gap: 15px;
   margin-bottom: 25px;
 }
+
 .gap-small { gap: 10px; }
 
 .list-item {
@@ -246,16 +208,22 @@ body {
   padding-bottom: 15px;
   border-bottom: 1px solid #f0f0f0;
 }
+
 .list-item:last-child { border-bottom: none; padding-bottom: 0; }
 
 .list-item-simple {
   padding: 15px 20px;
   border-radius: 8px;
 }
-.bg-light { background-color: #f9fafc; } /* Fundo sutil pros itens de distribuição */
+
+.bg-light { background-color: #f9fafc; }
+
+/* Fundo sutil pros itens de distribuição */
 
 .item-texts { display: flex; flex-direction: column; gap: 4px; }
+
 .item-title { font-size: 15px; font-weight: 700; color: #000; margin: 0; }
+
 .item-desc { font-size: 13px; color: #666; margin: 0; }
 
 /* Badges / Etiquetas de Status */
@@ -266,17 +234,27 @@ body {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-.badge-revisar { background-color: #fff8e1; color: #d97706; } /* Amarelo */
-.badge-validar { background-color: #dcfce7; color: #15803d; } /* Verde */
-.badge-ajuste  { background-color: #ffe4e6; color: #e11d48; } /* Vermelho/Rosa */
+
+.badge-revisar { background-color: #fff8e1; color: #d97706; }
+
+/* Amarelo */
+.badge-validar { background-color: #dcfce7; color: #15803d; }
+
+/* Verde */
+.badge-ajuste  { background-color: #ffe4e6; color: #e11d48; }
+
+/* Vermelho/Rosa */
 .badge-pendente { background-color: #ffedd5; color: #b45309; display: inline-block; margin-bottom: 15px; }
 
 .badge-pendente-wrapper { margin-top: -10px; }
+
 .text-warning-desc { font-size: 14px; color: #555; line-height: 1.5; margin: 0 0 25px 0; }
 
 /* Botões do Painel */
 .panel-footer-btn { display: flex; justify-content: flex-end; margin-top: auto; }
+
 .panel-footer-btn-center { display: flex; justify-content: center; margin-top: auto; }
+
 .panel-footer-btn-left { display: flex; justify-content: flex-start; margin-top: auto; }
 
 .btn-primary {
@@ -290,6 +268,7 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .btn-primary:hover { background-color: #6109b8; }
 
 .btn-light-purple {
@@ -304,19 +283,20 @@ body {
   transition: 0.2s;
   width: 100%; /* Estica para ocupar a base do card */
 }
+
 .btn-light-purple:hover { background-color: #ead9ff; }
 
 @media (max-width: 1024px) {
   .config-empresa-wrapper {
     padding: 30px 20px;
   }
-  
-  /* Empilha os painéis de configuração que estavam lado a lado */
+
+/* Empilha os painéis de configuração que estavam lado a lado */
   .config-grid {
     flex-direction: column;
   }
-  
-  .top-bar-white {
+
+.top-bar-white {
     padding: 0 20px;
   }
 }
@@ -329,66 +309,66 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* Faz o conteúdo principal ocupar toda a tela */
+/* Faz o conteúdo principal ocupar toda a tela */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes da barra de pesquisa e topo */
+/* Ajustes da barra de pesquisa e topo */
   .top-bar-white {
     padding: 0 15px;
     gap: 15px;
   }
 
-  .pesquisa-wrapper {
+.pesquisa-wrapper {
     padding: 6px 10px;
   }
-  
-  .input-busca-real {
+
+.input-busca-real {
     font-size: 14px;
   }
 
-  .btn-filtrar span {
+.btn-filtrar span {
     display: none; /* Esconde a palavra "Filtrar" */
   }
 
-  /* Esconde os textos do perfil no topo para liberar espaço (deixa só o avatar) */
+/* Esconde os textos do perfil no topo para liberar espaço (deixa só o avatar) */
   .perfil-textos-top {
     display: none;
   }
 
-  /* Ajustes de tipografia do cabeçalho */
+/* Ajustes de tipografia do cabeçalho */
   .page-title {
     font-size: 24px;
   }
-  
-  .page-subtitle {
+
+.page-subtitle {
     font-size: 14px;
   }
 
-  /* Reduz o padding interno dos cards */
+/* Reduz o padding interno dos cards */
   .card-painel {
     padding: 20px 15px;
   }
 
-  /* Reorganiza os itens com badge para não encavalar o texto com a etiqueta */
+/* Reorganiza os itens com badge para não encavalar o texto com a etiqueta */
   .config-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .badge {
+.badge {
     align-self: flex-start; /* Alinha a etiqueta à esquerda no celular */
   }
 
-  /* Empilha os botões no rodapé dos cards */
+/* Empilha os botões no rodapé dos cards */
   .panel-footer-btn-row {
     flex-direction: column;
     gap: 10px;
   }
 
-  .btn-primary, .btn-light-purple {
+.btn-primary, .btn-light-purple {
     width: 100%;
     text-align: center;
   }

@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hirly - Central de ModeraÃ§Ã£o</title>
+    <title>Hirly - Central de Moderação</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="css/centraldemoderacao.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="css/centraldemoderacao.css">
 </head>
 <body>
     <div class="app-container">
-        
+
         <!-- SIDEBAR DO ADMINISTRADOR -->
         <aside class="side-bar">
             <div class="sidebar-top">
                 <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
             </div>
-            
+
             <nav class="sidebar-menu">
                 <!-- Item Ativo: Dashboard -->
                 <a href="#" class="menu-item active">
                     <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
                 </a>
                 <a href="../secundaria/moderarusuarios.html" class="menu-item">
-                    <img src="images/icons/Recrutadores.png" alt="Moderar usuÃ¡rios" /> <span>Moderar usuÃ¡rios</span>
+                    <img src="images/icons/Recrutadores.png" alt="Moderar usuários" /> <span>Moderar usuários</span>
                 </a>
                 <a href="../secundaria/moderarvagas.html" class="menu-item">
                     <img src="images/icons/Validarvagas.png" alt="Moderar vagas" /> <span>Moderar vagas</span>
@@ -34,28 +34,28 @@
                 <a href="../secundaria/pesquisarvagas.html" class="menu-item">
                     <img src="images/icons/icone_lupa.png" alt="Pesquisar vagas" /> <span>Pesquisar vagas</span>
                 </a>
-                
+
                 <div class="menu-divider-admin"></div>
-                
+
                 <a href="perfiladministrativo.html" class="menu-item">
                     <img src="images/icons/Recrutadores.png" alt="Perfil" /> <span>Perfil</span>
                 </a>
                 <a href="configuracoes.html" class="menu-item">
-                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes" /> <span>ConfiguraÃ§Ãµes</span>
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
                 </a>
             </nav>
-            
+
             <div class="sidebar-footer-admin">
                 <div class="footer-admin-info">
-                    <span class="admin-nome-rodape">LÃ­via Martins</span>
-                    <a href="../../auth/login.html" class="btn-encerrar-sessao">Encerrar sessÃ£o</a>
+                    <span class="admin-nome-rodape">Lívia Martins</span>
+                    <a href="../../auth/login.html" class="btn-encerrar-sessao">Encerrar sessão</a>
                 </div>
             </div>
         </aside>
 
-        <!-- CONTEÃšDO PRINCIPAL -->
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="main-content">
-            
+
             <!-- BARRA SUPERIOR (BRANCA) -->
             <header class="top-bar-white">
                 <div class="pesquisa-wrapper">
@@ -69,30 +69,30 @@
                         <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
                     </button>
                 </div>
-                
+
                 <div class="top-right-info">
                     <div class="perfil-textos-top">
-                        <span class="top-label-light">Painel de operaÃ§Ãµes</span>
+                        <span class="top-label-light">Painel de operações</span>
                         <span class="top-label-bold">Perfil ativo: Administrador</span>
                     </div>
                     <img class="usuario-foto-top" src="images/icons/Avatarempresa.png" alt="Avatar Admin" />
                 </div>
             </header>
 
-            <!-- ÃREA DO DASHBOARD ADMINISTRATIVO -->
+            <!-- REA DO DASHBOARD ADMINISTRATIVO -->
             <div class="dashboard-wrapper">
-                
-                <!-- CabeÃ§alho -->
+
+                <!-- Cabeçalho -->
                 <div class="dash-header">
-                    <h1 class="dash-title">Central de moderaÃ§Ã£o</h1>
-                    <p class="dash-subtitle">Monitore usuÃ¡rios, vagas e sinais crÃ­ticos.</p>
+                    <h1 class="dash-title">Central de moderação</h1>
+                    <p class="dash-subtitle">Monitore usuários, vagas e sinais críticos.</p>
                 </div>
 
                 <!-- LINHA DE INDICADORES -->
                 <div class="metrics-row">
                     <div class="metric-card line-red">
                         <h2 class="metric-value">18</h2>
-                        <span class="metric-label">Itens em revisÃ£o</span>
+                        <span class="metric-label">Itens em revisão</span>
                     </div>
                     <div class="metric-card line-orange">
                         <h2 class="metric-value">07</h2>
@@ -104,13 +104,13 @@
                     </div>
                     <div class="metric-card line-green">
                         <h2 class="metric-value">2h</h2>
-                        <span class="metric-label">Resposta mÃ©dia</span>
+                        <span class="metric-label">Resposta média</span>
                     </div>
                 </div>
 
                 <!-- GRID INFERIOR 2 COLUNAS -->
                 <div class="dash-grid">
-                    
+
                     <!-- COLUNA ESQUERDA: Prioridade imediata -->
                     <div class="dash-col-left">
                         <div class="card-painel h-100">
@@ -118,74 +118,74 @@
                                 <h3 class="panel-title">Prioridade imediata</h3>
                                 <p class="panel-subtitle">Casos de maior impacto</p>
                             </div>
-                            
+
                             <div class="panel-list">
-                                <!-- Item CrÃ­tico -->
+                                <!-- Item Crítico -->
                                 <div class="list-item">
                                     <div class="item-texts">
                                         <h4 class="item-title">Identidade divergente</h4>
-                                        <p class="item-desc">UsuÃ¡rio â€¢ 3 denÃºncias</p>
+                                        <p class="item-desc">Usuário • 3 denúncias</p>
                                     </div>
-                                    <span class="badge badge-critico">CRÃTICO</span>
+                                    <span class="badge badge-critico">CRÍTICO</span>
                                 </div>
-                                
+
                                 <!-- Item Alto -->
                                 <div class="list-item">
                                     <div class="item-texts">
                                         <h4 class="item-title">Spam em vagas remotas</h4>
-                                        <p class="item-desc">Vaga â€¢ mÃºltiplas cÃ³pias</p>
+                                        <p class="item-desc">Vaga • múltiplas cópias</p>
                                     </div>
                                     <span class="badge badge-alto">ALTO</span>
                                 </div>
-                                
-                                <!-- Item MÃ©dio -->
+
+                                <!-- Item Médio -->
                                 <div class="list-item">
                                     <div class="item-texts">
-                                        <h4 class="item-title">SolicitaÃ§Ã£o de bloqueio</h4>
-                                        <p class="item-desc">UsuÃ¡rio â€¢ reincidente</p>
+                                        <h4 class="item-title">Solicitação de bloqueio</h4>
+                                        <p class="item-desc">Usuário • reincidente</p>
                                     </div>
-                                    <span class="badge badge-medio">MÃ‰DIO</span>
+                                    <span class="badge badge-medio">MÉDIO</span>
                                 </div>
                             </div>
-                            
+
                             <div class="panel-footer-btn-left mt-auto">
-                                <button class="btn-primary">Moderar usuÃ¡rios</button>
+                                <button class="btn-primary">Moderar usuários</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- COLUNA DIREITA: Vagas e SeguranÃ§a -->
+                    <!-- COLUNA DIREITA: Vagas e Segurança -->
                     <div class="dash-col-right">
-                        
+
                         <!-- Vagas sinalizadas -->
                         <div class="card-painel">
                             <div class="panel-header">
                                 <h3 class="panel-title">Vagas sinalizadas</h3>
                             </div>
-                            
+
                             <div class="panel-list">
                                 <div class="list-item-gray">
                                     <h4 class="item-title">Engenheiro Front-end</h4>
-                                    <p class="item-desc">ConteÃºdo duplicado</p>
+                                    <p class="item-desc">Conteúdo duplicado</p>
                                 </div>
                                 <div class="list-item-gray">
                                     <h4 class="item-title">Analista financeiro</h4>
-                                    <p class="item-desc">SalÃ¡rio inconsistente</p>
+                                    <p class="item-desc">Salário inconsistente</p>
                                 </div>
                             </div>
-                            
+
                             <div class="panel-footer-btn-left mt-15">
-                                <button class="btn-light-purple">Abrir moderaÃ§Ã£o</button>
+                                <button class="btn-light-purple">Abrir moderação</button>
                             </div>
                         </div>
 
-                        <!-- AÃ§Ãµes de seguranÃ§a (Card Escuro) -->
+                        <!-- Ações de segurança (Card Escuro) -->
                         <div class="card-painel-dark">
-                            <h3 class="dark-title">AÃ§Ãµes de seguranÃ§a</h3>
+                            <h3 class="dark-title">Ações de segurança</h3>
                             <p class="dark-desc">
-                                3 usuÃ¡rios aguardam decisÃ£o de bloqueio<br>apÃ³s reincidÃªncia confirmada.
+                                3 usuários aguardam decisão de bloqueio<br>após reincidência confirmada.
                             </p>
-                            
+
                             <div class="dark-btn-row">
                                 <button class="btn-danger-solid">Revisar bloqueios</button>
                                 <button class="btn-white-purple">Pesquisar vagas</button>

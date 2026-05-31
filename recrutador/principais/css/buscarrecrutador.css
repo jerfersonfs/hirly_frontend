@@ -1,7 +1,6 @@
 /* ================= Reset e Base ================= */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
-body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; color: #333; overflow-x: hidden; }
+* { box-sizing: border-box; margin: 0; padding: 0; }body { font-family: 'Inter', sans-serif; background-color: #f5f6f8; color: #333; overflow-x: hidden; }
+
 .app-container { display: flex; min-height: 100vh; }
 
 /* Auxiliar: Imagens com atributo src vazio mostram fundo cinza para marcação visual */
@@ -15,7 +14,7 @@ img:not([src]), img[src=""] {
 /* ================= Menu Lateral (Sidebar) ================= */
 .sidebar {
     width: 250px;
-    background-color: #f6f3fc; 
+    background-color: #f6f3fc;
     display: flex; flex-direction: column;
     padding: 30px 20px; position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
@@ -26,17 +25,20 @@ img:not([src]), img[src=""] {
 }
 
 .sidebar-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 35px; }
+
 /* Trava o tamanho da logo */
 .sidebar-logo img { width: 80px; height: auto; object-fit: contain; }
 
 .menu-group { margin-bottom: 25px; }
+
 .menu-title {
     font-size: 11px; font-weight: 700; color: #999;
     text-transform: uppercase; margin-bottom: 10px; padding-left: 10px;
 }
+
 .menu-item {
     display: flex; align-items: center; gap: 12px; padding: 12px 14px;
-    text-decoration: none; color: #444; font-size: 14px; font-weight: 600; 
+    text-decoration: none; color: #444; font-size: 14px; font-weight: 600;
     border-radius: 8px; margin-bottom: 5px; transition: 0.2s;
 }
 
@@ -49,21 +51,23 @@ img:not([src]), img[src=""] {
 }
 
 /* Deixa o ícone ativo totalmente opaco e aplica a cor roxa (caso a imagem seja preta) */
-.menu-item.active img { 
-    opacity: 1; 
+.menu-item.active img {
+    opacity: 1;
     filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%);
 }
 
 .sidebar-footer {
-    margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05); 
+    margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05);
     display: flex; flex-direction: column; gap: 15px;
 }
+
 .user-info { display: flex; align-items: center; gap: 10px; padding-left: 10px; }
 
 /* Trava o tamanho da foto de perfil */
 .user-info img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
 
 .user-name { font-size: 13px; font-weight: 700; color: #000; }
+
 .logout-btn {
     display: flex; align-items: center; gap: 10px; padding-left: 10px;
     color: #444; text-decoration: none; font-size: 13px; font-weight: 600;
@@ -81,26 +85,33 @@ img:not([src]), img[src=""] {
     height: 80px; padding: 0 40px;
     display: flex; justify-content: space-between; align-items: center;
 }
+
 .search-container {
     display: flex; align-items: center; background-color: #ffffff; border-radius: 40px;
     padding: 5px 20px; width: 100%; max-width: 600px; height: 46px;
 }
+
 .search-icon { width: 18px; height: 18px; opacity: 0.5; }
+
 .search-input {
     border: none; outline: none; padding: 0 15px; font-size: 14px;
     font-family: 'Inter', sans-serif; font-style: normal; color: #333; flex: 1;
 }
+
 .search-input::placeholder { color: #9ca3af; font-size: 15px;}
+
 .filter-btn {
-    display: flex; align-items: center; gap: 8px; background: none; border: none; 
+    display: flex; align-items: center; gap: 8px; background: none; border: none;
     font-size: 14px; font-weight: 500; color: #8338ec; cursor: pointer;
     padding-left: 15px; border-left: 1px solid #eee; height: 24px;
 }
+
 .filter-icon { width: 16px; height: 16px; object-fit: contain; }
+
 .arrow-icon { width: 12px; height: 12px; object-fit: contain; }
 
-.header-user-avatar { 
-    width: 40px; height: 40px; border-radius: 6px; 
+.header-user-avatar {
+    width: 40px; height: 40px; border-radius: 6px;
     background-color: #fff; display: flex; justify-content: center; align-items: center;
     font-weight: 800; font-size: 14px; color: #000;
 }
@@ -112,13 +123,16 @@ img:not([src]), img[src=""] {
 .page-title-row {
     display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 25px;
 }
+
 .page-title-row h1 { font-size: 24px; font-weight: 800; color: #111827; margin-bottom: 6px; }
+
 .page-title-row p { font-size: 14px; color: #6b7280; font-weight: 500; }
 
 .btn-primary {
     background-color: #8b5cf6; color: #fff; border: none; border-radius: 8px;
     padding: 10px 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s;
 }
+
 .btn-primary:hover { background-color: #7c3aed; }
 
 /* Banner Busca Recomendada (Roxo Escuro) */
@@ -127,39 +141,55 @@ img:not([src]), img[src=""] {
     border-radius: 16px; padding: 30px; color: #fff;
     display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
 }
+
 .banner-left { max-width: 55%; }
+
 .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; opacity: 0.8; display: block; margin-bottom: 8px; }
+
 .banner-left h2 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+
 .banner-left p { font-size: 13px; font-weight: 400; line-height: 1.5; opacity: 0.9; }
 
 .banner-right { display: flex; gap: 40px; }
+
 .stat-item { display: flex; flex-direction: column; }
+
 .stat-value { font-size: 26px; font-weight: 800; margin-bottom: 2px; }
+
 .stat-label { font-size: 11px; font-weight: 500; opacity: 0.8; }
 
 /* Linha de Filtros */
 .filter-row {
     display: flex; align-items: center; gap: 15px; margin-bottom: 35px;
 }
+
 .input-tags {
     background: #fff; border: 1px solid #e5e7eb; border-radius: 8px;
     padding: 0 15px; height: 42px; width: 300px; font-size: 13px; font-family: 'Inter';
 }
+
 .input-tags::placeholder { color: #9ca3af; }
+
 .tag-group { display: flex; gap: 10px; flex: 1; }
+
 .tag-purple {
     background-color: #f3e8ff; color: #7c3aed; font-size: 12px; font-weight: 700;
     padding: 8px 16px; border-radius: 20px;
 }
+
 .filter-row .btn-primary { height: 42px; padding: 0 25px; }
 
 /* ================= GRID 3 COLUNAS ================= */
 .main-grid { display: flex; gap: 20px; align-items: flex-start; }
+
 .ranking-col { flex: 1.8; }
+
 .compare-col { flex: 1; }
+
 .best-col { flex: 1.2; }
 
 .section-title { font-size: 18px; font-weight: 800; color: #111827; margin-bottom: 20px; }
+
 .card { background: #fff; border-radius: 12px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
 
 /* --- Coluna 1: Ranking --- */
@@ -167,17 +197,22 @@ img:not([src]), img[src=""] {
     background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 12px;
     display: flex; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
+
 .rank-circle {
     width: 32px; height: 32px; border-radius: 50%; color: #fff; font-size: 14px; font-weight: 800;
     display: flex; justify-content: center; align-items: center; margin-right: 15px; flex-shrink: 0;
 }
+
 .ranking-info { flex: 1; }
+
 .rank-name { font-size: 15px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+
 .rank-meta { font-size: 12px; color: #6b7280; font-weight: 500; }
 
 .match-badge {
     padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-right: 20px;
 }
+
 .btn-secondary {
     background-color: #8b5cf6; color: #fff; border: none; border-radius: 8px;
     padding: 8px 20px; font-size: 12px; font-weight: 600; cursor: pointer;
@@ -185,43 +220,81 @@ img:not([src]), img[src=""] {
 
 /* --- Coluna 2: Comparação --- */
 .card-compare { padding: 25px 20px; }
+
 .progress-item { margin-bottom: 22px; }
+
 .progress-item:last-child { margin-bottom: 0; }
+
 .progress-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+
 .progress-label { font-size: 13px; font-weight: 700; color: #111827; }
+
 .progress-value { font-size: 13px; font-weight: 800; }
+
 .progress-bar-bg { width: 100%; height: 6px; background-color: #f3f4f6; border-radius: 10px; overflow: hidden; }
+
 .progress-bar-fill { height: 100%; border-radius: 10px; }
 
 /* --- Coluna 3: Melhor Candidata --- */
 .best-label { font-size: 10px; font-weight: 800; color: #8b5cf6; letter-spacing: 0.5px; display: block; margin-bottom: 20px; }
+
 .profile-header { display: flex; gap: 15px; align-items: center; }
+
 .profile-avatar {
     width: 48px; height: 48px; border-radius: 50%; color: #fff; font-size: 16px; font-weight: 700;
     display: flex; justify-content: center; align-items: center; flex-shrink: 0;
 }
+
 .profile-name { font-size: 18px; font-weight: 800; color: #111827; margin-bottom: 4px; }
+
 .profile-role { font-size: 12px; color: #6b7280; font-weight: 500; }
+
 .mt-5 { margin-top: 8px; display: inline-block; padding: 4px 10px; font-size: 10px;}
 
 .divider { border: 0; height: 1px; background: #e5e7eb; margin: 25px 0; }
 
 .why-title { font-size: 15px; font-weight: 800; color: #111827; margin-bottom: 8px; }
+
 .why-desc { font-size: 13px; color: #6b7280; line-height: 1.5; margin-bottom: 20px; }
 
 .attr-tags { display: flex; flex-direction: column; gap: 8px; margin-bottom: 25px; align-items: flex-start; }
+
 .attr-tag { background-color: #f8fafc; color: #475569; font-size: 11px; font-weight: 600; padding: 8px 12px; border-radius: 6px; }
 
 .action-right { display: flex; justify-content: flex-end; }
 
 /* ================= Cores e Status Auxiliares ================= */
-.c-green { background-color: #10b981; } .c-blue { background-color: #3b82f6; }
-.c-orange { background-color: #f59e0b; } .c-purple { background-color: #8b5cf6; }
+.c-green { background-color: #10b981; }
 
-.bg-green { background-color: #ecfdf5; } .c-green-text { color: #059669; } .bg-green-solid { background-color: #10b981; }
-.bg-blue { background-color: #eff6ff; } .c-blue-text { color: #2563eb; } .bg-blue-solid { background-color: #3b82f6; }
-.bg-orange { background-color: #fffbeb; } .c-orange-text { color: #d97706; } .bg-orange-solid { background-color: #f59e0b; }
-.bg-purple { background-color: #f5f3ff; } .c-purple-text { color: #7c3aed; } .bg-purple-solid { background-color: #8b5cf6; }
+.c-blue { background-color: #3b82f6; }
+
+.c-orange { background-color: #f59e0b; }
+
+.c-purple { background-color: #8b5cf6; }
+
+.bg-green { background-color: #ecfdf5; }
+
+.c-green-text { color: #059669; }
+
+.bg-green-solid { background-color: #10b981; }
+
+.bg-blue { background-color: #eff6ff; }
+
+.c-blue-text { color: #2563eb; }
+
+.bg-blue-solid { background-color: #3b82f6; }
+
+.bg-orange { background-color: #fffbeb; }
+
+.c-orange-text { color: #d97706; }
+
+.bg-orange-solid { background-color: #f59e0b; }
+
+.bg-purple { background-color: #f5f3ff; }
+
+.c-purple-text { color: #7c3aed; }
+
+.bg-purple-solid { background-color: #8b5cf6; }
 
 @media (max-width: 768px) {
   /* Esconde a Sidebar */
@@ -230,141 +303,141 @@ img:not([src]), img[src=""] {
     transition: transform 0.3s ease;
   }
 
-  .dashboard-wrapper {
+.dashboard-wrapper {
     padding: 30px 20px;
   }
-  
-  /* O banner principal tem muita informação, permite que os números quebrem linha */
+
+/* O banner principal tem muita informação, permite que os números quebrem linha */
   .banner-right {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-end;
   }
-  
-  /* Transforma a grelha de 3 colunas numa coluna única para não espremer os dados */
+
+/* Transforma a grelha de 3 colunas numa coluna única para não espremer os dados */
   .main-grid {
     flex-direction: column;
   }
-  
-  .grid-col {
+
+.grid-col {
     width: 100%;
   }
 
-  /* Faz o conteúdo principal ocupar todo o ecrã */
+/* Faz o conteúdo principal ocupar todo o ecrã */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes do Cabeçalho Superior (Header) */
+/* Ajustes do Cabeçalho Superior (Header) */
   .header {
     padding: 0 20px;
   }
 
-  .search-container {
+.search-container {
     padding: 5px 10px;
   }
 
-  .search-input {
+.search-input {
     font-size: 13px;
     padding: 0 10px;
   }
 
-  /* Esconde a palavra "Filtrar", a seta e o avatar no mobile para poupar espaço */
+/* Esconde a palavra "Filtrar", a seta e o avatar no mobile para poupar espaço */
   .filter-btn {
-    font-size: 0; 
+    font-size: 0;
     padding-left: 10px;
   }
-  
-  .filter-btn .arrow-icon,
+
+.filter-btn .arrow-icon,
   .header-user-avatar {
     display: none;
   }
 
-  /* Título da página e Botão Salvar */
+/* Título da página e Botão Salvar */
   .page-title-row {
     flex-direction: column;
     align-items: stretch;
     gap: 15px;
     text-align: center;
   }
-  
-  .page-title-row h1 {
+
+.page-title-row h1 {
     font-size: 24px;
   }
-  
-  .page-title-row .btn-primary {
+
+.page-title-row .btn-primary {
     width: 100%;
   }
 
-  /* Banner Roxo (Busca Recomendada) */
+/* Banner Roxo (Busca Recomendada) */
   .highlight-banner {
     flex-direction: column;
     text-align: center;
     gap: 25px;
     padding: 25px 20px;
   }
-  
-  .banner-left {
+
+.banner-left {
     max-width: 100%;
   }
-  
-  .banner-right {
+
+.banner-right {
     justify-content: center;
     gap: 15px;
   }
 
-  /* Linha de Filtros (Tags) */
+/* Linha de Filtros (Tags) */
   .filter-row {
     flex-direction: column;
     align-items: stretch;
     gap: 15px;
   }
-  
-  .input-tags {
-    width: 100%;
-  }
-  
-  .tag-group {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .filter-row .btn-primary {
+
+.input-tags {
     width: 100%;
   }
 
-  /* Cartões do Ranking */
+.tag-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.filter-row .btn-primary {
+    width: 100%;
+  }
+
+/* Cartões do Ranking */
   .ranking-card {
     flex-direction: column;
     text-align: center;
     gap: 12px;
     padding: 20px 15px;
   }
-  
-  .rank-circle, 
+
+.rank-circle,
   .match-badge {
     margin-right: 0;
   }
-  
-  .ranking-card .btn-secondary {
+
+.ranking-card .btn-secondary {
     width: 100%;
   }
-  
-  /* Cartão da Melhor Candidata */
+
+/* Cartão da Melhor Candidata */
   .profile-header {
     flex-direction: column;
     text-align: center;
   }
-  
-  .attr-tags {
+
+.attr-tags {
     align-items: center;
   }
-  
-  .action-right {
+
+.action-right {
     justify-content: center;
   }
-  
-  .action-right .btn-primary {
+
+.action-right .btn-primary {
     width: 100%;
   }
 }
