@@ -1,0 +1,681 @@
+.curriculo,
+.curriculo * {
+  box-sizing: border-box;
+}
+.curriculo {
+  background: #ffffff;
+  height: 1080px;
+  position: relative;
+}
+.side-bar {
+  background: rgba(121, 12, 230, 0.05);
+  width: 272px;
+  height: 1080px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.logo {
+  width: 76.77px;
+  height: 77px;
+  position: absolute;
+  left: 98px;
+  top: 15px;
+  overflow: visible;
+  aspect-ratio: 76.77/77;
+}
+.card-usu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 24px;
+  top: 971px;
+}
+.usuario-foto {
+  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  object-fit: cover;
+}
+.nome-usuario {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+.log-out-card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 24px;
+  top: 1031px;
+}
+.sign-out {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.log-out {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  top: 151px;
+}
+.home2 {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.in-co {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 96px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mensagem {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 19px;
+  top: 373px;
+}
+.icone-mensagem {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.mensagem2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 106px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.documento {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 19px;
+  top: 441px;
+}
+.icone-pasta {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.documento2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ajuda {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 19px;
+  top: 527px;
+}
+.icone-ajuda {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.ajuda2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.outros {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px;
+  top: 509px;
+  width: 77px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.configura-es {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 19px;
+  top: 595px;
+}
+.gear {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.configura-es2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.servi-os {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px;
+  top: 355px;
+  width: 77px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pesquisar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  top: 219px;
+}
+.icone-lupa {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.pesquisar2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 96px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.insights {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 20px;
+  top: 287px;
+}
+.icone-dashboard {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.insights2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  width: 96px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.line-4 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 214px;
+  height: 0px;
+  position: absolute;
+  left: 28px;
+  top: 947.49px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-5 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 214px;
+  height: 0px;
+  position: absolute;
+  left: 23px;
+  top: 349px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-7 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 214px;
+  height: 0px;
+  position: absolute;
+  left: 18px;
+  top: 116px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-6 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 214px;
+  height: 0px;
+  position: absolute;
+  left: 13px;
+  top: 503px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.principal {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 18px;
+  top: 122px;
+  width: 77px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tela-home {
+  background: rgba(121, 12, 230, 0.05);
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 0px 0px 1px;
+  width: 1648px;
+  height: 1081px;
+  position: absolute;
+  left: 272px;
+  top: -1px;
+}
+.curr-culo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Black", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  position: absolute;
+  right: 1195px;
+  top: 117px;
+  width: 448px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nome {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1100px;
+  position: absolute;
+  left: 5px;
+  top: 243px;
+}
+.t-tulo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.campo {
+  background: #e0e0e0;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 500px;
+  height: 60px;
+  position: relative;
+}
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1100px;
+  position: absolute;
+  left: 5px;
+  top: 423px;
+}
+.descricao2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.campo2 {
+  background: #e0e0e0;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 700px;
+  height: 180px;
+  position: relative;
+}
+.arquivo {
+  width: 1579px;
+  height: 172px;
+  position: absolute;
+  left: 5px;
+  top: 723px;
+}
+.topo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.arquivo2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  width: 468px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.addbutton {
+  padding: 10px;
+  flex-shrink: 0;
+  width: 80px;
+  height: 66px;
+  position: relative;
+  aspect-ratio: 80/66;
+}
+.circulo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 25px;
+  top: 13px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.campo3 {
+  background: #e0e0e0;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 77px;
+}
+.paperclip-horizontal {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 8px;
+  top: 95px;
+  overflow: visible;
+}
+.anexar-arquivo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 42px;
+  top: 93px;
+  width: 468px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.barra-pesquisa-2 {
+  background: #7102e0;
+  border-radius: 5px;
+  padding: 23px 695px 23px 51px;
+  width: 1648px;
+  height: 100px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+.pesquisa {
+  width: 902px;
+  height: 68px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 16px;
+}
+.rectangle-8 {
+  background: #f3f3f3;
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.encontre-uma-vaga {
+  color: #8c8c8c;
+  text-align: left;
+  font-family: "Inter-LightItalic", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: italic;
+  position: absolute;
+  right: 57.43%;
+  left: 10.53%;
+  width: 32.04%;
+  bottom: 4.41%;
+  top: 5.88%;
+  height: 89.71%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icone-lupa2 {
+  opacity: 0.4;
+  width: 4.21%;
+  height: 38px;
+  position: absolute;
+  right: 91.69%;
+  left: 4.1%;
+  top: 15px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.icone-filtro {
+  width: 5.54%;
+  height: 50px;
+  position: absolute;
+  right: 18.85%;
+  left: 75.61%;
+  top: 9px;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.filtrar {
+  color: #790ce6;
+  text-align: left;
+  font-family: "Inter-MediumItalic", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  position: absolute;
+  right: 1.22%;
+  left: 82.15%;
+  width: 16.63%;
+  bottom: 33.82%;
+  top: 35.29%;
+  height: 30.88%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.seta-selecao {
+  width: 2.66%;
+  height: 35.29%;
+  position: absolute;
+  right: 3.77%;
+  left: 93.57%;
+  bottom: 32.35%;
+  top: 32.35%;
+  overflow: visible;
+}
+.card-usu2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 46px;
+  position: absolute;
+  left: 1475px;
+  top: 23px;
+}
+.usuario-foto2 {
+  background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 64px;
+  height: 58px;
+  position: relative;
+  object-fit: cover;
+}
