@@ -1,25 +1,8 @@
-/* --- Reset Global --- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
-}
-
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* --- Sidebar --- */
@@ -165,13 +148,6 @@ body {
   justify-content: space-between;
 }
 
-.search-input-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-}
-
 .icone-lupa-input {
   width: 20px;
   opacity: 0.5;
@@ -185,10 +161,6 @@ body {
   width: 100%;
   font-style: italic;
   font-weight: 300;
-}
-
-.input-busca-real:focus {
-  outline: none;
 }
 
 .btn-filtrar {
@@ -207,7 +179,6 @@ body {
 }
 
 .icone-filtro { width: 20px; }
-.seta-selecao { width: 10px; }
 
 .usuario-foto-top {
   width: 45px;
@@ -485,12 +456,12 @@ body {
     gap: 20px;
   }
 
-  .lista-vagas-coluna, .detalhes-vaga-coluna {
+.lista-vagas-coluna, .detalhes-vaga-coluna {
     flex: none;
     width: 100%;
   }
 
-  /* Reduz um pouco o padding do header para ganhar espaço */
+/* Reduz um pouco o padding do header para ganhar espaço */
   .top-search-bar {
     padding: 0 20px;
   }
@@ -504,25 +475,25 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* Remove a margem esquerda do conteúdo principal */
+/* Remove a margem esquerda do conteúdo principal */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajusta a barra de pesquisa superior */
+/* Ajusta a barra de pesquisa superior */
   .pesquisa-wrapper {
     padding: 6px 10px;
   }
-  
-  .input-busca-real {
+
+.input-busca-real {
     font-size: 14px; /* Diminui levemente a fonte no mobile */
   }
 
-  .btn-filtrar span {
+.btn-filtrar span {
     display: none; /* Esconde a palavra "Filtrar", deixa só o ícone para poupar espaço */
   }
 
-  /* Ajusta o card da vaga para não espremer os itens */
+/* Ajusta o card da vaga para não espremer os itens */
   .vaga-card-busca {
     flex-direction: column;
     align-items: center; /* Centraliza no celular */
@@ -530,12 +501,12 @@ body {
     gap: 15px;
   }
 
-  .card-busca-meta {
+.card-busca-meta {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  /* Ajusta o painel de detalhes da vaga */
+/* Ajusta o painel de detalhes da vaga */
   .detalhes-vaga-coluna {
     padding: 25px 20px;
   }

@@ -1,25 +1,8 @@
-/* --- Reset Global --- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
-}
-
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* =========================================
@@ -43,19 +26,31 @@ body {
 }
 
 .sidebar-top { display: flex; justify-content: center; margin-bottom: 30px; }
+
 .side-bar .logo { width: 76px; object-fit: contain; }
+
 .sidebar-menu { display: flex; flex-direction: column; flex: 1; }
+
 .menu-title { font-size: 14px; font-weight: 400; color: rgba(0, 0, 0, 0.6); margin: 15px 0 8px 10px; }
+
 .menu-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; text-decoration: none; color: #000; font-size: 18px; font-weight: 500; border-radius: 8px; transition: 0.2s; margin-bottom: 4px; }
+
 .menu-item img { width: 28px; }
+
 .menu-item:hover, .menu-item.active { background-color: rgba(121, 12, 230, 0.1); color: #790ce6; }
+
 .menu-divider { height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 15px 10px; }
 
 .sidebar-footer { display: flex; flex-direction: column; gap: 15px; margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
 .card-usu { display: flex; align-items: center; gap: 12px; }
+
 .usuario-foto { width: 40px; height: 40px; border-radius: 5px; object-fit: cover; }
+
 .nome-usuario { font-size: 14px; font-weight: 500; }
+
 .log-out-btn { display: flex; align-items: center; gap: 10px; background: none; border: none; font-size: 14px; cursor: pointer; padding: 5px 10px; transition: color 0.2s; }
+
 .log-out-btn:hover { color: red; }
 
 /* Main Content & Topbar */
@@ -79,15 +74,16 @@ body {
 }
 
 .pesquisa-wrapper { display: flex; align-items: center; background-color: #ffffff; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 650px; height: 52px; justify-content: space-between; }
-.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
-.icone-lupa-input { width: 20px; opacity: 0.5; }
-.input-busca-real { border: none; background: transparent; font-size: 16px; width: 100%; font-style: italic; }
-.input-busca-real:focus { outline: none; }
-.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 16px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
-.icone-filtro { width: 20px; }
-.seta-selecao { width: 10px; }
-.usuario-foto-top { width: 45px; height: 45px; border-radius: 5px; object-fit: cover; }
 
+.icone-lupa-input { width: 20px; opacity: 0.5; }
+
+.input-busca-real { border: none; background: transparent; font-size: 16px; width: 100%; font-style: italic; }
+
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 16px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+.icone-filtro { width: 20px; }
+
+.usuario-foto-top { width: 45px; height: 45px; border-radius: 5px; object-fit: cover; }
 
 /* =========================================
    PÁGINA DE CONFIGURAÇÕES (NOVO CONTEÚDO)
@@ -298,8 +294,8 @@ body {
   .perfil-wrapper {
     padding: 30px 20px;
   }
-  
-  /* Reduz o espaço entre a foto e os dados */
+
+/* Reduz o espaço entre a foto e os dados */
   .perfil-header-section {
     gap: 30px;
     padding: 30px 20px;
@@ -310,8 +306,8 @@ body {
   .configuracoes-wrapper {
     padding: 30px 20px;
   }
-  
-  .config-body {
+
+.config-body {
     padding: 30px 20px; /* Reduz o preenchimento interno do card */
   }
 }
@@ -324,43 +320,43 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* Faz o conteúdo principal ocupar toda a tela */
+/* Faz o conteúdo principal ocupar toda a tela */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes do cabeçalho de pesquisa */
+/* Ajustes do cabeçalho de pesquisa */
   .top-search-bar {
     padding: 0 20px;
   }
 
-  .pesquisa-wrapper {
+.pesquisa-wrapper {
     padding: 6px 10px;
   }
-  
-  .input-busca-real {
+
+.input-busca-real {
     font-size: 14px;
   }
 
-  .btn-filtrar span {
+.btn-filtrar span {
     display: none; /* Esconde o texto "Filtrar" */
   }
 
-  /* Ajustes da Tela de Configurações */
+/* Ajustes da Tela de Configurações */
   .page-title {
     font-size: 26px;
   }
-  
-  .page-subtitle {
+
+.page-subtitle {
     font-size: 15px;
   }
 
-  /* Ajuste das Abas (Tabs) para não espremer no celular */
+/* Ajuste das Abas (Tabs) para não espremer no celular */
   .config-tabs {
     flex-wrap: wrap; /* Permite quebrar linha */
   }
-  
-  .tab-item {
+
+.tab-item {
     font-size: 15px;
     padding: 15px 5px;
     flex: 1 1 50%; /* Faz com que fiquem 2 abas por linha (50% de largura cada) */
@@ -368,28 +364,28 @@ body {
     border-bottom: 1px solid #999;
   }
 
-  /* Remove a borda inferior das duas últimas abas para não duplicar com o card */
+/* Remove a borda inferior das duas últimas abas para não duplicar com o card */
   .tab-item:nth-last-child(-n+2) {
     border-bottom: none;
   }
 
-  /* Corpo do Formulário */
+/* Corpo do Formulário */
   .config-body {
     padding: 20px 15px;
   }
 
-  .section-title {
+.section-title {
     font-size: 20px;
   }
 
-  /* Ajuste dos botões de ação para ficarem um em cima do outro */
+/* Ajuste dos botões de ação para ficarem um em cima do outro */
   .form-actions {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
   }
-  
-  .btn-primary, .btn-secondary {
+
+.btn-primary, .btn-secondary {
     width: 100%;
     text-align: center;
   }

@@ -4,70 +4,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hirly - Escolha seu Perfil</title>
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="routepage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="../css/common.css">
 </head>
 <body>
-    
+
     <div class="routing-container">
-        
+
         <img class="decor-top-left" src="images/logo/hirly/logo.png" alt="" aria-hidden="true">
         <img class="decor-bottom-right" src="images/logo/hirly/logo.png" alt="" aria-hidden="true">
 
         <main class="routing-card">
-            
+
             <img class="main-logo" src="images/logo/hirly/logo.png" alt="Hirly Logo">
-            
+
             <h1 class="routing-title">Escolha o perfil da sua conta</h1>
-            
+
             <div class="roles-wrapper">
-                
+
                 <button class="role-btn" id="btnCandidato">
                     <span class="role-text">Candidato</span>
-                    <img class="role-icon" src="images/icons/Recrutadores.png" alt="Ãcone Candidato">
+                    <img class="role-icon" src="images/icons/Recrutadores.png" alt="Ícone Candidato">
                 </button>
 
                 <button class="role-btn" id="btnRecrutador">
                     <span class="role-text">Recrutador</span>
-                    <img class="role-icon" src="images/icons/Recrutadores.png" alt="Ãcone Recrutador">
+                    <img class="role-icon" src="images/icons/Recrutadores.png" alt="Ícone Recrutador">
                 </button>
 
                 <button class="role-btn" id="btnEmpresa">
                     <span class="role-text">Empresa</span>
-                    <img class="role-icon" src="images/icons/empresa.png" alt="Ãcone Empresa">
+                    <img class="role-icon" src="images/icons/empresa.png" alt="Ícone Empresa">
                 </button>
 
                 <button class="role-btn" id="btnAdmin">
                     <span class="role-text">Administrador</span>
-                    <img class="role-icon" src="images/icons/Gear.png" alt="Ãcone Administrador">
+                    <img class="role-icon" src="images/icons/Gear.png" alt="Ícone Administrador">
                 </button>
 
             </div>
 
         </main>
     </div>
-    
+
     <script>
         // Adicione aqui as rotas exatas para as pastas do seu projeto
-        
+
         document.getElementById("btnCandidato")?.addEventListener("click", function () {
-            window.location.href = "../cadidato/principais/home.html"; 
+            window.location.href = "../cadidato/principais/home.html";
             console.log("Indo para Candidato");
         });
-        
+
         document.getElementById("btnRecrutador")?.addEventListener("click", function () {
             window.location.href = "../recrutador/principais/homerecrutador.html";
             console.log("Indo para Recrutador");
         });
-        
+
         document.getElementById("btnEmpresa")?.addEventListener("click", function () {
             window.location.href = "../empresa/principais/homeempresa.html";
             console.log("Indo para Empresa");
         });
-        
+
         document.getElementById("btnAdmin")?.addEventListener("click", function () {
-			window.location.href = "../administrador/principais/centraldemoderacao.html";
+			window.location.href = "../Administrador/principais/centraldemoderacao.html";
             console.log("Indo para Admin");
         });
     </script>

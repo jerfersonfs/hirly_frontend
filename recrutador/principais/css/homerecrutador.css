@@ -1,13 +1,12 @@
 /* ================= Reset e Base ================= */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html {scrollbar-width: thin; scrollbar-color: rgba(121, 12, 230, 0.3) transparent;}
-body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; overflow-x: hidden; }
+* { box-sizing: border-box; margin: 0; padding: 0; }body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; overflow-x: hidden; }
+
 .app-container { display: flex; min-height: 100vh; }
 
 /* ================= Menu Lateral (Sidebar) ================= */
 .sidebar {
     width: 250px;
-    background-color: #f6f3fc; 
+    background-color: #f6f3fc;
     display: flex; flex-direction: column;
     padding: 30px 20px; position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
@@ -16,37 +15,49 @@ body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333;
     scrollbar-width: thin;
     scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
+
 .sidebar-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 35px; }
+
 .sidebar-logo img { width: 50px; object-fit: contain; }
 
 .menu-group { margin-bottom: 25px; }
+
 .menu-title {
     font-size: 11px; font-weight: 700; color: #999;
     text-transform: uppercase; margin-bottom: 10px; padding-left: 10px;
 }
+
 .menu-item {
     display: flex; align-items: center; gap: 12px; padding: 12px 14px;
-    text-decoration: none; color: #444; font-size: 14px; font-weight: 600; 
+    text-decoration: none; color: #444; font-size: 14px; font-weight: 600;
     border-radius: 8px; margin-bottom: 5px; transition: 0.2s;
 }
+
 .menu-item img { width: 18px; height: 18px; object-fit: contain; opacity: 0.6; }
+
 .menu-item.active {
     background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     color: #7b00ff;
 }
+
 .menu-item.active img { opacity: 1; filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%); }
 
 .sidebar-footer {
-    margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05); 
+    margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05);
     display: flex; flex-direction: column; gap: 15px;
 }
+
 .user-info { display: flex; align-items: center; gap: 10px; padding-left: 10px; }
+
 .user-avatar { width: 32px; height: 32px; border-radius: 8px; background: #e0e0e0; object-fit: cover;}
+
 .user-name { font-size: 13px; font-weight: 700; color: #000; }
+
 .logout-btn {
     display: flex; align-items: center; gap: 10px; padding-left: 10px;
     color: #444; text-decoration: none; font-size: 13px; font-weight: 600;
 }
+
 .logout-btn img { width: 16px; object-fit: contain; opacity: 0.7; }
 
 /* ================= Conteúdo Principal ================= */
@@ -57,138 +68,218 @@ body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333;
     background-color: #7b00ff; height: 80px; padding: 0 40px;
     display: flex; justify-content: space-between; align-items: center;
 }
+
 .search-container {
     display: flex; align-items: center; background-color: #ffffff; border-radius: 40px;
     padding: 5px 20px; width: 100%; max-width: 550px; height: 46px;
 }
+
 .search-icon { width: 16px; height: 16px; opacity: 0.4; }
+
 .search-input {
     border: none; outline: none; padding: 0 15px; font-size: 14px;
     font-family: 'Inter', sans-serif; font-style: italic; color: #333; flex: 1;
 }
+
 .search-input::placeholder { color: #aaa; }
+
 .filter-btn {
-    display: flex; align-items: center; gap: 8px; background: none; border: none; 
+    display: flex; align-items: center; gap: 8px; background: none; border: none;
     font-size: 14px; font-weight: 600; color: #7b00ff; font-style: italic; cursor: pointer;
     padding-left: 15px; border-left: 1px solid #eee; height: 24px;
 }
+
 .filter-icon { width: 14px; }
+
 .arrow-icon { width: 10px; }
+
 .header-user-avatar { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
 
 /* ================= Dashboard ================= */
 .dashboard-wrapper { padding: 40px; max-width: 1300px; margin: 0 auto; width: 100%; }
+
 .welcome-header h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; color: #000;}
+
 .welcome-header p { font-size: 15px; color: #666; font-weight: 500; margin-bottom: 30px; }
 
 /* ================= Métricas (Cards do Topo) ================= */
 .metrics-row { display: flex; gap: 20px; margin-bottom: 30px; }
+
 .metric-card {
     flex: 1; background: #fff; border: 1px solid #f0f0f0; border-radius: 16px;
     padding: 22px; display: flex; align-items: center; gap: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
+
 .metric-icon {
     width: 55px; height: 55px; border-radius: 12px;
     display: flex; justify-content: center; align-items: center;
 }
+
 .metric-icon img { width: 26px; height: 26px; filter: brightness(0) invert(1); }
+
 .metric-info { display: flex; flex-direction: column; }
+
 .metric-title { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
+
 .metric-value { font-size: 34px; font-weight: 800; line-height: 1; color: #000; margin-bottom: 6px;}
+
 .metric-trend { font-size: 12px; font-weight: 700; display: flex; align-items: center; gap: 4px; color: #000; }
+
 .trend-arrow { color: #22c55e; font-size: 16px; font-weight: 900;}
 
 .card-vagas .metric-icon { background-color: #6b00ff; }
+
 .card-vagas .metric-title { color: #6b00ff; }
+
 .card-candidatos .metric-icon { background-color: #0055ff; }
+
 .card-candidatos .metric-title { color: #0055ff; }
+
 .card-contratados .metric-icon { background-color: #ff8c00; }
+
 .card-contratados .metric-title { color: #ff8c00; }
 
 /* ================= Grid Principal (Esquerda e Direita) ================= */
 .main-grid { display: flex; gap: 25px; }
+
 .left-col { flex: 2; display: flex; flex-direction: column; gap: 25px; }
+
 .right-col { flex: 1; display: flex; flex-direction: column; gap: 25px; }
 
 /* Cards Base */
 .card { background: #fff; border: 1px solid #f0f0f0; border-radius: 16px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+
 .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+
 .card-title { font-size: 16px; font-weight: 800; color: #000;}
+
 .card-link { font-size: 12px; font-weight: 700; color: #7b00ff; text-decoration: none; }
 
 /* Coluna Esquerda - Topo (Eventos + Logo Central) */
-.left-top-row { display: flex; gap: 20px; align-items: stretch; } /* Altura fixa removida */
+.left-top-row { display: flex; gap: 20px; align-items: stretch; }
+
+/* Altura fixa removida */
 .card-eventos { width: 300px; flex-shrink: 0; }
-.evento-item { 
-    display: flex; 
-    gap: 15px; 
-    margin-bottom: 12px; 
-    align-items: center; 
-    background-color: rgba(113, 2, 224, 0.1); 
-    padding: 14px 15px; 
-    border-radius: 8px; 
+
+.evento-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+    align-items: center;
+    background-color: rgba(113, 2, 224, 0.1);
+    padding: 14px 15px;
+    border-radius: 8px;
 }
+
 .evento-item:last-child { margin-bottom: 0; }
+
 .evento-icon { display: flex; align-items: center; justify-content: center; }
-.evento-icon img { width: 20px; opacity: 1; filter: invert(0); } /* Garantido que o ícone fique visível */
+
+.evento-icon img { width: 20px; opacity: 1; filter: invert(0); }
+
+/* Garantido que o ícone fique visível */
 .evento-text { font-size: 13px; font-weight: 500; color: #333; line-height: 1.4; }
 
 .central-logo {
     flex: 1; display: flex; justify-content: center; align-items: center;
 }
+
 .logo-text { font-size: 70px; font-weight: 800; font-style: italic; letter-spacing: -2px; display: flex; align-items: center; gap: 15px; color: #000; }
+
 .logo-text img { width: 80px; height: auto;}
 
 /* Tabela Candidatos em Destaque */
 .table { width: 100%; border-collapse: collapse; }
+
 .table th { font-size: 12px; font-weight: 500; color: #888; text-align: left; padding-bottom: 15px; }
+
 .table td { padding: 15px 0; }
+
 .candidato-info { display: flex; align-items: center; gap: 12px; }
+
 .cand-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+
 .cand-avatar img { width: 20px; filter: brightness(0) invert(1); }
+
 .cand-name { font-size: 14px; font-weight: 800; margin-bottom: 3px; color: #000; }
+
 .cand-email { font-size: 11px; color: #888; font-weight: 500; }
+
 .vaga-name { font-size: 13px; font-weight: 700; color: #000; }
 
 .badge { padding: 6px 14px; border-radius: 20px; font-size: 11px; font-weight: 700; display: inline-block; }
+
 .badge-entrevista { background: #bbf7d0; color: #16a34a; }
+
 .badge-candidatura { background: #bfdbfe; color: #2563eb; }
+
 .badge-feedback { background: #fef08a; color: #ca8a04; }
 
 .stars { font-size: 14px; color: #fbbf24; display: flex; gap: 3px;}
+
 .stars .empty { color: #e5e7eb; }
+
 .stars-text { font-size: 13px; font-weight: 700; color: #000;}
 
 /* Lista Vagas Ativas */
 .vaga-list-item { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #f0f0f0; }
+
 .vaga-list-item:first-child { padding-top: 0; }
+
 .vaga-list-item:last-child { border-bottom: none; padding-bottom: 0; }
+
 .vaga-list-left { display: flex; align-items: center; gap: 15px; }
+
 .vaga-list-icon { width: 42px; height: 42px; border-radius: 10px; display: flex; justify-content: center; align-items: center; }
+
 .vaga-list-icon img { width: 20px; height: 20px; filter: brightness(0) invert(1); object-fit: contain; }
+
 .vaga-list-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; color: #7b00ff; }
+
 .vaga-list-dept { font-size: 11px; color: #888; font-weight: 500; }
+
 .vaga-list-right { text-align: right; }
+
 .vaga-list-cands { font-size: 11px; font-weight: 800; margin-bottom: 6px; color: #000; }
+
 .status-ativa { font-size: 10px; font-weight: 700; color: #888; display: flex; align-items: center; gap: 5px; justify-content: flex-end;}
+
 .status-ativa::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
 
 /* Lista Atividades Recentes */
 .atividade-item { display: flex; align-items: flex-start; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid #f0f0f0; }
+
 .atividade-item:first-child { padding-top: 0; }
+
 .atividade-item:last-child { border-bottom: none; padding-bottom: 0; }
+
 .atividade-left { display: flex; align-items: flex-start; gap: 15px; }
+
 .atividade-dot { width: 22px; height: 22px; border-radius: 8px; flex-shrink: 0; margin-top: 2px;}
+
 .atividade-text { font-size: 13px; font-weight: 800; color: #000; }
+
 .atividade-sub { font-size: 12px; font-weight: 500; color: #666; margin-top: 3px;}
+
 .atividade-time { font-size: 12px; color: #888; font-weight: 500; margin-top: 2px;}
 
 /* Cores Auxiliares */
-.c-orange { background-color: #f97316; } .c-red { background-color: #ef4444; }
-.c-green { background-color: #22c55e; } .c-blue { background-color: #3b82f6; }
-.c-purple { background-color: #a855f7; } .c-pink { background-color: #ec4899; }
-.c-light-green { background-color: #84cc16; } .c-cyan { background-color: #06b6d4; }
+.c-orange { background-color: #f97316; }
+
+.c-red { background-color: #ef4444; }
+
+.c-green { background-color: #22c55e; }
+
+.c-blue { background-color: #3b82f6; }
+
+.c-purple { background-color: #a855f7; }
+
+.c-pink { background-color: #ec4899; }
+
+.c-light-green { background-color: #84cc16; }
+
+.c-cyan { background-color: #06b6d4; }
 
 /* Telas Pequenas (Celulares) - Abaixo de 768px */
 @media (max-width: 768px) {
@@ -198,91 +289,91 @@ body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333;
     transition: transform 0.3s ease;
   }
 
-  .dashboard-wrapper {
+.dashboard-wrapper {
     padding: 30px 20px;
   }
-  
-  /* Empilha a coluna esquerda (eventos/candidatos) e a coluna direita (vagas) */
+
+/* Empilha a coluna esquerda (eventos/candidatos) e a coluna direita (vagas) */
   .main-grid {
     flex-direction: column;
   }
 
-  /* Permite que os cards de métricas (Vagas, Candidatos, Contratados) quebrem linha */
+/* Permite que os cards de métricas (Vagas, Candidatos, Contratados) quebrem linha */
   .metrics-row {
     flex-wrap: wrap;
   }
-  
-  .metric-card {
+
+.metric-card {
     min-width: 250px; /* Garante que os cards não fiquem espremidos */
   }
 
-  /* Faz o conteúdo principal ocupar toda a tela */
+/* Faz o conteúdo principal ocupar toda a tela */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes do Header */
+/* Ajustes do Header */
   .header {
     padding: 0 20px;
   }
 
-  .search-container {
+.search-container {
     padding: 5px 10px;
   }
 
-  .search-input {
+.search-input {
     font-size: 13px;
     padding: 0 10px;
   }
 
-  /* Esconde a palavra "Filtrar" e a seta no mobile para poupar espaço */
+/* Esconde a palavra "Filtrar" e a seta no mobile para poupar espaço */
   .filter-btn {
-    font-size: 0; 
+    font-size: 0;
     padding-left: 10px;
   }
-  
-  .filter-btn .arrow-icon {
+
+.filter-btn .arrow-icon {
     display: none;
   }
 
-  .welcome-header h1 {
+.welcome-header h1 {
     font-size: 24px;
   }
 
-  /* Força os cards de métricas a ficarem um embaixo do outro */
+/* Força os cards de métricas a ficarem um embaixo do outro */
   .metrics-row {
     flex-direction: column;
   }
 
-  /* Empilha o bloco de 'Próximos Eventos' e a 'Logo Central' */
+/* Empilha o bloco de 'Próximos Eventos' e a 'Logo Central' */
   .left-top-row {
     flex-direction: column;
   }
 
-  .card-eventos {
+.card-eventos {
     width: 100%; /* Tira a largura fixa de 300px */
   }
 
-  /* Reduz o tamanho da logo central e do texto para caber no celular */
+/* Reduz o tamanho da logo central e do texto para caber no celular */
   .central-logo {
     padding: 20px 0;
   }
-  
-  .logo-text {
+
+.logo-text {
     font-size: 45px;
   }
-  
-  .logo-text img {
+
+.logo-text img {
     width: 55px;
   }
 
-  /* --- Tratamento da Tabela de Candidatos --- */
+/* --- Tratamento da Tabela de Candidatos --- */
   /* Cria uma rolagem horizontal apenas dentro do card da tabela */
   .card {
     overflow-x: auto;
   }
 
-  .table {
+.table {
     min-width: 500px; /* Força a tabela a manter tamanho legível, ativando o scroll no card */
   }
 }

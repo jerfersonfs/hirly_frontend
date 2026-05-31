@@ -1,25 +1,8 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #ffffff;
-}
-
-/* Container mestre que divide a tela em Sidebar e Conteúdo Principal */
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* SIDEBAR ESQUERDA */
@@ -181,13 +164,6 @@ body {
   justify-content: space-between;
 }
 
-.search-input-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex: 1;
-}
-
 .icone-lupa-input {
   width: 24px;
   height: 24px;
@@ -201,10 +177,6 @@ body {
   color: #333;
   width: 100%;
   font-style: italic;
-}
-
-.input-busca-real:focus {
-  outline: none;
 }
 
 .btn-filtrar {
@@ -437,10 +409,15 @@ body {
 
 /* Cores idênticas aos blocos da imagem de referência */
 .bg-purple     { background-color: #790ce6; }
+
 .bg-orange     { background-color: #e6800c; }
+
 .bg-blue       { background-color: #0033b4; }
+
 .bg-green      { background-color: #007808; }
+
 .bg-darkgreen  { background-color: #004d05; }
+
 .bg-lightpurple { background-color: #a518ba; }
 
 .card-header-texts {
@@ -515,7 +492,7 @@ body {
 
 .evento-item-row {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 15px;
 }
 
@@ -554,19 +531,19 @@ body {
     flex-direction: column; /* Joga a lista de 'Próximos Eventos' para baixo dos cards */
     padding: 30px;
   }
-  
-  .insights-right-panel {
+
+.insights-right-panel {
     width: 100%; /* Faz a lista de eventos usar toda a largura disponível */
     margin-top: 10px;
     padding: 0;
   }
-  
-  /* Ajusta o grid para os cards preencherem o espaço de forma flexível */
+
+/* Ajusta o grid para os cards preencherem o espaço de forma flexível */
   .insights-cards-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
-  
-  .insight-card {
+
+.insight-card {
     width: 100%; /* Remove a trava fixa de 286px */
   }
 }
@@ -579,43 +556,43 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* Faz o conteúdo principal ocupar 100% da tela */
+/* Faz o conteúdo principal ocupar 100% da tela */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes da barra de pesquisa roxa */
+/* Ajustes da barra de pesquisa roxa */
   .top-search-bar {
     padding: 0 20px;
   }
 
-  .pesquisa-wrapper {
+.pesquisa-wrapper {
     padding: 6px 10px;
   }
-  
-  .input-busca-real {
+
+.input-busca-real {
     font-size: 14px;
   }
 
-  .btn-filtrar span {
+.btn-filtrar span {
     display: none; /* Esconde o texto "Filtrar" */
   }
 
-  /* Ajuste de espaçamentos gerais do miolo da página */
+/* Ajuste de espaçamentos gerais do miolo da página */
   .insights-content-wrapper {
     padding: 20px;
   }
 
-  /* Diminui os títulos para não quebrarem linhas desnecessárias */
+/* Diminui os títulos para não quebrarem linhas desnecessárias */
   .insights-main-title {
     font-size: 28px;
   }
-  
-  .insights-subtitle {
+
+.insights-subtitle {
     font-size: 16px;
   }
 
-  /* Força os cards a ficarem em 1 única coluna perfeita */
+/* Força os cards a ficarem em 1 única coluna perfeita */
   .insights-cards-grid {
     grid-template-columns: 1fr;
   }

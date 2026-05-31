@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hirly - Moderar UsuÃ¡rios</title>
+    <title>Hirly - Moderar Usuários</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-    <link rel="stylesheet" href="css/moderarusuarios.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="css/moderarusuarios.css">
 </head>
 <body>
     <div class="app-container">
-        
+
         <!-- SIDEBAR DO ADMINISTRADOR -->
         <aside class="side-bar">
             <div class="sidebar-top">
                 <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
             </div>
-            
+
             <nav class="sidebar-menu">
                 <a href="../principais/centraldemoderacao.html" class="menu-item">
                     <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
                 </a>
-                <!-- Item Ativo: Moderar usuÃ¡rios -->
+                <!-- Item Ativo: Moderar usuários -->
                 <a href="#" class="menu-item active">
-                    <img src="images/icons/Recrutadores.png" alt="Moderar usuÃ¡rios" /> <span>Moderar usuÃ¡rios</span>
+                    <img src="images/icons/Recrutadores.png" alt="Moderar usuários" /> <span>Moderar usuários</span>
                 </a>
                 <a href="moderarvagas.html" class="menu-item">
                     <img src="images/icons/Validarvagas.png" alt="Moderar vagas" /> <span>Moderar vagas</span>
@@ -34,28 +34,28 @@
                 <a href="pesquisarvagas.html" class="menu-item">
                     <img src="images/icons/icone_lupa.png" alt="Pesquisar vagas" /> <span>Pesquisar vagas</span>
                 </a>
-                
+
                 <div class="menu-divider-admin"></div>
-                
+
                 <a href="../principais/perfiladministrativo.html" class="menu-item">
                     <img src="images/icons/Recrutadores.png" alt="Perfil" /> <span>Perfil</span>
                 </a>
                 <a href="../principais/configuracoes.html" class="menu-item">
-                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes" /> <span>ConfiguraÃ§Ãµes</span>
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
                 </a>
             </nav>
-            
+
             <div class="sidebar-footer-admin">
                 <div class="footer-admin-info">
-                    <span class="admin-nome-rodape">LÃ­via Martins</span>
-                    <a href="../../auth/login.html" class="btn-encerrar-sessao">Encerrar sessÃ£o</a>
+                    <span class="admin-nome-rodape">Lívia Martins</span>
+                    <a href="../../auth/login.html" class="btn-encerrar-sessao">Encerrar sessão</a>
                 </div>
             </div>
         </aside>
 
-        <!-- CONTEÃšDO PRINCIPAL -->
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="main-content">
-            
+
             <!-- BARRA SUPERIOR (BRANCA) -->
             <header class="top-bar-white">
                 <div class="pesquisa-wrapper">
@@ -69,34 +69,34 @@
                         <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
                     </button>
                 </div>
-                
+
                 <div class="top-right-info">
                     <div class="perfil-textos-top">
-                        <span class="top-label-light">Painel de operaÃ§Ãµes</span>
+                        <span class="top-label-light">Painel de operações</span>
                         <span class="top-label-bold">Perfil ativo: Administrador</span>
                     </div>
                     <img class="usuario-foto-top" src="images/icons/Avatarempresa.png" alt="Avatar Admin" />
                 </div>
             </header>
 
-            <!-- ÃREA DE MODERAÃ‡ÃƒO -->
+            <!-- ÁREA DE MODERAÇÃO -->
             <div class="moderar-wrapper">
-                
-                <!-- CabeÃ§alho da PÃ¡gina -->
+
+                <!-- Cabeçalho da Página -->
                 <div class="page-header">
-                    <h1 class="page-title">Moderar usuÃ¡rios</h1>
-                    <p class="page-subtitle">Analise denÃºncias e aplique aÃ§Ãµes proporcionais.</p>
+                    <h1 class="page-title">Moderar usuários</h1>
+                    <p class="page-subtitle">Analise denúncias e aplique ações proporcionais.</p>
                 </div>
 
                 <!-- GRID 2 COLUNAS -->
                 <div class="moderar-grid">
-                    
+
                     <!-- COLUNA ESQUERDA: Casos abertos -->
                     <div class="card-painel col-esquerda">
                         <div class="panel-header">
                             <h3 class="panel-title">Casos abertos</h3>
                         </div>
-                        
+
                         <div class="panel-list">
                             <!-- Item 1 (Ativo) -->
                             <div class="fila-item active">
@@ -104,31 +104,31 @@
                                     <h4 class="item-title">Rafael Costa</h4>
                                     <p class="item-desc">Perfil duplicado</p>
                                 </div>
-                                <span class="badge badge-critico">CRÃTICO</span>
+                                <span class="badge badge-critico">CRÍTICO</span>
                             </div>
-                            
+
                             <!-- Item 2 -->
                             <div class="fila-item">
                                 <div class="fila-textos">
                                     <h4 class="item-title">Maria Torres</h4>
-                                    <p class="item-desc">InformaÃ§Ã£o enganosa</p>
+                                    <p class="item-desc">Informação enganosa</p>
                                 </div>
                                 <span class="badge badge-alto">ALTO</span>
                             </div>
-                            
+
                             <!-- Item 3 -->
                             <div class="fila-item">
                                 <div class="fila-textos">
                                     <h4 class="item-title">Empresa Nova</h4>
                                     <p class="item-desc">Contato indevido</p>
                                 </div>
-                                <span class="badge badge-medio">MÃ‰DIO</span>
+                                <span class="badge badge-medio">MÉDIO</span>
                             </div>
-                            
+
                             <!-- Item 4 -->
                             <div class="fila-item">
                                 <div class="fila-textos">
-                                    <h4 class="item-title">JoÃ£o Pedro</h4>
+                                    <h4 class="item-title">João Pedro</h4>
                                     <p class="item-desc">Spam em candidatura</p>
                                 </div>
                                 <span class="badge badge-alto">ALTO</span>
@@ -136,18 +136,18 @@
                         </div>
                     </div>
 
-                    <!-- COLUNA DIREITA: Detalhes e DecisÃ£o -->
+                    <!-- COLUNA DIREITA: Detalhes e Decisão -->
                     <div class="card-painel col-direita">
-                        
-                        <!-- CabeÃ§alho dos detalhes -->
+
+                        <!-- Cabeçalho dos detalhes -->
                         <div class="detalhes-header">
                             <div class="detalhes-title-row">
                                 <h2 class="detalhes-title">Rafael Costa</h2>
-                                <span class="badge badge-critico">CRÃTICO</span>
+                                <span class="badge badge-critico">CRÍTICO</span>
                             </div>
-                            <p class="detalhes-meta">Candidato â€¢ Denunciado 3 vezes</p>
+                            <p class="detalhes-meta">Candidato • Denunciado 3 vezes</p>
                         </div>
-                        
+
                         <!-- Lista de Detalhes -->
                         <div class="detalhes-lista">
                             <div class="detalhe-bloco">
@@ -155,24 +155,24 @@
                                 <span class="dado-valor">Divergente</span>
                             </div>
                             <div class="detalhe-bloco">
-                                <span class="dado-label">DenÃºncias vÃ¡lidas</span>
+                                <span class="dado-label">Denúncias válidas</span>
                                 <span class="dado-valor">3 confirmadas</span>
                             </div>
                             <div class="detalhe-bloco">
-                                <span class="dado-label">OcorrÃªncia</span>
+                                <span class="dado-label">Ocorrência</span>
                                 <span class="dado-valor">Hoje, 09:14</span>
                             </div>
                         </div>
 
                         <!-- Justificativa -->
                         <div class="justificativa-section">
-                            <label class="justificativa-label">Justificativa da decisÃ£o</label>
+                            <label class="justificativa-label">Justificativa da decisão</label>
                             <div class="justificativa-box">
-                                ReincidÃªncia de perfil duplicado confirmado.
+                                Reincidência de perfil duplicado confirmado.
                             </div>
                         </div>
 
-                        <!-- BotÃµes de AÃ§Ã£o -->
+                        <!-- Botões de Ação -->
                         <div class="panel-footer-btn-row">
                             <button class="btn-light-purple">Advertir</button>
                             <button class="btn-danger-solid">Revisar bloqueio</button>

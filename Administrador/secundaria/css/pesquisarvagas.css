@@ -1,25 +1,8 @@
-/* --- Reset Global --- */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
   background-color: #f4f5f7; /* Fundo cinza claro */
-}
-
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* =========================================
@@ -43,7 +26,6 @@ body {
 }
 
 .sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; margin-top: 10px; }
-.side-bar .logo { width: 45px; object-fit: contain; }
 
 .sidebar-menu { display: flex; flex-direction: column; flex: 1; gap: 6px; }
 
@@ -66,16 +48,6 @@ body {
   opacity: 0.6;
 }
 
-.menu-item:hover {
-  background-color: rgba(121, 12, 230, 0.05);
-  color: #790ce6;
-}
-
-/* Item ativo (Pesquisar Vagas) */
-.menu-item.active {
-  background: linear-gradient(90deg, #790ce6 0%, #a252f5 100%);
-  color: #ffffff;
-}
 .menu-item.active img {
   opacity: 1;
   filter: brightness(0) invert(1);
@@ -91,7 +63,9 @@ body {
 }
 
 .footer-admin-info { display: flex; flex-direction: column; gap: 4px; }
+
 .admin-nome-rodape { font-size: 14px; font-weight: 700; color: #000; }
+
 .btn-encerrar-sessao {
   background: none;
   border: none;
@@ -103,7 +77,6 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-.btn-encerrar-sessao:hover { color: #5a07ad; text-decoration: underline; }
 
 /* =========================================
    BARRA SUPERIOR (BRANCA)
@@ -129,19 +102,10 @@ body {
 }
 
 .pesquisa-wrapper { display: flex; align-items: center; background-color: #f5f5f5; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 500px; height: 48px; justify-content: space-between; }
-.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
-.icone-lupa-input { width: 18px; opacity: 0.4; }
-.input-busca-real { border: none; background: transparent; font-size: 15px; color: #333; width: 100%; font-style: italic; }
-.input-busca-real:focus { outline: none; }
-.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 15px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
-.icone-filtro { width: 18px; }
-.seta-selecao { width: 10px; }
 
-.top-right-info { display: flex; align-items: center; gap: 20px; }
-.perfil-textos-top { display: flex; flex-direction: column; text-align: right; }
-.top-label-light { font-size: 12px; color: #888; }
-.top-label-bold { font-size: 13px; font-weight: 700; color: #000; }
-.usuario-foto-top { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+.input-busca-real { border: none; background: transparent; font-size: 15px; color: #333; width: 100%; font-style: italic; }
+
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 15px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
 
 /* =========================================
    PESQUISAR VAGAS (NOVO CONTEÚDO)
@@ -152,7 +116,9 @@ body {
 }
 
 .page-header { margin-bottom: 30px; }
+
 .page-title { font-size: 28px; font-weight: 800; color: #000; margin: 0 0 8px 0; }
+
 .page-subtitle { font-size: 15px; color: #666; margin: 0; }
 
 /* Layout de Coluna Única Empilhada */
@@ -193,6 +159,7 @@ body {
   font-size: 16px;
   color: #333;
 }
+
 .input-grande:focus {
   outline: none;
   border-color: #790ce6;
@@ -209,6 +176,7 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+
 .btn-primary-large:hover { background-color: #6109b8; }
 
 /* Filtros rápidos (Tags Clicáveis) */
@@ -234,14 +202,18 @@ body {
   cursor: pointer;
   transition: opacity 0.2s;
 }
+
 .btn-filtro-tag:hover { opacity: 0.8; }
 
 .tag-sinalizadas { background-color: #ffe4e6; color: #e11d48; }
+
 .tag-recentes    { background-color: #e0e7ff; color: #3730a3; }
 
 /* --- BLOCO INFERIOR: RESULTADOS --- */
 .panel-header { margin-bottom: 25px; }
+
 .panel-title { font-size: 18px; font-weight: 800; color: #000; margin: 0 0 4px 0; }
+
 .panel-subtitle { font-size: 13px; color: #888; margin: 0; }
 
 .panel-list {
@@ -261,6 +233,7 @@ body {
   transition: border-color 0.2s, background-color 0.2s;
   cursor: pointer;
 }
+
 .resultado-item:hover {
   background-color: #ffffff;
   border-color: rgba(121, 12, 230, 0.2);
@@ -268,7 +241,9 @@ body {
 }
 
 .resultado-textos { display: flex; flex-direction: column; gap: 4px; }
+
 .item-title { font-size: 16px; font-weight: 700; color: #000; margin: 0; }
+
 .item-desc { font-size: 14px; color: #666; margin: 0; }
 
 /* --- BADGES (Status das vagas) --- */
@@ -279,16 +254,23 @@ body {
   font-weight: 800;
   letter-spacing: 0.5px;
 }
-.badge-ocultada { background-color: #ffedd5; color: #c2410c; } /* Laranja */
-.badge-ativa    { background-color: #dcfce7; color: #15803d; } /* Verde */
-.badge-revisao  { background-color: #ffe4e6; color: #e11d48; } /* Vermelho */
+
+.badge-ocultada { background-color: #ffedd5; color: #c2410c; }
+
+/* Laranja */
+.badge-ativa    { background-color: #dcfce7; color: #15803d; }
+
+/* Verde */
+.badge-revisao  { background-color: #ffe4e6; color: #e11d48; }
+
+/* Vermelho */
 
 @media (max-width: 1024px) {
   .pesquisa-page-wrapper {
     padding: 30px 20px;
   }
-  
-  .top-bar-white {
+
+.top-bar-white {
     padding: 0 20px;
   }
 }
@@ -301,72 +283,72 @@ body {
     transition: transform 0.3s ease;
   }
 
-  /* Faz o conteúdo principal ocupar toda a tela */
+/* Faz o conteúdo principal ocupar toda a tela */
   .main-content {
     margin-left: 0;
   }
 
-  /* Ajustes da barra de pesquisa do topo */
+/* Ajustes da barra de pesquisa do topo */
   .top-bar-white {
     padding: 0 15px;
     gap: 15px;
   }
 
-  .pesquisa-wrapper {
+.pesquisa-wrapper {
     padding: 6px 10px;
   }
-  
-  .input-busca-real {
+
+.input-busca-real {
     font-size: 14px;
   }
 
-  /* Esconde o texto "Filtrar" no botão mobile */
+/* Esconde o texto "Filtrar" no botão mobile */
   .btn-filtrar span {
-    display: none; 
+    display: none;
   }
 
-  /* Esconde os textos do perfil no topo */
+/* Esconde os textos do perfil no topo */
   .perfil-textos-top {
     display: none;
   }
 
-  /* Ajustes de tipografia do cabeçalho */
+/* Ajustes de tipografia do cabeçalho */
   .page-title {
     font-size: 24px;
   }
-  
-  .page-subtitle {
+
+.page-subtitle {
     font-size: 14px;
   }
 
-  /* Reduz o padding interno dos cards */
+/* Reduz o padding interno dos cards */
   .card-painel {
     padding: 20px 15px;
   }
 
-  /* Ajusta a busca avançada (input e botão ocupam 100%) */
+/* Ajusta a busca avançada (input e botão ocupam 100%) */
   .busca-input-row {
     flex-direction: column;
   }
 
-  .btn-primary-large {
+.btn-primary-large {
     width: 100%;
     padding: 15px;
   }
 
-  /* Permite que as tags rápidas quebrem linha */
+/* Permite que as tags rápidas quebrem linha */
   .filtros-rapidos-row {
     flex-wrap: wrap;
   }
 
-  /* Resultados da Auditoria: Não deixa o texto sobrepor a badge */
+/* Resultados da Auditoria: Não deixa o texto sobrepor a badge */
   .resultado-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .badge {
+.badge {
     align-self: flex-start;
   }
 }
