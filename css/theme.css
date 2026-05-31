@@ -1,0 +1,13 @@
+:root {
+  --hirly-primary: #790ce6;
+  --hirly-primary-hover: #7c3aed;
+  --hirly-primary-soft: rgba(121, 12, 230, 0.05);
+  --hirly-primary-border: rgba(121, 12, 230, 0.3);
+  --hirly-page-bg: #f4f5f7;
+  --hirly-card-bg: #ffffff;
+  --hirly-text: #000000;
+  --hirly-text-muted: #666666;
+  --hirly-sidebar-width: 272px;
+  --hirly-radius-sm: 8px;
+  --hirly-radius-md: 16px;
+}
