@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Empresa - Hirly</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="cadastro-page-empresa">
+        <!-- Left Decorative Side -->
+        <div class="cadastro-empresa-left">
+            <img src="images/logo/hirly/logodecoleft.png" alt="Logo">
+        </div>
+
+        <!-- Center Content -->
+        <div class="cadastro-empresa-center">
+            <img class="logo-empresa" src="images/logo/hirly/logo.png" alt="Hirly" />
+
+            <div class="cadastro-empresa-header">
+                <h1 class="cadastro-empresa-title">Crie a sua conta de empresa</h1>
+                <p class="cadastro-empresa-subtitle">Preencha os dados da sua organizaÃ§Ã£o para encontrar talentos</p>
+            </div>
+
+            <form class="cadastro-empresa-form">
+                <input type="text" class="form-input" placeholder="RazÃ£o Social" required />
+                <input type="text" class="form-input" placeholder="CNPJ" required />
+                <input type="text" class="form-input" placeholder="Nome Fantasia (Opcional)" />
+                <input type="email" class="form-input" placeholder="Email" required />
+                <input type="tel" class="form-input" placeholder="Telefone da empresa" required />
+                <input type="text" class="form-input" placeholder="EndereÃ§o da sede" required />
+
+                <div class="password-input-group">
+                    <div class="password-field">
+                        <input type="password" class="form-input" id="senha-empresa" placeholder="Senha" required />
+                        <img class="toggle-password" src="mostrar-senha0.svg" alt="toggle" onclick="togglePassword('senha-empresa')" />
+                    </div>
+                </div>
+
+                <div class="password-input-group">
+                    <div class="password-field">
+                        <input type="password" class="form-input" id="confirmar-senha-empresa" placeholder="Confirmar senha" required />
+                        <img class="toggle-password" src="mostrar-senha1.svg" alt="toggle" onclick="togglePassword('confirmar-senha-empresa')" />
+                    </div>
+                </div>
+
+                <a href="#" class="terms-link">Aceito aos Termos de Uso e PolÃ­tica de privacidade</a>
+
+                <button type="submit" class="btn-cadastro-empresa" onclick="submitCadastroEmpresa(event)">Criar conta de empresa â†’</button>
+            </form>
+        </div>
+
+        <!-- Right Decorative Side -->
+        <div class="cadastro-empresa-right">
+            <img src="images/logo/hirly/logodecoght.png" alt="Logo">
+        </div>
+    </div>
+
+    <script>
+        function togglePassword(fieldId) {
+            const field = document.getElementById(fieldId);
+            field.type = field.type === 'password' ? 'text' : 'password';
+        }
+
+        function submitCadastroEmpresa(event) {
+            event.preventDefault();
+            // After form validation, redirect to empresa home
+            window.location.href = "../../empresa/principais/homeempresa.html";
+        }
+    </script>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

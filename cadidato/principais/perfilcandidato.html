@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Perfil do Candidato</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/perfilcandidato.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+                <a href="/auth/landingpage.html">
+                    <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+                </a>
+            
+            <nav class="sidebar-menu">
+                <span class="menu-title">Principal</span>
+                <a href="home.html" class="menu-item">
+                    <img src="images/icons/Home.png" alt="InÃ­cio" /> <span>InÃ­cio</span>
+                </a>
+                <a href="buscarcandidatos.html" class="menu-item active">
+                    <img src="images/icons/icone_lupa.png" alt="Pesquisar" /> <span>Pesquisar</span>
+                </a>
+                <a href="insightscadidato.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Insights" /> <span>Insights</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">ServiÃ§os</span>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagem" /> <span>Mensagem</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento" /> <span>Documento</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Outros</span>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda" /> <span>Ajuda</span>
+                </a>
+                <a href="../secundarias/configuracoescandidato.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes" /> <span>ConfiguraÃ§Ãµes</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="card-usu">
+                    <img class="usuario-foto" src="images/user/Usuariofoto.png" alt="Foto do UsuÃ¡rio" />
+                    <div class="nome-usuario">Marcelo</div>
+                </div>
+                <a href="../../auth/login.html" class="log-out-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair" /> <span>Log out</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-search-bar">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                <div class="user-avatar-top">
+                    <img class="usuario-foto-top" src="images/user/Usuariofoto.png" alt="Avatar" />
+                </div>
+            </header>
+
+            <div class="perfil-wrapper">
+                <h1 class="page-title">Dados UsuÃ¡rio</h1>
+
+                <section class="perfil-header-section">
+                    <div class="perfil-foto-col">
+                        <img src="images/user/Usuariofoto.png" class="foto-perfil-grande" alt="Foto de Perfil">
+                        <button class="btn-editar-foto">
+                            Foto de Perfil <img src="images/icons/Lapis_editar.png" alt="Editar" class="icon-lapis-sm">
+                        </button>
+                    </div>
+                    <div class="perfil-dados-col">
+                        <div class="dado-linha">
+                            <span class="dado-label">Nome:</span>
+                            <span class="dado-valor">Marcelo Ricardo Monteiro Filho</span>
+                            <img src="images/icons/Lapis_editar.png" alt="Editar" class="icon-lapis">
+                        </div>
+                        <div class="dado-linha">
+                            <span class="dado-label">Email:</span>
+                            <span class="dado-valor">marcelo@gmail.com</span>
+                            <img src="images/icons/Lapis_editar.png" alt="Editar" class="icon-lapis">
+                        </div>
+                        <div class="dado-linha">
+                            <span class="dado-label">Celular:</span>
+                            <span class="dado-valor">(19) 99120-3328</span>
+                            <img src="images/icons/Lapis_editar.png" alt="Editar" class="icon-lapis">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="historico-section">
+                    <div class="section-header">
+                        <h2 class="section-title">ExperiÃªncias</h2>
+                        <button class="btn-adicionar"><img src="images/icons/circulo+.png" alt="Adicionar"></button>
+                    </div>
+                    
+                    <div class="cards-lista">
+                        <div class="historico-card">
+                            <div class="card-icone-box bg-purple-light">
+                                <img src="images/icons/empresa.png" alt="Empresa">
+                            </div>
+                            <div class="card-conteudo">
+                                <h3 class="card-cargo">Assistente Front-end</h3>
+                                <p class="card-empresa">TechWare</p>
+                                <div class="card-rodape">
+                                    <span class="card-data">Jan 2025 - Atual</span>
+                                    <span class="card-desc">Desenvolvimento de telas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="historico-card">
+                            <div class="card-icone-box bg-blue-solid">
+                                <img src="images/logo/others/ype.png" alt="YpÃª">
+                            </div>
+                            <div class="card-conteudo">
+                                <h3 class="card-cargo">Suporte TÃ©cnico</h3>
+                                <p class="card-empresa">YpÃª</p>
+                                <div class="card-rodape">
+                                    <span class="card-data">Mar 2023 - Out 2024</span>
+                                    <span class="card-desc">ManutenÃ§Ã£o BÃ¡sica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="historico-section">
+                    <div class="section-header">
+                        <h2 class="section-title">QualificaÃ§Ãµes</h2>
+                        <button class="btn-adicionar"><img src="images/icons/circulo+.png" alt="Adicionar"></button>
+                    </div>
+                    
+                    <div class="cards-lista">
+                        <div class="historico-card">
+                            <div class="card-icone-box bg-purple-light">
+                                <img src="images/icons/empresa.png" alt="Empresa">
+                            </div>
+                            <div class="card-conteudo">
+                                <h3 class="card-cargo">Assistente Front-end</h3>
+                                <p class="card-empresa">TechWare</p>
+                                <div class="card-rodape">
+                                    <span class="card-data">Jan 2025 - Atual</span>
+                                    <span class="card-desc">Desenvolvimento de telas</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="historico-card">
+                            <div class="card-icone-box bg-blue-solid">
+                                <img src="images/logo/others/ype.png" alt="YpÃª">
+                            </div>
+                            <div class="card-conteudo">
+                                <h3 class="card-cargo">Suporte TÃ©cnico</h3>
+                                <p class="card-empresa">YpÃª</p>
+                                <div class="card-rodape">
+                                    <span class="card-data">Mar 2023 - Out 2024</span>
+                                    <span class="card-desc">ManutenÃ§Ã£o BÃ¡sica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

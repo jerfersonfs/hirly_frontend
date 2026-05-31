@@ -1,0 +1,413 @@
+/* --- Reset Global --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f8fc; /* Fundo roxo bem claro idêntico à imagem */
+}
+
+/* Container Mestre */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   SIDEBAR E TOPBAR (Padrão do Sistema)
+   ========================================= */
+.side-bar {
+  width: 272px;
+  background: rgba(121, 12, 230, 0.05); /* Cor original restaurada (roxo com 5% de opacidade) */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(121, 12, 230, 0.1);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top { display: flex; justify-content: center; margin-bottom: 30px; }
+.side-bar .logo { width: 76px; object-fit: contain; }
+.sidebar-menu { display: flex; flex-direction: column; flex: 1; }
+.menu-title { font-size: 14px; color: rgba(0,0,0,0.6); margin: 15px 0 8px 10px; }
+.menu-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; text-decoration: none; color: #000; font-size: 18px; font-weight: 500; border-radius: 8px; margin-bottom: 4px; transition: 0.2s; }
+.menu-item img { width: 28px; }
+.menu-item:hover, .menu-item.active { background-color: rgba(121, 12, 230, 0.1); color: #790ce6; }
+.menu-divider { height: 1px; background-color: rgba(0,0,0,0.1); margin: 15px 10px; }
+
+.sidebar-footer { display: flex; flex-direction: column; gap: 15px; margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.1); }
+.card-usu { display: flex; align-items: center; gap: 12px; }
+.usuario-foto { width: 40px; height: 40px; border-radius: 5px; object-fit: cover; }
+.nome-usuario { font-size: 14px; font-weight: 500; }
+.log-out-btn { display: flex; align-items: center; gap: 10px; background: none; border: none; cursor: pointer; padding: 5px 10px; }
+.log-out-btn img { width: 20px; }
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 272px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.top-search-bar {
+  background-color: #7102e0; /* Roxo principal */
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.pesquisa-wrapper { display: flex; align-items: center; background-color: #ffffff; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 650px; height: 52px; justify-content: space-between; }
+.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
+.icone-lupa-input { width: 20px; opacity: 0.5; }
+.input-busca-real { border: none; background: transparent; font-size: 16px; width: 100%; font-style: italic; }
+.input-busca-real:focus { outline: none; }
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: none; border: none; color: #790ce6; font-size: 16px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0,0,0,0.1); }
+.icone-filtro { width: 20px; }
+.seta-selecao { width: 10px; }
+.usuario-foto-top { width: 45px; height: 45px; border-radius: 5px; object-fit: cover; }
+
+/* =========================================
+   ÁREA DE PERFIL (DADOS USUÁRIO)
+   ========================================= */
+.perfil-wrapper {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto; /* Isso centraliza toda a página de perfil no meio da tela */
+  width: 100%;
+}
+
+.page-title {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 40px 0;
+}
+
+/* Cabeçalho do Perfil (Foto e Dados) */
+.perfil-header-section {
+  display: flex;
+  justify-content: center; /* Isso centraliza a foto e os dados perfeitamente no meio */
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  background-color: rgba(121, 12, 230, 0.03); /* Adiciona um fundo bem sutil e suave atrás dos dados, igual à imagem */
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.perfil-foto-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.foto-perfil-grande {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  background-color: #d9d9d9;
+}
+
+.btn-editar-foto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-lapis-sm {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.perfil-dados-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dado-linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: #000;
+}
+
+.dado-label {
+  font-weight: 800;
+}
+
+.dado-valor {
+  font-weight: 400;
+}
+
+.icon-lapis {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.icon-lapis:hover {
+  opacity: 1;
+}
+
+/* =========================================
+   CARDS DE HISTÓRICO (Experiências / Qualificações)
+   ========================================= */
+.historico-section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0;
+}
+
+.btn-adicionar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-adicionar img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+
+.btn-adicionar img:hover {
+  transform: scale(1.1);
+}
+
+.cards-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historico-card {
+  background: #ffffff;
+  border: 1px solid #790ce6; /* Borda roxa idêntica à imagem */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  transition: box-shadow 0.2s;
+}
+
+.historico-card:hover {
+  box-shadow: 0 6px 15px rgba(121, 12, 230, 0.1);
+}
+
+.card-icone-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icone-box img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Cores de fundo para os ícones */
+.bg-purple-light { background-color: #d0a2ff; }
+.bg-blue-solid { background-color: #0010c2; } /* Fundo azul do logo Ypê */
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.card-cargo {
+  font-size: 22px;
+  font-weight: 900;
+  color: #000;
+  margin: 0 0 2px 0;
+}
+
+.card-empresa {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 25px 0;
+}
+
+.card-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 15px;
+  color: #222;
+}
+
+.card-data {
+  font-weight: 400;
+}
+
+.card-desc {
+  font-weight: 400;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .perfil-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Reduz o espaço entre a foto e os dados */
+  .perfil-header-section {
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar toda a tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra de pesquisa */
+  .top-search-bar {
+    padding: 0 20px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde o texto "Filtrar" */
+  }
+
+  .page-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Empilha a foto e os dados do usuário */
+  .perfil-header-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .perfil-dados-col {
+    align-items: center; /* Centraliza os itens da coluna */
+  }
+
+  /* Reduz a fonte e permite quebra de linha para não estourar a tela */
+  .dado-linha {
+    font-size: 16px;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  /* Centraliza os textos do cabeçalho da seção */
+  .section-header {
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* Reorganiza os cards de Experiência/Qualificações */
+  .historico-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .card-cargo {
+    font-size: 18px;
+  }
+  
+  .card-empresa {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  /* Empilha a data e a descrição do rodapé do card */
+  .card-rodape {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .card-desc {
+    text-align: center;
+  }
+}

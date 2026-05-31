@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Vagas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vagasrecrutador.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo/hirly/logo.png" alt="Hirly Logo">
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Principal</div>
+                <a href="homerecrutador.html" class="menu-item active">
+                    <img src="images/icons/Home.png" alt="InÃ­cio"> InÃ­cio
+                </a>
+                <a href="buscarrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar"> Buscar
+                </a>
+                <a href="candidatosrecrutador.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Candidatos"> Candidatos
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Vagas"> Vagas
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">ServiÃ§os</div>
+                <a href="../secundarias/mensagensrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagens"> Mensagens
+                </a>
+                <a href="../secundarias/recrutadordocumento.html" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento"> Documento
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_amarela.png" alt="Feedbacks"> Feedbacks
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_vazia.png" alt="AvaliaÃ§Ãµes"> AvaliaÃ§Ãµes
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Outros</div>
+                <a href="../secundarias/recrutadorajuda.html" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda"> Ajuda
+                </a>
+                <a href="../secundarias/condiguracoesrecrutador.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes"> ConfiguraÃ§Ãµes
+                </a>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="images/user/Usuario foto.png" alt="Foto do UsuÃ¡rio" class="user-avatar">
+                    <span class="user-name">Pedro</span>
+                </div>
+                <a href="../../auth/login.html" class="logout-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair"> Log out
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="header">
+                <div class="search-container">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar" class="search-icon">
+                    <input type="text" class="search-input" placeholder="Encontre um candidato">
+                    <button class="filter-btn">
+                        <img src="images/icons/filtro.png" alt="Filtro" class="filter-icon">
+                        Filtrar
+                        <img src="images/icons/seta_selecao.png" alt="Seta" class="arrow-icon">
+                    </button>
+                </div>
+                <img src="images/user/Usuario foto.png" alt="User" class="header-user-avatar">
+            </header>
+
+            <div class="dashboard-wrapper">
+                
+                <div class="page-title-row">
+                    <div>
+                        <h1>Vagas</h1>
+                        <p>Controle vagas abertas, prioridade e saÃºde do funil de contrataÃ§Ã£o.</p>
+                    </div>
+                    <button class="btn-primary">Criar vaga</button>
+                </div>
+
+                <div class="hero-banner">
+                    <div class="hero-left">
+                        <h2>18 vagas abertas em prioridade</h2>
+                        <p>O painel destaca gargalos, volume por etapa e aÃ§Ãµes rÃ¡pidas para vagas crÃ­ticas.</p>
+                    </div>
+                    <div class="hero-right">
+                        <div class="stat-item">
+                            <span class="stat-value">342</span>
+                            <span class="stat-label">candidaturas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">84</span>
+                            <span class="stat-label">triagem</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">24</span>
+                            <span class="stat-label">entrevista</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">8</span>
+                            <span class="stat-label">ofertas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vagas-grid">
+                    
+                    <div class="vaga-card">
+                        <div class="vaga-card-left">
+                            <div class="vaga-icon-box bg-green-solid"></div>
+                            <div class="vaga-info">
+                                <h3 class="vaga-title">Front-end Junior</h3>
+                                <p class="vaga-meta">42 candidatos | Product team</p>
+                                <span class="badge bg-green c-green-text">Alta</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Ver candidatos</button>
+                    </div>
+
+                    <div class="vaga-card">
+                        <div class="vaga-card-left">
+                            <div class="vaga-icon-box bg-blue-solid"></div>
+                            <div class="vaga-info">
+                                <h3 class="vaga-title">Analista de Dados</h3>
+                                <p class="vaga-meta">36 candidatos | Product team</p>
+                                <span class="badge bg-blue c-blue-text">Ativa</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Ver candidatos</button>
+                    </div>
+
+                    <div class="vaga-card">
+                        <div class="vaga-card-left">
+                            <div class="vaga-icon-box bg-orange-solid"></div>
+                            <div class="vaga-info">
+                                <h3 class="vaga-title">UX/UI Designer</h3>
+                                <p class="vaga-meta">28 candidatos | Product team</p>
+                                <span class="badge bg-orange c-orange-text">Pausada</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Ver candidatos</button>
+                    </div>
+
+                    <div class="vaga-card">
+                        <div class="vaga-card-left">
+                            <div class="vaga-icon-box bg-purple-solid"></div>
+                            <div class="vaga-info">
+                                <h3 class="vaga-title">Back-end EstÃ¡gio</h3>
+                                <p class="vaga-meta">51 candidatos | Product team</p>
+                                <span class="badge bg-purple c-purple-text">Triagem</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Ver candidatos</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+/* --- Reset Global --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f5f7; /* Fundo cinza claro */
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   SIDEBAR (Design Empresa)
+   ========================================= */
+.side-bar {
+  width: 272px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 40px; margin-top: 10px; }
+.side-bar .logo { width: 45px; object-fit: contain; }
+
+.sidebar-menu { display: flex; flex-direction: column; flex: 1; gap: 8px; }
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #555555;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu-item img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.6;
+}
+
+.menu-item:hover {
+  background-color: rgba(121, 12, 230, 0.05);
+  color: #790ce6;
+}
+
+/* Item ativo (Validar Vagas) */
+.menu-item.active {
+  background: linear-gradient(90deg, #790ce6 0%, #a252f5 100%);
+  color: #ffffff;
+}
+.menu-item.active img {
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.menu-divider-empresa { height: 1px; background-color: transparent; margin: 15px 0; }
+
+.sidebar-footer-empresa {
+  margin-top: auto;
+  background-color: #f6f0ff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.footer-empresa-info { display: flex; flex-direction: column; gap: 4px; }
+.empresa-nome-rodape { font-size: 14px; font-weight: 700; color: #000; }
+.btn-encerrar-sessao {
+  background: none;
+  border: none;
+  color: #790ce6;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-encerrar-sessao:hover { color: #5a07ad; text-decoration: underline; }
+
+/* =========================================
+   BARRA SUPERIOR
+   ========================================= */
+.main-content {
+  flex: 1;
+  margin-left: 272px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar-white {
+  background-color: #ffffff;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pesquisa-wrapper { display: flex; align-items: center; background-color: #f5f5f5; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 500px; height: 48px; justify-content: space-between; }
+.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
+.icone-lupa-input { width: 18px; opacity: 0.4; }
+.input-busca-real { border: none; background: transparent; font-size: 15px; color: #333; width: 100%; font-style: italic; }
+.input-busca-real:focus { outline: none; }
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 15px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
+.icone-filtro { width: 18px; }
+.seta-selecao { width: 10px; }
+
+.top-right-info { display: flex; align-items: center; gap: 20px; }
+.perfil-textos-top { display: flex; flex-direction: column; text-align: right; }
+.top-label-light { font-size: 12px; color: #888; }
+.top-label-bold { font-size: 13px; font-weight: 700; color: #000; }
+.usuario-foto-top { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+
+/* =========================================
+   VALIDAR VAGAS (NOVO CONTEÚDO)
+   ========================================= */
+.validar-vagas-wrapper {
+  padding: 40px;
+  max-width: 1400px;
+}
+
+.page-header { margin-bottom: 30px; }
+.page-title { font-size: 28px; font-weight: 800; color: #000; margin: 0 0 8px 0; }
+.page-subtitle { font-size: 15px; color: #666; margin: 0; }
+
+/* Grid 2 Colunas */
+.validar-grid {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* Tamanhos desiguais: a coluna direita tem mais peso visual */
+.col-esquerda { flex: 1; }
+.col-direita { flex: 1.6; }
+
+.card-painel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header { margin-bottom: 25px; }
+.panel-title { font-size: 18px; font-weight: 800; color: #000; margin: 0; }
+
+/* --- COLUNA ESQUERDA (FILA) --- */
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fila-item {
+  background-color: #f9fafc;
+  padding: 18px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid transparent; /* Borda invisível para manter tamanho */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Estado Ativo/Selecionado (Vaga em visualização) */
+.fila-item.active {
+  background-color: #fcfaff;
+  border-color: #790ce6;
+}
+.fila-item:hover:not(.active) {
+  border-color: rgba(121, 12, 230, 0.2);
+}
+
+.fila-textos { display: flex; flex-direction: column; gap: 4px; }
+.item-title { font-size: 15px; font-weight: 700; color: #000; margin: 0; }
+.item-desc { font-size: 13px; color: #666; margin: 0; }
+
+/* --- COLUNA DIREITA (DETALHES DA VAGA) --- */
+.detalhes-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.detalhes-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.detalhes-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  margin: 0;
+}
+
+.detalhes-meta {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Checklist */
+.checklist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.checklist-item {
+  background-color: #f9fafc;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+}
+
+/* Destaque sutil para o item que precisa de correção */
+.checklist-item.erro-destaque {
+  background-color: #fffafb;
+  border-color: #ffe4e6;
+}
+
+.check-textos { display: flex; flex-direction: column; gap: 4px; }
+.dado-label { font-size: 14px; font-weight: 700; color: #000; }
+.dado-valor { font-size: 13px; color: #666; }
+
+/* Comentário (Textarea) */
+.comentario-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.comentario-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+.comentario-input {
+  width: 100%;
+  height: 100px;
+  background-color: #f9fafc;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #333;
+  resize: none; /* Impede que o usuário distorça o layout puxando a caixa */
+}
+.comentario-input:focus {
+  outline: none;
+  border-color: #790ce6;
+}
+
+/* --- BADGES (Etiquetas de Status) --- */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.badge-warning { background-color: #ffedd5; color: #b45309; } /* Amarelo/Laranja */
+.badge-neutral { background-color: #f1f5f9; color: #64748b; } /* Cinza Azulado */
+.badge-success { background-color: #dcfce7; color: #15803d; } /* Verde */
+.badge-danger  { background-color: #ffe4e6; color: #e11d48; } /* Vermelho */
+
+/* --- BOTÕES FINAIS --- */
+.panel-footer-btn-row {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #8b5cf6; /* Roxo principal */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-primary:hover { background-color: #7c3aed; }
+
+.btn-light-purple {
+  background-color: #f3e8ff; /* Roxo clarinho */
+  color: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-light-purple:hover { background-color: #e9d5ff; }
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar toda a tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra de pesquisa e topo */
+  .top-bar-white {
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde a palavra "Filtrar" */
+  }
+
+  /* Esconde os textos do perfil no topo para liberar espaço (deixa só o avatar) */
+  .perfil-textos-top {
+    display: none;
+  }
+
+  /* Ajustes de tipografia do cabeçalho */
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  /* Reduz o padding interno dos cards */
+  .card-painel {
+    padding: 20px 15px;
+  }
+
+  /* Reorganiza os itens com badge para não encavalar o texto com a etiqueta */
+  .config-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .badge {
+    align-self: flex-start; /* Alinha a etiqueta à esquerda no celular */
+  }
+
+  /* Empilha os botões no rodapé dos cards */
+  .panel-footer-btn-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary, .btn-light-purple {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,402 @@
+/* --- Reset Global --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f5f7; /* Fundo cinza claro padrão */
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   SIDEBAR (Administrador)
+   ========================================= */
+.side-bar {
+  width: 272px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top { display: flex; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; margin-top: 10px; }
+.side-bar .logo { width: 45px; object-fit: contain; }
+
+.sidebar-menu { display: flex; flex-direction: column; flex: 1; gap: 6px; }
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+.menu-item:hover {
+  background-color: rgba(121, 12, 230, 0.05);
+  color: #790ce6;
+}
+
+/* Item ativo (Perfil Admin) */
+.menu-item.active {
+  background: linear-gradient(90deg, #790ce6 0%, #a252f5 100%);
+  color: #ffffff;
+}
+.menu-item.active img {
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.menu-divider-admin { height: 1px; background-color: transparent; margin: 10px 0; }
+
+.sidebar-footer-admin {
+  margin-top: auto;
+  background-color: #f6f0ff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.footer-admin-info { display: flex; flex-direction: column; gap: 4px; }
+.admin-nome-rodape { font-size: 14px; font-weight: 700; color: #000; }
+.btn-encerrar-sessao {
+  background: none;
+  border: none;
+  color: #790ce6;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-encerrar-sessao:hover { color: #5a07ad; text-decoration: underline; }
+
+/* =========================================
+   BARRA SUPERIOR
+   ========================================= */
+.main-content {
+  flex: 1;
+  margin-left: 272px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar-white {
+  background-color: #ffffff;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pesquisa-wrapper { display: flex; align-items: center; background-color: #f5f5f5; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 500px; height: 48px; justify-content: space-between; }
+.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
+.icone-lupa-input { width: 18px; opacity: 0.4; }
+.input-busca-real { border: none; background: transparent; font-size: 15px; color: #333; width: 100%; font-style: italic; }
+.input-busca-real:focus { outline: none; }
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 15px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
+.icone-filtro { width: 18px; }
+.seta-selecao { width: 10px; }
+
+.top-right-info { display: flex; align-items: center; gap: 20px; }
+.perfil-textos-top { display: flex; flex-direction: column; text-align: right; }
+.top-label-light { font-size: 12px; color: #888; }
+.top-label-bold { font-size: 13px; font-weight: 700; color: #000; }
+.usuario-foto-top { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+
+/* =========================================
+   PERFIL DO ADMINISTRADOR
+   ========================================= */
+.perfil-admin-wrapper {
+  padding: 40px;
+  max-width: 1400px;
+}
+
+.page-header { margin-bottom: 30px; }
+.page-title { font-size: 28px; font-weight: 800; color: #000; margin: 0 0 8px 0; }
+.page-subtitle { font-size: 15px; color: #666; margin: 0; }
+
+/* Card 1: Identidade (Topo) */
+.card-identidade {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.identidade-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo-monograma {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /* Administradores geralmente usam avatares redondos */
+  background-color: #790ce6;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.identidade-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.admin-nome-destaque { font-size: 24px; font-weight: 800; color: #000; margin: 0; }
+.admin-cargo-destaque { font-size: 15px; color: #666; margin: 0 0 5px 0; }
+
+/* Grid 2 Colunas */
+.perfil-grid {
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+}
+
+.card-painel {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header { margin-bottom: 25px; }
+.panel-title { font-size: 18px; font-weight: 800; color: #000; margin: 0; }
+
+/* Listas de Dados */
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dado-item {
+  background-color: #f9fafc;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.atividade-item {
+  background-color: #f9fafc;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atividade-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dado-label { font-size: 14px; font-weight: 700; color: #000; }
+.dado-valor { font-size: 13px; color: #666; }
+.atividade-tempo { font-size: 12px; font-weight: 600; color: #888; }
+
+/* Badges / Etiquetas */
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Badge específica para o cargo do Admin */
+.badge-acesso-total { 
+  background-color: #e0e7ff; 
+  color: #3730a3; 
+  padding: 6px 16px; 
+}
+
+/* Botões */
+.mt-20 { margin-top: auto; padding-top: 20px; }
+
+.btn-primary {
+  background-color: #790ce6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-primary:hover { background-color: #6109b8; }
+
+.btn-light-purple {
+  background-color: #f3e8ff;
+  color: #790ce6;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-light-purple:hover { background-color: #e9d5ff; }
+
+@media (max-width: 1024px) {
+  .perfil-admin-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Empilha os painéis lado a lado, caso existam colunas */
+  .admin-grid-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-bar-white {
+    padding: 0 20px;
+  }
+}
+
+/* Ecrãs Pequenos (Telemóveis) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde a Sidebar na lateral */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar a totalidade do ecrã */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes da barra superior e de pesquisa */
+  .top-bar-white {
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde a palavra "Filtrar" para poupar espaço */
+  }
+
+  /* Esconde o texto do cargo no topo (deixa apenas a foto de perfil) */
+  .perfil-textos-top {
+    display: none;
+  }
+
+  /* Ajustes do Título da Página */
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  /* Cartão Principal do Perfil */
+  .perfil-header-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  /* Ajusta a zona dos botões de ação do perfil para ocuparem a largura total */
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .btn-primary, 
+  .btn-secondary, 
+  .btn-light-purple, 
+  .btn-danger-outline {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Cartões Inferiores e Lista de Atividades */
+  .card-painel {
+    padding: 20px 15px;
+  }
+
+  .atividade-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Ajusta a largura dos botões do rodapé dos painéis */
+  .panel-footer-btn-left {
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,352 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Container mestre que divide a tela em Sidebar e Conteúdo Principal */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* SIDEBAR ESQUERDA */
+.side-bar {
+  width: 272px;
+  background: rgba(121, 12, 230, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(121, 12, 230, 0.1);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  
+  /* Adicione estas linhas: */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.side-bar .logo {
+  width: 76.77px;
+  height: 77px;
+  object-fit: contain;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menu-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 15px 0 8px 10px;
+  text-transform: capitalize;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.menu-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.menu-item:hover, .menu-item.active {
+  background-color: rgba(121, 12, 230, 0.1);
+  color: #790ce6;
+}
+
+.menu-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 15px 10px;
+}
+
+/* Sidebar Rodapé */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-usu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usuario-foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.nome-usuario {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.log-out-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.log-out-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.log-out-btn:hover {
+  color: #ff0000;
+}
+
+/* ÁREA DA DIREITA (CONTEÚDO PRINCIPAL) */
+.main-content {
+  flex: 1;
+  margin-left: 272px; /* Deixa o espaço exato da sidebar fixa */
+  display: flex;
+  flex-direction: column;
+}
+
+/* BARRA ROXA SUPERIOR DE PESQUISA */
+.top-search-bar {
+  background-color: #7102e0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.pesquisa-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 35px;
+  padding: 6px 10px 6px 20px;
+  width: 100%;
+  max-width: 850px;
+  height: 56px;
+  justify-content: space-between;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.icone-lupa-input {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+
+.input-busca-real {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+  font-style: italic;
+}
+
+.input-busca-real:focus {
+  outline: none;
+}
+
+.btn-filtrar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #790ce6;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icone-filtro {
+  width: 24px;
+  height: 24px;
+}
+
+.seta-selecao {
+  width: 12px;
+}
+
+/* Foto do Usuário no Topo Direito */
+.user-avatar-top {
+  display: flex;
+  align-items: center;
+}
+
+.usuario-foto-top {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+
+/* SEÇÃO DE CONTEÚDO DAS VAGAS */
+.vagas-section {
+  padding: 40px;
+}
+
+.cabecalho-home {
+  margin-bottom: 35px;
+}
+
+.vagas-em-destaque {
+  font-size: 36px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+
+.subtitulo-vagas {
+  font-size: 20px;
+  font-weight: 200;
+  color: #555555;
+  margin: 0;
+}
+
+/* LISTAGEM DE CARDS */
+.lista-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card de Vaga Individual */
+.vaga-card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-top: 1px solid rgba(121, 12, 230, 0.25);
+  border-bottom: 1px solid rgba(121, 12, 230, 0.25);
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.vaga-card-item:hover {
+  background-color: rgba(121, 12, 230, 0.02);
+}
+
+/* Bloco da esquerda do Card (Logo + Títulos) */
+.vaga-main-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.empresa-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.textos-vaga {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vaga-titulo-purple {
+  font-size: 24px;
+  font-weight: 900;
+  color: #790ce6;
+  margin: 0;
+}
+
+.empresa-nome {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Bloco da direita do Card (Localização + Salário) */
+.vaga-meta-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meta-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.meta-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+}

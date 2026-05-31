@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Buscar Vagas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/buscarcandidatos.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <a href="/auth/landingpage.html">
+                    <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+                </a>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <span class="menu-title">Principal</span>
+                <a href="home.html" class="menu-item">
+                    <img src="images/icons/Home.png" alt="InÃ­cio" /> <span>InÃ­cio</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/icone_lupa.png" alt="Pesquisar" /> <span>Pesquisar</span>
+                </a>
+                <a href="insightscadidato.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Insights" /> <span>Insights</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">ServiÃ§os</span>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagem" /> <span>Mensagem</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento" /> <span>Documento</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Outros</span>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda" /> <span>Ajuda</span>
+                </a>
+                <a href="../secundarias/configuracoescandidato.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes" /> <span>ConfiguraÃ§Ãµes</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="card-usu">
+                    <img class="usuario-foto" src="images/user/Usuariofoto.png" alt="Foto do UsuÃ¡rio" />
+                    <div class="nome-usuario">Marcelo</div>
+                </div>
+                <a href="../../auth/login.html" class="log-out-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair" /> <span>Log out</span>
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            
+            <header class="top-search-bar">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                <div class="user-avatar-top">
+                    <img class="usuario-foto-top" src="images/user/Usuariofoto.png" alt="Avatar UsuÃ¡rio" />
+                </div>
+            </header>
+
+            <div class="buscar-vagas-container">
+                
+                <section class="lista-vagas-coluna">
+                    
+                    <div class="resultados-header">
+                        <h2 class="resultados-titulo">Resultados da Pesquisa</h2>
+                        <p class="resultados-sub">Encontramos 25 vagas para vocÃª</p>
+                    </div>
+
+                    <div class="filtros-rapidos-section">
+                        <h3 class="filtros-titulo">Filtros RÃ¡pidos</h3>
+                        <div class="filtros-tags">
+                            <label class="filtro-tag"><input type="checkbox" checked> JÃºnior</label>
+                            <label class="filtro-tag"><input type="checkbox"> Remoto</label>
+                            <label class="filtro-tag"><input type="checkbox"> CLT</label>
+                            <label class="filtro-tag"><input type="checkbox"> EstÃ¡gio</label>
+                            <label class="filtro-tag"><input type="checkbox"> SÃ£o Paulo</label>
+                        </div>
+                    </div>
+
+                    <div class="vagas-cards-wrapper">
+                        
+                        <div class="vaga-card-busca active">
+                            <img class="card-busca-logo" src="images/logo/others/nubank.png" alt="Nubank" />
+                            <div class="card-busca-textos">
+                                <h3 class="card-busca-titulo">Product Designer</h3>
+                                <span class="card-busca-empresa">Nubank</span>
+                                <div class="card-busca-meta">
+                                    <span><img src="images/icons/MapPin.png" alt="Pin"> Remoto</span>
+                                    <span><img src="images/icons/mala.png" alt="Mala"> R$ 2300 - 2800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vaga-card-busca">
+                            <img class="card-busca-logo" src="images/logo/others/itau.png" alt="ItaÃº" />
+                            <div class="card-busca-textos">
+                                <h3 class="card-busca-titulo">Software Engineer (Backend)</h3>
+                                <span class="card-busca-empresa">ItaÃº</span>
+                                <div class="card-busca-meta">
+                                    <span><img src="images/icons/MapPin.png" alt="Pin"> Remoto</span>
+                                    <span><img src="images/icons/mala.png" alt="Mala"> R$ 2300 - 2800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vaga-card-busca">
+                            <img class="card-busca-logo" src="images/logo/others/samsung.png" alt="Samsung" />
+                            <div class="card-busca-textos">
+                                <h3 class="card-busca-titulo">Analista de Dados</h3>
+                                <span class="card-busca-empresa">Samsung</span>
+                                <div class="card-busca-meta">
+                                    <span><img src="images/icons/MapPin.png" alt="Pin"> Remoto</span>
+                                    <span><img src="images/icons/mala.png" alt="Mala"> R$ 2300 - 2800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vaga-card-busca">
+                            <img class="card-busca-logo" src="images/logo/others/ifood.png" alt="Ifood" />
+                            <div class="card-busca-textos">
+                                <h3 class="card-busca-titulo">Analista de Testes</h3>
+                                <span class="card-busca-empresa">Ifood</span>
+                                <div class="card-busca-meta">
+                                    <span><img src="images/icons/MapPin.png" alt="Pin"> Remoto</span>
+                                    <span><img src="images/icons/mala.png" alt="Mala"> R$ 2300 - 2800</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <aside class="detalhes-vaga-coluna">
+                    <h2 class="detalhes-top-title">Detalhes da Vaga</h2>
+                    
+                    <div class="detalhes-centro">
+                        <img class="detalhe-logo-gigante" src="images/logo/others/nubank.png" alt="Nubank" />
+                        <h3 class="detalhe-cargo">Product Designer<br>(JÃºnior)</h3>
+                        <p class="detalhe-info-linha">Nubank - Fintech</p>
+                        <p class="detalhe-info-linha">Remoto - Full-time</p>
+                        <p class="detalhe-info-linha">SalÃ¡rio: R$2300 - 2800/mÃªs</p>
+                    </div>
+
+                    <div class="detalhe-divisor"></div>
+
+                    <div class="detalhe-bloco-texto">
+                        <h4 class="detalhe-secao-titulo">Sobre a Vaga</h4>
+                        <p class="detalhe-texto-p">
+                            Texto brabo muito texto dakshdoash dihasdoihasdoiahsd ioahsdoiahsdoiashdoais aisdhaoisdhaosda daishdaoisdahsdd aishdoiashdasd
+                        </p>
+                    </div>
+
+                    <div class="detalhe-divisor"></div>
+
+                    <div class="detalhe-bloco-texto">
+                        <h4 class="detalhe-secao-titulo">Requisitos</h4>
+                        <p class="detalhe-texto-p">
+                            Texto brabo muito texto dakshdoash dihasdoihasdoiahsd ioahsdoiahsdoiashdoais aisdhaoisdhaosda daishdaoisdahsdd aishdoiashdasd
+                        </p>
+                        
+                        <div class="btn-container-center">
+                            <button class="btn-candidatar-agora">
+                                Candidatar-se Agora
+                                <img src="images/icons/seta.png" alt="Seta" class="seta-btn-icon" />
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+    </div>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

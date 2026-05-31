@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Pesquisar Vagas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/pesquisarvagas.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="../principais/centraldemoderacao.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Dashboard" /> <span>Dashboard</span>
+                </a>
+                <a href="moderarusuarios.html" class="menu-item">
+                    <img src="images/icons/recrutadores.png" alt="Moderar usuÃ¡rios" /> <span>Moderar usuÃ¡rios</span>
+                </a>
+                <a href="moderarvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Moderar vagas" /> <span>Moderar vagas</span>
+                </a>
+                <a href="bloquearusuarios.html" class="menu-item">
+                    <img src="images/icons/Dadosdaempresa.png" alt="Bloqueios" /> <span>Bloqueios</span>
+                </a>
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/icone_lupa.png" alt="Pesquisar vagas" /> <span>Pesquisar vagas</span>
+                </a>
+                
+                <div class="menu-divider-admin"></div>
+                
+                <a href="../principais/perfiladministrativo.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Perfil" /> <span>Perfil</span>
+                </a>
+                <a href="../principais/configuracoes.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes" /> <span>ConfiguraÃ§Ãµes</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer-admin">
+                <div class="footer-admin-info">
+                    <span class="admin-nome-rodape">LÃ­via Martins</span>
+                    <a href="../../auth/login.html" class="btn-encerrar-sessao">Encerrar sessÃ£o</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-bar-white">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                
+                <div class="top-right-info">
+                    <div class="perfil-textos-top">
+                        <span class="top-label-light">Painel de operaÃ§Ãµes</span>
+                        <span class="top-label-bold">Perfil ativo: Administrador</span>
+                    </div>
+                    <img class="usuario-foto-top" src="images/icons/Recrutadores.png" alt="Avatar Admin" />
+                </div>
+            </header>
+
+            <div class="pesquisa-page-wrapper">
+                
+                <div class="page-header">
+                    <h1 class="page-title">Pesquisar vagas</h1>
+                    <p class="page-subtitle">Busque no banco de dados e audite o status dos anÃºncios.</p>
+                </div>
+
+                <div class="pesquisa-conteudo">
+                    
+                    <div class="card-painel">
+                        <div class="busca-avancada-container">
+                            
+                            <div class="busca-input-row">
+                                <input type="text" class="input-grande" placeholder="ID, empresa ou palavra-chave">
+                                <button class="btn-primary-large">Buscar</button>
+                            </div>
+                            
+                            <div class="filtros-rapidos-row">
+                                <span class="filtros-label">Filtros rÃ¡pidos:</span>
+                                <button class="btn-filtro-tag tag-sinalizadas">SINALIZADAS</button>
+                                <button class="btn-filtro-tag tag-recentes">RECENTES</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card-painel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">Resultados de auditoria</h3>
+                            <p class="panel-subtitle">24 vagas encontradas</p>
+                        </div>
+                        
+                        <div class="panel-list">
+                            <div class="resultado-item">
+                                <div class="resultado-textos">
+                                    <h4 class="item-title">Assistente remoto</h4>
+                                    <p class="item-desc">Emprego FÃ¡cil â€¢ suspeita de fraude</p>
+                                </div>
+                                <span class="badge badge-ocultada">OCULTADA</span>
+                            </div>
+                            
+                            <div class="resultado-item">
+                                <div class="resultado-textos">
+                                    <h4 class="item-title">Dev Front-end Jr.</h4>
+                                    <p class="item-desc">TechWave â€¢ sem sinais</p>
+                                </div>
+                                <span class="badge badge-ativa">ATIVA</span>
+                            </div>
+                            
+                            <div class="resultado-item">
+                                <div class="resultado-textos">
+                                    <h4 class="item-title">Analista financeiro</h4>
+                                    <p class="item-desc">Fin Corp â€¢ salÃ¡rio inconsistente</p>
+                                </div>
+                                <span class="badge badge-revisao">EM REVISÃƒO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

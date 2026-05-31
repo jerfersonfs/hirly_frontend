@@ -1,0 +1,396 @@
+/* --- Reset Global --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   SIDEBAR E TOPBAR (Padrão do Sistema)
+   ========================================= */
+.side-bar {
+  width: 272px;
+  background: rgba(121, 12, 230, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(121, 12, 230, 0.1);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top { display: flex; justify-content: center; margin-bottom: 30px; }
+.side-bar .logo { width: 76px; object-fit: contain; }
+.sidebar-menu { display: flex; flex-direction: column; flex: 1; }
+.menu-title { font-size: 14px; font-weight: 400; color: rgba(0, 0, 0, 0.6); margin: 15px 0 8px 10px; }
+.menu-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; text-decoration: none; color: #000; font-size: 18px; font-weight: 500; border-radius: 8px; transition: 0.2s; margin-bottom: 4px; }
+.menu-item img { width: 28px; }
+.menu-item:hover, .menu-item.active { background-color: rgba(121, 12, 230, 0.1); color: #790ce6; }
+.menu-divider { height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 15px 10px; }
+
+.sidebar-footer { display: flex; flex-direction: column; gap: 15px; margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.card-usu { display: flex; align-items: center; gap: 12px; }
+.usuario-foto { width: 40px; height: 40px; border-radius: 5px; object-fit: cover; }
+.nome-usuario { font-size: 14px; font-weight: 500; }
+.log-out-btn { display: flex; align-items: center; gap: 10px; background: none; border: none; font-size: 14px; cursor: pointer; padding: 5px 10px; transition: color 0.2s; }
+.log-out-btn:hover { color: red; }
+
+/* Main Content & Topbar */
+.main-content {
+  flex: 1;
+  margin-left: 272px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-search-bar {
+  background-color: #7102e0;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.pesquisa-wrapper { display: flex; align-items: center; background-color: #ffffff; border-radius: 35px; padding: 6px 10px 6px 20px; width: 100%; max-width: 650px; height: 52px; justify-content: space-between; }
+.search-input-container { display: flex; align-items: center; gap: 12px; flex: 1; }
+.icone-lupa-input { width: 20px; opacity: 0.5; }
+.input-busca-real { border: none; background: transparent; font-size: 16px; width: 100%; font-style: italic; }
+.input-busca-real:focus { outline: none; }
+.btn-filtrar { display: flex; align-items: center; gap: 8px; background: transparent; border: none; color: #790ce6; font-size: 16px; font-weight: 600; font-style: italic; cursor: pointer; padding: 5px 15px; border-left: 1px solid rgba(0, 0, 0, 0.1); }
+.icone-filtro { width: 20px; }
+.seta-selecao { width: 10px; }
+.usuario-foto-top { width: 45px; height: 45px; border-radius: 5px; object-fit: cover; }
+
+
+/* =========================================
+   PÁGINA DE CONFIGURAÇÕES (NOVO CONTEÚDO)
+   ========================================= */
+
+.configuracoes-wrapper {
+  padding: 40px;
+  max-width: 1400px;
+}
+
+.configuracoes-header {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000;
+  margin: 0 0 8px 0;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+/* Card com Borda */
+.config-card {
+  background-color: #ffffff;
+  border: 1px solid #999; /* Borda cinza de acordo com a imagem */
+  border-radius: 12px;
+  overflow: hidden; /* Para os cantos ficarem perfeitos com as abas */
+}
+
+/* Abas de Navegação (Tabs) */
+.config-tabs {
+  display: flex;
+  border-bottom: 1px solid #999;
+  background-color: #ffffff;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  border-right: 1px solid #999;
+}
+
+.tab-item:last-child {
+  border-right: none;
+}
+
+.tab-item.active {
+  color: #790ce6;
+  font-weight: 600;
+  /* Efeito da linha roxa no inferior da aba */
+  box-shadow: inset 0 -4px 0 #790ce6;
+}
+
+/* Corpo do Formulário */
+.config-body {
+  padding: 40px 60px;
+}
+
+.body-header {
+  margin-bottom: 35px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  margin: 0 0 6px 0;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* Inputs */
+.form-inputs-col {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 450px; /* Limita a largura dos inputs para ficar igual a foto */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form-group input {
+  background-color: rgba(121, 12, 230, 0.05); /* Fundo roxo bem claro */
+  border: none;
+  border-radius: 20px; /* Formato de pílula */
+  padding: 14px 20px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  outline: none;
+}
+
+/* Botões Salvar / Cancelar */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background-color: #790ce6;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover { background-color: #6208be; }
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover { background-color: #ccc; }
+
+/* Linha Divisória */
+.config-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  margin: 30px 0;
+}
+
+/* Zona de Perigo (Excluir) */
+.danger-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.danger-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.danger-title {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.danger-desc {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+}
+
+.btn-danger-outline {
+  background-color: #ffffff;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 20px;
+  padding: 8px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-danger-outline:hover {
+  background-color: #fff0f0;
+}
+
+/* Telas Médias (Tablets) - Abaixo de 1024px */
+@media (max-width: 1024px) {
+  .perfil-wrapper {
+    padding: 30px 20px;
+  }
+  
+  /* Reduz o espaço entre a foto e os dados */
+  .perfil-header-section {
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .configuracoes-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .config-body {
+    padding: 30px 20px; /* Reduz o preenchimento interno do card */
+  }
+}
+
+/* Telas Pequenas (Celulares) - Abaixo de 768px */
+@media (max-width: 768px) {
+  /* Esconde o Sidebar */
+  .side-bar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Faz o conteúdo principal ocupar toda a tela */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Ajustes do cabeçalho de pesquisa */
+  .top-search-bar {
+    padding: 0 20px;
+  }
+
+  .pesquisa-wrapper {
+    padding: 6px 10px;
+  }
+  
+  .input-busca-real {
+    font-size: 14px;
+  }
+
+  .btn-filtrar span {
+    display: none; /* Esconde o texto "Filtrar" */
+  }
+
+  /* Ajustes da Tela de Configurações */
+  .page-title {
+    font-size: 26px;
+  }
+  
+  .page-subtitle {
+    font-size: 15px;
+  }
+
+  /* Ajuste das Abas (Tabs) para não espremer no celular */
+  .config-tabs {
+    flex-wrap: wrap; /* Permite quebrar linha */
+  }
+  
+  .tab-item {
+    font-size: 15px;
+    padding: 15px 5px;
+    flex: 1 1 50%; /* Faz com que fiquem 2 abas por linha (50% de largura cada) */
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+
+  /* Remove a borda inferior das duas últimas abas para não duplicar com o card */
+  .tab-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  /* Corpo do Formulário */
+  .config-body {
+    padding: 20px 15px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  /* Ajuste dos botões de ação para ficarem um em cima do outro */
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}

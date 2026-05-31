@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Busca Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/buscarrecrutador.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo/hirly/logo.png" alt="Hirly Logo">
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Principal</div>
+                <a href="homerecrutador.html" class="menu-item active">
+                    <img src="images/icons/Home.png" alt="InÃ­cio"> InÃ­cio
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar"> Buscar
+                </a>
+                <a href="candidatosrecrutador.html" class="menu-item">
+                    <img src="images/icons/Recrutadores.png" alt="Candidatos"> Candidatos
+                </a>
+                <a href="recrutadorvagas.html" class="menu-item">
+                    <img src="images/icons/Validarvagas.png" alt="Vagas"> Vagas
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">ServiÃ§os</div>
+                <a href="../secundarias/mensagensrecrutador.html" class="menu-item">
+                    <img src="images/icons/icone_Mensagem.png" alt="Mensagens"> Mensagens
+                </a>
+                <a href="../secundarias/recrutadordocumento.html" class="menu-item">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento"> Documento
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_amarela.png" alt="Feedbacks"> Feedbacks
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="images/icons/Star_vazia.png" alt="AvaliaÃ§Ãµes"> AvaliaÃ§Ãµes
+                </a>
+            </div>
+            
+            <div class="menu-group">
+                <div class="menu-title">Outros</div>
+                <a href="../secundarias/recrutadorajuda.html" class="menu-item">
+                    <img src="images/icons/icone_Ajuda.png" alt="Ajuda"> Ajuda
+                </a>
+                <a href="../secundarias/condiguracoesrecrutador.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="ConfiguraÃ§Ãµes"> ConfiguraÃ§Ãµes
+                </a>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="images/user/Usuario foto.png" alt="Foto do UsuÃ¡rio" class="user-avatar">
+                    <span class="user-name">Pedro</span>
+                </div>
+                <a href="../../auth/login.html" class="logout-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair"> Log out
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="header">
+                <div class="search-container">
+                    <img src="images/icons/icone_lupa.png" alt="Buscar" class="search-icon">
+                    <input type="text" class="search-input" placeholder="Encontre um candidato">
+                    <button class="filter-btn">
+                        <img src="images/icons/filtro.png" alt="Filtro" class="filter-icon">
+                        Filtrar
+                        <img src="images/icons/seta_selecao.png" alt="Seta" class="arrow-icon">
+                    </button>
+                </div>
+                <img src="images/user/Usuario foto.png" alt="User" class="header-user-avatar">
+            </header>
+
+            <div class="dashboard-wrapper">
+                
+                <div class="page-title-row">
+                    <div>
+                        <h1>Busca inteligente</h1>
+                        <p>Ranking, comparaÃ§Ã£o e sinais de aderÃªncia para encontrar o melhor candidato mais rÃ¡pido.</p>
+                    </div>
+                    <button class="btn-primary">Salvar busca</button>
+                </div>
+
+                <div class="highlight-banner">
+                    <div class="banner-left">
+                        <span class="eyebrow">BUSCA RECOMENDADA</span>
+                        <h2>Shortlist pronta para Front-end Junior</h2>
+                        <p>A IA cruzou stack, disponibilidade, faixa salarial, senioridade e qualidade dos feedbacks para sugerir os perfis mais fortes.</p>
+                    </div>
+                    <div class="banner-right">
+                        <div class="stat-item">
+                            <span class="stat-value">92%</span>
+                            <span class="stat-label">fit mÃ©dio</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">18</span>
+                            <span class="stat-label">talentos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">6</span>
+                            <span class="stat-label">alta prioridade</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-label">feedbacks fortes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-row">
+                    <input type="text" class="input-tags" placeholder="React, TypeScript...">
+                    <div class="tag-group">
+                        <span class="tag-purple">Fit 80%+</span>
+                        <span class="tag-purple">DisponÃ­vel</span>
+                        <span class="tag-purple">Feedback A+</span>
+                    </div>
+                    <button class="btn-primary">Aplicar</button>
+                </div>
+
+                <div class="main-grid">
+                    
+                    <div class="grid-col ranking-col">
+                        <h3 class="section-title">Ranking de candidatos</h3>
+                        
+                        <div class="ranking-card">
+                            <div class="rank-circle c-green">1</div>
+                            <div class="ranking-info">
+                                <div class="rank-name">Marina Costa</div>
+                                <div class="rank-meta">React, Design System</div>
+                            </div>
+                            <div class="match-badge bg-green c-green-text">92% match</div>
+                            <button class="btn-secondary">Ver</button>
+                        </div>
+                        
+                        <div class="ranking-card">
+                            <div class="rank-circle c-blue">2</div>
+                            <div class="ranking-info">
+                                <div class="rank-name">Lucas Ferreira</div>
+                                <div class="rank-meta">Vue, Node, Produto B2B</div>
+                            </div>
+                            <div class="match-badge bg-blue c-blue-text">88% match</div>
+                            <button class="btn-secondary">Ver</button>
+                        </div>
+                        
+                        <div class="ranking-card">
+                            <div class="rank-circle c-orange">3</div>
+                            <div class="ranking-info">
+                                <div class="rank-name">Beatriz Rocha</div>
+                                <div class="rank-meta">Mobile, QA, Entrega</div>
+                            </div>
+                            <div class="match-badge bg-orange c-orange-text">84% match</div>
+                            <button class="btn-secondary">Ver</button>
+                        </div>
+                        
+                        <div class="ranking-card">
+                            <div class="rank-circle c-purple">4</div>
+                            <div class="ranking-info">
+                                <div class="rank-name">Rafael Lima</div>
+                                <div class="rank-meta">Next.js, Analytics</div>
+                            </div>
+                            <div class="match-badge bg-purple c-purple-text">81% match</div>
+                            <button class="btn-secondary">Ver</button>
+                        </div>
+                    </div>
+
+                    <div class="grid-col compare-col">
+                        <div class="card card-compare">
+                            <h3 class="section-title">ComparaÃ§Ã£o rÃ¡pida</h3>
+                            
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-label">Stack</span>
+                                    <span class="progress-value c-green-text">92%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill bg-green-solid" style="width: 92%;"></div></div>
+                            </div>
+                            
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-label">ComunicaÃ§Ã£o</span>
+                                    <span class="progress-value c-blue-text">86%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill bg-blue-solid" style="width: 86%;"></div></div>
+                            </div>
+                            
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-label">Entrega</span>
+                                    <span class="progress-value c-purple-text">94%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill bg-purple-solid" style="width: 94%;"></div></div>
+                            </div>
+                            
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-label">Cultura</span>
+                                    <span class="progress-value c-orange-text">90%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill bg-orange-solid" style="width: 90%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-col best-col">
+                        <div class="card card-best">
+                            <span class="best-label">MELHOR CANDIDATA</span>
+                            
+                            <div class="profile-header">
+                                <div class="profile-avatar bg-green-solid">MC</div>
+                                <div class="profile-info">
+                                    <div class="profile-name">Marina Costa</div>
+                                    <div class="profile-role">Front-end Junior | React</div>
+                                    <div class="match-badge bg-green c-green-text mt-5">92% aderÃªncia</div>
+                                </div>
+                            </div>
+                            
+                            <hr class="divider">
+                            
+                            <h4 class="why-title">Por que ela aparece primeiro?</h4>
+                            <p class="why-desc">Tem stack aderente, feedbacks consistentes, disponibilidade imediata e boa comunicaÃ§Ã£o registrada nas entrevistas anteriores.</p>
+                            
+                            <div class="attr-tags">
+                                <span class="attr-tag">DisponÃ­vel hoje</span>
+                                <span class="attr-tag">Feedback A+</span>
+                                <span class="attr-tag">PretensÃ£o dentro da faixa</span>
+                            </div>
+                            
+                            <div class="action-right">
+                                <button class="btn-primary">Enviar mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../../js/app.js"></script>
+</body>
+</html>
