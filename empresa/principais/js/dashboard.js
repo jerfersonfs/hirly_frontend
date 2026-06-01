@@ -1,4 +1,4 @@
-  function renderCompanyDashboard() {
+/*  function renderCompanyDashboard() {
     var dashboard = document.querySelector(".dashboard-wrapper");
     var title = document.querySelector(".dash-title");
     if (!dashboard || !title || title.textContent.toLowerCase().indexOf("governan") === -1) return;
@@ -16,3 +16,4 @@
       });
     });
   }
+*/

@@ -1,4 +1,4 @@
-  function renderCandidateInsights() {
+/*  function renderCandidateInsights() {
     var wrapper = document.querySelector(".insights-content-wrapper");
     if (!wrapper) return;
     var candidateId = currentCandidate().id;
@@ -22,4 +22,4 @@
       }).join("");
       events.innerHTML = nextEvents || '<div class="evento-item-row"><div class="evento-icon-wrapper"><img src="' + iconSrc("CalendarDots.png") + '" alt="Calendario"></div><p class="evento-desc-text">Nenhum evento agendado<br><span class="sub-tech">(acompanhe suas candidaturas)</span></p></div>';
     }
-  }
+  }*/

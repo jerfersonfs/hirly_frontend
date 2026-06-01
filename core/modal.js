@@ -1,4 +1,4 @@
-  function closeModal() {
+/*  function closeModal() {
     var backdrop = document.querySelector(".hirly-modal-backdrop");
     if (backdrop) backdrop.remove();
   }
@@ -26,4 +26,4 @@
       if (event.target === backdrop) closeModal();
     });
     document.body.appendChild(backdrop);
-  }
+  }*/

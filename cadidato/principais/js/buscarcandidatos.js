@@ -1,4 +1,7 @@
-  function hasApplied(jobId) {
+/*
+const db = window.HirlyDatabase.db;
+
+ function hasApplied(jobId) {
     return db.applications.some(function (application) {
       return application.jobId === jobId && application.candidateId === currentCandidate().id;
     });
@@ -114,4 +117,4 @@
     var search = document.querySelector(".input-busca-real");
     if (search) search.addEventListener("input", render);
     render();
-  }
+  }*/

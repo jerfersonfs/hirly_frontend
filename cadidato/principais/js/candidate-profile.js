@@ -1,3 +1,0 @@
-    renderCandidateHome();
-    renderCandidateProfile();
-    renderCandidateInsights();

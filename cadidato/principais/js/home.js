@@ -1,4 +1,5 @@
-  function renderCandidateHome() {
+/*
+function renderCandidateHome() {
     var list = document.querySelector(".lista-card");
     if (!list) return;
     list.innerHTML = visibleJobs().slice(0, 5).map(function (job) {
@@ -23,3 +24,4 @@
       window.location.href = "buscarcandidatos.html";
     });
   }
+*/

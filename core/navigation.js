@@ -1,4 +1,4 @@
-  function removeUnimplementedSidebarLinks() {
+/*  function removeUnimplementedSidebarLinks() {
     document.querySelectorAll('.sidebar-menu a.menu-item[href="#"], .menu-group a.menu-item[href="#"]').forEach(function (link) {
       if (link.classList.contains("active")) return;
       var label = link.textContent.trim().toLowerCase();
@@ -14,4 +14,4 @@
         if (event.key === "Enter") notify("Busca aplicada aos dados locais.");
       });
     });
-  }
+  }*/

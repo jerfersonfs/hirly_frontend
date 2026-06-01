@@ -1,4 +1,4 @@
-  function renderCandidateProfile() {
+/*  function renderCandidateProfile() {
     if (!document.querySelector(".perfil-wrapper")) return;
     var candidate = currentCandidate();
     var values = document.querySelectorAll(".perfil-dados-col .dado-valor");
@@ -20,4 +20,4 @@
         notify("Perfil atualizado.");
       });
     });
-  }
+  }*/

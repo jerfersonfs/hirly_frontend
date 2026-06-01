@@ -1,4 +1,4 @@
-  function renderCompanyAssignment() {
+/*  function renderCompanyAssignment() {
     if (!document.querySelector(".atribuir-wrapper")) return;
     var pendingList = document.querySelector(".atribuir-grid .card-painel:first-child .panel-list");
     var recruiterList = document.querySelector(".atribuir-grid .card-painel:nth-child(2) .panel-list");
@@ -18,4 +18,4 @@
         notify(button.textContent.trim() === "Confirmar atribuicoes" ? "Atribuicoes confirmadas." : "Selecione uma vaga e um recrutador na lista.");
       });
     });
-  }
+  }*/

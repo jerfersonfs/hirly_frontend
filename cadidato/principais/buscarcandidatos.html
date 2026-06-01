@@ -184,6 +184,19 @@
         </main>
     </div>
     <script src="../../js/sidebar-active.js"></script>
-    <script src="../../js/app.js"></script>
+
+    <script src="../../../js/app.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        if (typeof renderCandidateSearch === "function") {
+            renderCandidateSearch();
+        }
+
+    });
+    </script>
+        
+    
 </body>
 </html>

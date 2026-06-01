@@ -1,4 +1,4 @@
-var STORAGE_KEY = "hirly.mockdb.v1";
+/*var STORAGE_KEY = "hirly.mockdb.v1";
 var SELECTED_JOB_KEY = "hirly.selectedJobId";
 
   var seed = {
@@ -187,3 +187,12 @@ var SELECTED_JOB_KEY = "hirly.selectedJobId";
   function createId(prefix) {
     return prefix + "-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 7);
   }
+  window.HirlyDatabase = {
+    db,
+    saveDb,
+    loadDb,
+    companyById,
+    jobById,
+    currentCandidate,
+    createId
+};*/

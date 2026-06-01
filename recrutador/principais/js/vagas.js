@@ -1,4 +1,4 @@
-  function renderRecruiterJobs() {
+/*  function renderRecruiterJobs() {
     var grid = document.querySelector(".vagas-grid");
     if (!grid) return;
     var jobs = db.jobs.filter(function (job) { return job.status !== "closed"; });
@@ -70,3 +70,4 @@
       }
     });
   }
+*/

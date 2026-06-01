@@ -1,4 +1,4 @@
-
+/*
   function notify(message) {
     var toast = document.createElement("div");
     toast.className = "hirly-toast";
@@ -9,4 +9,4 @@
       toast.classList.remove("is-visible");
       setTimeout(function () { toast.remove(); }, 220);
     }, 2600);
-  }
+  }*/

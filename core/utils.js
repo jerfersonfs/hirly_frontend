@@ -1,4 +1,4 @@
-  function firstAssetPrefix(pattern, fallback) {
+/*  function firstAssetPrefix(pattern, fallback) {
     var image = Array.prototype.find.call(document.images, function (img) {
       return img.getAttribute("src") && img.getAttribute("src").indexOf(pattern) !== -1;
     });
@@ -13,4 +13,4 @@
 
   function iconSrc(fileName) {
     return firstAssetPrefix("images/icons/", "images/icons/") + fileName;
-  }
+  }*/

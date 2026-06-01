@@ -1,4 +1,4 @@
-  function registerForms() {
+/*  function registerForms() {
     function saveCandidateFromForm(form) {
       var inputs = form.querySelectorAll("input");
       var candidate = {
@@ -56,4 +56,4 @@
         saveCompanyFromForm(companyForm);
       });
     }
-  }
+  }*/
