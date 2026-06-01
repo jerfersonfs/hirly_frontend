@@ -1,0 +1,333 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Container mestre que divide a tela em Sidebar e Conteúdo Principal */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* SIDEBAR ESQUERDA */
+.side-bar {
+  width: 272px;
+  background: rgba(121, 12, 230, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgba(121, 12, 230, 0.1);
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  
+  /* Adicione estas linhas: */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.side-bar .logo {
+  width: 76.77px;
+  height: 77px;
+  object-fit: contain;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menu-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 15px 0 8px 10px;
+  text-transform: capitalize;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.menu-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.menu-item:hover, .menu-item.active {
+  background-color: rgba(121, 12, 230, 0.1);
+  color: #790ce6;
+}
+
+.menu-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 15px 10px;
+}
+
+/* Sidebar Rodapé */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-usu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usuario-foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.nome-usuario {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.log-out-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.log-out-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.log-out-btn:hover {
+  color: #ff0000;
+}
+
+/* ÁREA DA DIREITA (CONTEÚDO PRINCIPAL) */
+.main-content {
+  flex: 1;
+  margin-left: 272px; /* Deixa o espaço exato da sidebar fixa */
+  display: flex;
+  flex-direction: column;
+}
+
+/* BARRA ROXA SUPERIOR DE PESQUISA */
+.top-search-bar {
+  background-color: #7102e0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.pesquisa-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 35px;
+  padding: 6px 10px 6px 20px;
+  width: 100%;
+  max-width: 850px;
+  height: 56px;
+  justify-content: space-between;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.icone-lupa-input {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+
+.input-busca-real {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+  font-style: italic;
+}
+
+.input-busca-real:focus {
+  outline: none;
+}
+
+.btn-filtrar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #790ce6;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icone-filtro {
+  width: 24px;
+  height: 24px;
+}
+
+.seta-selecao {
+  width: 12px;
+}
+
+/* Foto do Usuário no Topo Direito */
+.user-avatar-top {
+  display: flex;
+  align-items: center;
+}
+
+.usuario-foto-top {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+
+/* SEÇÃO DE CONTEÚDO DAS VAGAS */
+.vagas-section {
+  padding: 40px;
+}
+
+.cabecalho-home {
+  margin-bottom: 35px;
+}
+
+.forms{
+  padding: 10px;
+}
+
+.titulo-campo{
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#titulo{
+  font-family: "Inter-Medium", sans-serif;
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  background: #e0e0e0;
+  font-size: 20px;
+}
+
+#descricao{
+  font-family: "Inter-Medium", sans-serif;
+  width: 100%;
+  max-width: 700px;
+  height: 180px;
+  background: #e0e0e0;
+  font-size: 20px;
+}
+
+#anexo{
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+}
+
+.btn-anexar{
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    display: flex;
+    padding: 10px 20px;
+    background: #e0e0e0;
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botao-container{
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.botao{
+  width: 200px;
+  height: 60px;
+  background-color: #7102e0;
+  color: white;
+  font-size: 25px;
+}
+
+.subtitulo-botao{
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
