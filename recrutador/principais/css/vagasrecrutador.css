@@ -9,38 +9,63 @@ img:not([src]), img[src=""] { background-color: #d1d5db; border-radius: 4px; dis
 
 /* ================= Menu Lateral (Sidebar) TRAVADO ================= */
 .sidebar {
-    width: 220px !important; 
-    min-width: 220px !important;
-    max-width: 220px !important;
-    background-color: #f6f3fc !important; 
+    width: 250px;
+    background-color: #f6f3fc; 
     display: flex; flex-direction: column;
-    padding: 25px 15px !important; 
-    position: fixed; height: 100vh;
+    padding: 30px 20px; position: fixed; height: 100vh;
     border-right: 1px solid rgba(0,0,0,0.03);
-    z-index: 10; overflow-x: hidden;
+    z-index: 10;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
 }
 
-.sidebar-logo { display: flex; align-items: center; justify-content: flex-start; padding-left: 10px; margin-bottom: 30px; }
-.sidebar-logo img, .img-logo { width: 45px !important; height: 45px !important; object-fit: contain !important; background-color: transparent !important; }
+.sidebar-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 35px; }
+/* Trava o tamanho da logo */
+.sidebar-logo img { width: 80px; height: auto; object-fit: contain; }
 
-.menu-group { margin-bottom: 20px; }
-.menu-title { font-size: 11px; font-weight: 700; color: #999; text-transform: uppercase; margin-bottom: 8px; padding-left: 10px; }
-.menu-item { display: flex; align-items: center; gap: 12px; padding: 10px 12px; text-decoration: none; color: #444; font-size: 13px; font-weight: 600; border-radius: 8px; margin-bottom: 4px; transition: 0.2s; }
-.menu-item img, .menu-icon { width: 18px !important; height: 18px !important; object-fit: contain !important; opacity: 0.7; }
+.menu-group { margin-bottom: 25px; }
+.menu-title {
+    font-size: 11px; font-weight: 700; color: #999;
+    text-transform: uppercase; margin-bottom: 10px; padding-left: 10px;
+}
+.menu-item {
+    display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+    text-decoration: none; color: #444; font-size: 14px; font-weight: 600; 
+    border-radius: 8px; margin-bottom: 5px; transition: 0.2s;
+}
 
-.menu-item.active { background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.03); color: #7b00ff; }
-.menu-item.active img, .menu-item.active .menu-icon { opacity: 1 !important; filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%) !important; }
+/* Trava o tamanho dos ícones do menu */
+.menu-item img { width: 22px; height: 22px; object-fit: contain; opacity: 0.7; }
 
-.sidebar-footer { margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 12px; }
+.menu-item.active {
+    background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    color: #7b00ff;
+}
+
+/* Deixa o ícone ativo totalmente opaco e aplica a cor roxa (caso a imagem seja preta) */
+.menu-item.active img { 
+    opacity: 1; 
+    filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%);
+}
+
+.sidebar-footer {
+    margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05); 
+    display: flex; flex-direction: column; gap: 15px;
+}
 .user-info { display: flex; align-items: center; gap: 10px; padding-left: 10px; }
-.user-info img, .user-avatar-img { width: 30px !important; height: 30px !important; border-radius: 8px !important; object-fit: cover !important; }
-.user-name { font-size: 12px; font-weight: 700; color: #000; }
-.logout-btn { display: flex; align-items: center; gap: 10px; padding-left: 10px; color: #444; text-decoration: none; font-size: 13px; font-weight: 600; }
-.logout-btn img, .logout-icon { width: 16px !important; height: 16px !important; object-fit: contain !important; opacity: 0.7; }
 
+/* Trava o tamanho da foto de perfil */
+.user-info img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
+
+.user-name { font-size: 13px; font-weight: 700; color: #000; }
+.logout-btn {
+    display: flex; align-items: center; gap: 10px; padding-left: 10px;
+    color: #444; text-decoration: none; font-size: 13px; font-weight: 600;
+}
+
+/* Trava o tamanho do ícone de sair */
+.logout-btn img { width: 16px; height: 16px; object-fit: contain; opacity: 0.7; }
 /* ================= Conteúdo Principal ================= */
 .main-content { margin-left: 220px !important; width: calc(100% - 220px) !important; flex: 1; display: flex; flex-direction: column; }
 
