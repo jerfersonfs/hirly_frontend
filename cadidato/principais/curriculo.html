@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirly - Meu Currículo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/curriculo.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="side-bar">
+            <div class="sidebar-top">
+                <a href="/auth/landingpage.html">
+                    <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+                </a>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <span class="menu-title">Principal</span>
+                <a href="home.html" class="menu-item">
+                    <img src="images/icons/Home.png" alt="Início" /> <span>Início</span>
+                </a>
+                <a href="buscarcandidatos.html" class="menu-item">
+                    <img src="images/icons/icone_lupa.png" alt="Pesquisar" /> <span>Pesquisar</span>
+                </a>
+                <a href="insightscadidato.html" class="menu-item">
+                    <img src="images/icons/icone_dashboard.png" alt="Insights" /> <span>Insights</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Serviços</span>
+                <!-- Item Ativo no Currículo -->
+                <a href="#" class="menu-item active">
+                    <img src="images/icons/icone-Pasta.png" alt="Documento" /> <span>Documento</span>
+                </a>
+                
+                <div class="menu-divider"></div>
+                
+                <span class="menu-title">Outros</span>
+                <a href="../secundarias/configuracoescandidato.html" class="menu-item">
+                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="card-usu">
+                    <!-- Link na foto de perfil -->
+                    <a href="perfilcandidato.html" style="display: flex; align-items: center; text-decoration: none;">
+                        <img class="usuario-foto" src="images/user/Usuariofoto.png" alt="Foto do Usuário" />
+                    </a>
+                    <div class="nome-usuario">Marcelo</div>
+                </div>
+                <a href="../../auth/login.html" class="log-out-btn">
+                    <img src="images/icons/SignOut.png" alt="Sair" /> <span>Log out</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+        <main class="main-content">
+            
+            <!-- Cabeçalho (Header) Roxo -->
+            <header class="top-search-bar">
+                <div class="pesquisa-wrapper">
+                    <div class="search-input-container">
+                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
+                    </div>
+                    <button class="btn-filtrar">
+                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <span>Filtrar</span>
+                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                    </button>
+                </div>
+                
+                <!-- Foto de perfil superior com link -->
+                <div class="user-avatar-top">
+                    <a href="perfilcandidato.html" style="display: flex; align-items: center; text-decoration: none;">
+                        <img class="usuario-foto-top" src="images/user/Usuariofoto.png" alt="Avatar Usuário" />
+                    </a>
+                </div>
+            </header>
+
+            <!-- Área do Formulário -->
+            <div class="dashboard-wrapper">
+                
+                <div class="page-header">
+                    <h1 class="page-title">Currículo</h1>
+                    <p class="page-subtitle">Mantenha as suas informações e documentos atualizados para se destacar.</p>
+                </div>
+
+                <div class="form-card">
+                    
+                    <!-- Campo Título -->
+                    <div class="form-group">
+                        <label>Título</label>
+                        <input type="text" placeholder="Ex: Desenvolvedor Front-end Pleno">
+                    </div>
+
+                    <!-- Campo Descrição -->
+                    <div class="form-group">
+                        <label>Descrição</label>
+                        <textarea rows="5" placeholder="Descreva as suas principais habilidades, experiências profissionais e o que procura na sua próxima oportunidade..."></textarea>
+                    </div>
+
+                    <!-- Upload de Arquivo -->
+                    <div class="form-group">
+                        <label>Arquivo do Currículo</label>
+                        <div class="upload-box">
+                            <img src="images/icons/clip.png" alt="Anexar" class="upload-icon">
+                            <div class="upload-textos">
+                                <span class="upload-title">Clique para anexar um arquivo</span>
+                                <span class="upload-meta">PDF, DOCX ou JPG (Tamanho máximo: 5MB)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão de Salvar -->
+                    <div class="form-actions">
+                        <button class="btn-primary">Salvar Currículo</button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

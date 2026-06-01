@@ -183,6 +183,82 @@ body {
   opacity: 1;
 }
 
+.curriculo-action-section {
+    background: #ffffff;
+    border: 1px solid rgba(121, 12, 230, 0.2);
+    border-radius: 16px;
+    padding: 30px 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.curriculo-action-section .section-title {
+    margin-bottom: 5px;
+}
+
+.curriculo-desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.curriculo-botoes {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilos Partilhados dos Botões */
+.btn-adicionar-curriculo, 
+.btn-ver-curriculo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.icon-btn-curriculo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Botão Primário (Roxo Sólido) */
+.btn-adicionar-curriculo {
+    background-color: #790ce6;
+    color: #ffffff;
+}
+
+.btn-adicionar-curriculo .icon-btn-curriculo {
+    filter: brightness(0) invert(1); /* Deixa o ícone branco */
+}
+
+.btn-adicionar-curriculo:hover {
+    background-color: #5a07ad;
+    transform: translateY(-2px);
+}
+
+/* Botão Secundário (Borda Roxa) */
+.btn-ver-curriculo {
+    background-color: transparent;
+    color: #790ce6;
+    border: 2px solid #790ce6;
+}
+
+.btn-ver-curriculo .icon-btn-curriculo {
+    filter: invert(15%) sepia(87%) saturate(5831%) hue-rotate(264deg) brightness(91%) contrast(106%); /* Colore o ícone para roxo */
+}
+
+.btn-ver-curriculo:hover {
+    background-color: rgba(121, 12, 230, 0.05);
+    transform: translateY(-2px);
+}
+
 /* =========================================
    CARDS DE HISTÓRICO (Experiências / Qualificações)
    ========================================= */
@@ -229,7 +305,7 @@ body {
 
 .historico-card {
   background: #ffffff;
-  border: 1px solid #790ce6; /* Borda roxa idêntica à imagem */
+  border: 1px solid #790ce6;
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -408,5 +484,20 @@ body {
 
 .card-desc {
     text-align: center;
+  }
+
+.curriculo-action-section {
+      padding: 20px 15px;
+      text-align: center;
+  }
+
+.curriculo-botoes {
+    flex-direction: column; /* Empilha os botões no telemóvel */
+    gap: 15px;
+  }
+
+.btn-adicionar-curriculo, 
+.btn-ver-curriculo {
+      width: 100%;
   }
 }

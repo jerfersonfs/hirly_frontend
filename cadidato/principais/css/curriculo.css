@@ -1,0 +1,446 @@
+/* ================= Reset e Base ================= */
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html {
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f5f6f8; 
+    color: #333; 
+    overflow-x: hidden; 
+}
+
+.app-container { 
+    display: flex; 
+    min-height: 100vh; 
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= SIDEBAR (Estilo exato da Home) ================= */
+.side-bar {
+    width: 272px;
+    background: rgba(121, 12, 230, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid rgba(121, 12, 230, 0.1);
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121, 12, 230, 0.3) transparent;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.side-bar .logo {
+    width: 76.77px;
+    height: 77px;
+    object-fit: contain;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.menu-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 15px 0 8px 10px;
+    text-transform: capitalize;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.menu-item img {
+    width: 28px;
+    height: 28px;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: rgba(121, 12, 230, 0.1);
+    color: #790ce6;
+}
+
+.menu-divider {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15px 10px;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-usu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.usuario-foto {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.nome-usuario {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.log-out-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: left;
+    transition: color 0.2s ease;
+}
+
+.log-out-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.log-out-btn:hover {
+    color: #ff0000;
+}
+
+/* ================= Conteúdo Principal ================= */
+.main-content { 
+    margin-left: 272px; /* Margem exata da sidebar da home */
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* ================= Cabeçalho Superior ================= */
+.top-search-bar {
+    background-color: #7102e0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.pesquisa-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 35px;
+    padding: 6px 10px 6px 20px;
+    width: 100%;
+    max-width: 850px;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.icone-lupa-input {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+
+.input-busca-real {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    font-style: italic;
+}
+
+.input-busca-real:focus {
+    outline: none;
+}
+
+.btn-filtrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    color: #790ce6;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icone-filtro {
+    width: 24px;
+    height: 24px;
+}
+
+.seta-selecao {
+    width: 12px;
+}
+
+/* Foto do Usuário no Topo Direito */
+.user-avatar-top {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-foto-top {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+/* ================= Dashboard Area ================= */
+.dashboard-wrapper { 
+    padding: 40px; 
+    max-width: 900px; 
+}
+
+.page-header { margin-bottom: 30px; }
+.page-title { font-size: 26px; font-weight: 800; color: #111827; margin-bottom: 6px; }
+.page-subtitle { font-size: 14px; color: #6b7280; font-weight: 500; }
+
+/* ================= Card do Formulário ================= */
+.form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+}
+
+.form-group { margin-bottom: 25px; }
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+/* Campos de Texto */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafc;
+    transition: all 0.2s ease;
+    resize: vertical;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Caixa de Upload */
+.upload-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 20px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-box:hover {
+    border-color: #8b5cf6;
+    background-color: #f5f3ff;
+}
+
+.upload-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.upload-box:hover .upload-icon {
+    filter: invert(36%) sepia(85%) saturate(2978%) hue-rotate(244deg) brightness(98%) contrast(93%);
+}
+
+.upload-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.upload-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    transition: color 0.2s;
+}
+
+.upload-box:hover .upload-title {
+    color: #7c3aed;
+}
+
+.upload-meta {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Botão de Salvar */
+.form-actions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background-color: #8b5cf6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #7c3aed;
+}
+
+/* ================= Responsividade ================= */
+@media (max-width: 1024px) {
+    .dashboard-wrapper {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-bar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header {
+        padding: 0 20px;
+        justify-content: flex-start; 
+    }
+    
+    .header .header-user-avatar {
+        display: none; 
+    }
+
+    .search-container {
+        padding: 5px 10px;
+    }
+
+    .search-input {
+        font-size: 13px;
+    }
+
+    .filter-btn {
+        font-size: 0; 
+        padding-left: 10px;
+    }
+    
+    .filter-btn .arrow-icon {
+        display: none;
+    }
+
+    .page-header {
+        text-align: center;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .form-card {
+        padding: 20px 15px;
+    }
+
+    .form-actions {
+        justify-content: center;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}
