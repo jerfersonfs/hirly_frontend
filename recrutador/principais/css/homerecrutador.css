@@ -17,8 +17,8 @@
 }
 
 .sidebar-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 35px; }
-
-.sidebar-logo img { width: 50px; object-fit: contain; }
+/* Trava o tamanho da logo */
+.sidebar-logo img { width: 80px; height: auto; object-fit: contain; }
 
 .menu-group { margin-bottom: 25px; }
 
@@ -33,14 +33,19 @@
     border-radius: 8px; margin-bottom: 5px; transition: 0.2s;
 }
 
-.menu-item img { width: 18px; height: 18px; object-fit: contain; opacity: 0.6; }
+/* Trava o tamanho dos ícones do menu */
+.menu-item img { width: 22px; height: 22px; object-fit: contain; opacity: 0.7; }
 
 .menu-item.active {
     background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.03);
     color: #7b00ff;
 }
 
-.menu-item.active img { opacity: 1; filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%); }
+/* Deixa o ícone ativo totalmente opaco e aplica a cor roxa (caso a imagem seja preta) */
+.menu-item.active img { 
+    opacity: 1; 
+    filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(5833%) hue-rotate(264deg) brightness(85%) contrast(110%);
+}
 
 .sidebar-footer {
     margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.05);
@@ -49,7 +54,8 @@
 
 .user-info { display: flex; align-items: center; gap: 10px; padding-left: 10px; }
 
-.user-avatar { width: 32px; height: 32px; border-radius: 8px; background: #e0e0e0; object-fit: cover;}
+/* Trava o tamanho da foto de perfil */
+.user-info img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
 
 .user-name { font-size: 13px; font-weight: 700; color: #000; }
 
@@ -58,6 +64,44 @@
     color: #444; text-decoration: none; font-size: 13px; font-weight: 600;
 }
 
+/* Trava o tamanho do ícone de sair */
+.logout-btn img { width: 16px; height: 16px; object-fit: contain; opacity: 0.7; }
+
+/* Trava o tamanho do ícone de sair */
+.logout-btn img { width: 16px; height: 16px; object-fit: contain; opacity: 0.7; }
+
+/* ================= Conteúdo Principal ================= */
+.main-content { margin-left: 250px; flex: 1; display: flex; flex-direction: column; }
+
+/* ================= Cabeçalho Superior ================= */
+.header {
+    background-color: #8338ec; /* Roxo vibrante da imagem */
+    height: 80px; padding: 0 40px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.search-container {
+    display: flex; align-items: center; background-color: #ffffff; border-radius: 40px;
+    padding: 5px 20px; width: 100%; max-width: 600px; height: 46px;
+}
+.search-icon { width: 18px; height: 18px; opacity: 0.5; }
+.search-input {
+    border: none; outline: none; padding: 0 15px; font-size: 14px;
+    font-family: 'Inter', sans-serif; font-style: normal; color: #333; flex: 1;
+}
+.search-input::placeholder { color: #9ca3af; font-size: 15px;}
+.filter-btn {
+    display: flex; align-items: center; gap: 8px; background: none; border: none; 
+    font-size: 14px; font-weight: 500; color: #8338ec; cursor: pointer;
+    padding-left: 15px; border-left: 1px solid #eee; height: 24px;
+}
+.filter-icon { width: 16px; height: 16px; object-fit: contain; }
+.arrow-icon { width: 12px; height: 12px; object-fit: contain; }
+
+.header-user-avatar { 
+    width: 40px; height: 40px; border-radius: 6px; 
+    background-color: #fff; display: flex; justify-content: center; align-items: center;
+    font-weight: 800; font-size: 14px; color: #000;
+}
 .logout-btn img { width: 16px; object-fit: contain; opacity: 0.7; }
 
 /* ================= Conteúdo Principal ================= */
