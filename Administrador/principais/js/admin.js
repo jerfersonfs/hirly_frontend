@@ -1,2 +1,0 @@
-    renderAdminDashboard();
-    renderModerationQueues();
