@@ -1,0 +1,181 @@
+/* =====================================
+   RESPONSIVIDADE GLOBAL - HIRLY
+===================================== */
+
+/* DESKTOP GRANDE */
+@media (min-width: 1440px) {
+
+    .container,
+    .content,
+    .main-content {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* NOTEBOOKS */
+@media (max-width: 1200px) {
+
+    .container,
+    .content,
+    .main-content {
+        padding: 0 24px;
+    }
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1024px) {
+
+    .dashboard-layout,
+    .page-layout,
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .cards-grid,
+    .vagas-grid,
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================
+   TABLET PEQUENO
+===================================== */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        font-size: .95rem;
+    }
+
+    .cards-grid,
+    .vagas-grid,
+    .dashboard-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar,
+    .search-container {
+        width: 100%;
+    }
+
+    .filters-container {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .modal {
+        width: 90vw;
+        max-width: 90vw;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .content,
+    .main-content {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .card,
+    .vaga-card,
+    .candidate-card {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE PEQUENO
+===================================== */
+
+@media (max-width: 375px) {
+
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    h2 {
+        font-size: 1.2rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    .content,
+    .main-content {
+        padding: 12px;
+    }
+
+    .card,
+    .vaga-card,
+    .candidate-card {
+        padding: 12px;
+    }
+
+}
