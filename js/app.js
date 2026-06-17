@@ -461,7 +461,7 @@
       db.candidates.unshift(candidate);
       db.users.unshift({ id: createId("user"), role: "candidate", name: candidate.name, email: candidate.email, phone: candidate.phone });
       saveDb(db);
-      window.location.href = "../../cadidato/principais/home.html";
+      window.location.href = "../../candidato/principais/home.html";
     }
 
     function saveCompanyFromForm(form) {
