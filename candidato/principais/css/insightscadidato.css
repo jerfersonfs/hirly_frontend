@@ -366,7 +366,8 @@ body {
 /* GRID AUTOMÁTICO DOS CARDS (3 colunas perfeitas de 286px) */
 .insights-cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 286px);
+  grid-template-columns: 
+    repeat(auto-fit,minmax(280px,1fr));
   gap: 24px;
 }
 
@@ -464,7 +465,7 @@ body {
 
 /* PAINEL LATERAL DIREITO (Próximos Eventos) */
 .insights-right-panel {
-  width: 365px;
+  width: clamp(280px,30vw,365px);
   padding: 10px 20px;
   align-self: flex-start;
   margin-top: 20px;
