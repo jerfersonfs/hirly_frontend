@@ -524,10 +524,13 @@
         '</div>'
       ].join("");
     }).join("");
-
+    
+    // 528 - 702 : Analisar e refatorar
     var createButton = Array.prototype.find.call(document.querySelectorAll("button"), function (button) {
       return button.textContent.trim().toLowerCase() === "criar vaga";
-    });createButton.addEventListener("click", function () {
+    });
+    if (!createButton) return;
+    createButton.addEventListener("click", function () {
 
   if (!document.getElementById("hirly-modal-form-style")) {
 
