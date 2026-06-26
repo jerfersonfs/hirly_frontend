@@ -33,9 +33,10 @@
                     <input type="password" id="password" class="form-input" placeholder="Digite sua senha" />
                 </div>
 
+                <!-- Adicionar página para recuperar senha-->
                 <a href="#" class="forgot-password">Esqueceu o nome de usuário</a>
 
-                <button type="button" class="btn-login" onclick="redirectLogin()">Explorar</button>
+                <button type="button" class="btn-login" onclick="window.location.href = '../routes/routepage.html'">Explorar</button>
             </form>
 
             <div class="divider">ou</div>
@@ -50,13 +51,6 @@
             <img class="logo-rodape" src="images/logo/hirly/logodecoght.png" alt="decoration" />
         </div>
     </div>
-
-    <script>
-        function redirectLogin() {
-            // Redirect to candidate home by default, can be customized based on user role
-            window.location.href = "../routes/routepage.html";
-        }
-    </script>
     <script src="../js/app.js"></script>
 </body>
 </html>
