@@ -119,7 +119,6 @@ body {
 /* --- Main Content & Topbar --- */
 .main-content {
   flex: 1;
-  margin-left: 272px;
   display: flex;
   flex-direction: column;
 }
@@ -190,10 +189,12 @@ body {
 /* --- Layout da Busca (Colunas) --- */
 .buscar-vagas-container {
   display: flex;
-  padding: 30px 40px;
-  gap: 40px;
+  padding: var(--hirly-page-padding);
+  gap: var(--hirly-gap);
   background-color: #ffffff;
   min-height: calc(100vh - 90px);
+  width: 100%;
+  max-width: none !important;
 }
 
 /* --- Coluna Esquerda (Lista e Filtros) --- */
@@ -342,7 +343,7 @@ body {
   flex: 1;
   background-color: #f7f7f9; /* Fundo cinza claro idêntico à imagem */
   border-radius: 16px;
-  padding: 35px 40px;
+  padding: clamp(24px, 3vw, 35px) clamp(20px, 4vw, 40px);
   display: flex;
   flex-direction: column;
   height: fit-content;

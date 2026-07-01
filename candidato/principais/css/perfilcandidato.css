@@ -56,7 +56,6 @@ body {
 /* Main Content */
 .main-content {
   flex: 1;
-  margin-left: 272px;
   display: flex;
   flex-direction: column;
 }
@@ -89,10 +88,10 @@ body {
    ÁREA DE PERFIL (DADOS USUÁRIO)
    ========================================= */
 .perfil-wrapper {
-  padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto; /* Isso centraliza toda a página de perfil no meio da tela */
+  padding: var(--hirly-page-padding);
   width: 100%;
+  max-width: none !important;
+  margin: 0;
 }
 
 .page-title {
@@ -108,10 +107,10 @@ body {
   display: flex;
   justify-content: center; /* Isso centraliza a foto e os dados perfeitamente no meio */
   align-items: center;
-  gap: 60px;
+  gap: clamp(20px, 4vw, 60px);
   margin-bottom: 50px;
   background-color: rgba(121, 12, 230, 0.03); /* Adiciona um fundo bem sutil e suave atrás dos dados, igual à imagem */
-  padding: 40px;
+  padding: var(--hirly-card-padding);
   border-radius: 16px;
 }
 
@@ -187,7 +186,7 @@ body {
     background: #ffffff;
     border: 1px solid rgba(121, 12, 230, 0.2);
     border-radius: 16px;
-    padding: 30px 40px;
+    padding: var(--hirly-card-padding);
     margin-bottom: 50px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.02);
 }
@@ -204,7 +203,7 @@ body {
 
 .curriculo-botoes {
     display: flex;
-    gap: 20px;
+    gap: var(--hirly-gap);
 }
 
 /* Estilos Partilhados dos Botões */
@@ -307,10 +306,10 @@ body {
   background: #ffffff;
   border: 1px solid #790ce6;
   border-radius: 12px;
-  padding: 20px;
+  padding: var(--hirly-card-padding);
   display: flex;
   align-items: flex-start;
-  gap: 25px;
+  gap: var(--hirly-gap);
   box-shadow: 0 4px 10px rgba(0,0,0,0.02);
   transition: box-shadow 0.2s;
 }
@@ -432,7 +431,7 @@ body {
   .perfil-header-section {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: var(--hirly-gap);
     padding: 20px 15px;
   }
 

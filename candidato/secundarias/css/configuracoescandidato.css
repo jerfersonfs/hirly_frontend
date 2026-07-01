@@ -56,7 +56,6 @@ body {
 /* Main Content & Topbar */
 .main-content {
   flex: 1;
-  margin-left: 272px;
   display: flex;
   flex-direction: column;
 }
@@ -90,8 +89,9 @@ body {
    ========================================= */
 
 .configuracoes-wrapper {
-  padding: 40px;
-  max-width: 1400px;
+  padding: var(--hirly-page-padding);
+  width: 100%;
+  max-width: none !important;
 }
 
 .configuracoes-header {
@@ -150,7 +150,7 @@ body {
 
 /* Corpo do Formulário */
 .config-body {
-  padding: 40px 60px;
+  padding: clamp(24px, 4vw, 40px) clamp(16px, 5vw, 60px);
 }
 
 .body-header {
@@ -175,7 +175,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 450px; /* Limita a largura dos inputs para ficar igual a foto */
+  width: 100%;
+  max-width: min(100%, 450px); /* Limita a largura dos inputs para ficar igual a foto */
 }
 
 .form-group {

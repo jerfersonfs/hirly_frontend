@@ -136,7 +136,6 @@ body {
 /* ÁREA DA DIREITA (CONTEÚDO PRINCIPAL) */
 .main-content {
   flex: 1;
-  margin-left: 272px; /* Deixa o espaço exato da sidebar fixa */
   display: flex;
   flex-direction: column;
 }
@@ -222,6 +221,8 @@ body {
 /* SEÇÃO DE CONTEÚDO DAS VAGAS */
 .vagas-section {
   padding: 40px;
+  width: 100%;
+  max-width: none !important;
 }
 
 .cabecalho-home {
@@ -247,7 +248,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
 }
 
 /* Card de Vaga Individual */
@@ -255,7 +256,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: var(--hirly-card-padding);
   border-top: 1px solid rgba(121, 12, 230, 0.25);
   border-bottom: 1px solid rgba(121, 12, 230, 0.25);
   background-color: #ffffff;
@@ -270,7 +271,7 @@ body {
 .vaga-main-info {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: var(--hirly-gap);
 }
 
 .empresa-logo {
@@ -303,7 +304,7 @@ body {
 .vaga-meta-info {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: clamp(14px, 3vw, 40px);
 }
 
 .meta-item {

@@ -52,7 +52,9 @@ textarea {
 .vagas-section,
 .buscar-vagas-container,
 .config-empresa-wrapper,
+.configuracoes-wrapper,
 .profile-wrapper,
+.perfil-wrapper,
 .curriculo-wrapper {
   min-width: 0;
 }
@@ -124,6 +126,8 @@ textarea {
 .dashboard-wrapper,
 .vagas-section,
 .config-empresa-wrapper,
+.configuracoes-wrapper,
+.perfil-wrapper,
 .buscar-vagas-container,
 .curriculo-page,
 .main-content > section,
@@ -222,9 +226,25 @@ textarea {
 .page-title-row,
 .highlight-banner,
 .banner-right,
-.panel-footer-btn-row {
+.panel-footer-btn-row,
+.perfil-header-section,
+.curriculo-botoes,
+.historico-card,
+.card-rodape,
+.config-tabs,
+.form-actions {
   min-width: 0;
   flex-wrap: wrap;
+}
+
+.perfil-dados-col,
+.dado-linha,
+.dado-valor,
+.card-conteudo,
+.config-card,
+.config-body,
+.form-inputs-col {
+  min-width: 0;
 }
 
 .empresa-logo,
@@ -321,7 +341,9 @@ table {
   .main-content > .dashboard-wrapper,
   .main-content > .vagas-section,
   .main-content > .buscar-vagas-container,
-  .main-content > .config-empresa-wrapper {
+  .main-content > .config-empresa-wrapper,
+  .main-content > .configuracoes-wrapper,
+  .main-content > .perfil-wrapper {
     max-width: 1400px;
   }
 }

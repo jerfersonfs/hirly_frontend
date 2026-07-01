@@ -250,9 +250,11 @@ a {
 }
 
 /* ================= Dashboard Area ================= */
-.dashboard-wrapper { 
+.main-content > .dashboard-wrapper { 
     padding: 40px; 
-    max-width: 900px; 
+    width: 100%;
+    max-width: none !important;
+    margin-inline: 0 !important;
 }
 
 .page-header { margin-bottom: 30px; }
