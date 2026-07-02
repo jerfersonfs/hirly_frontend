@@ -82,120 +82,46 @@
                     <h1 class="vagas-em-destaque">Vagas em Destaque</h1>
                     <p class="subtitulo-vagas">Confira as oportunidades mais recentes e encontre a vaga ideal para você</p>
                 </div>
-
-                <div class="lista-card">
-
-                    <div class="vaga-card-item">
-                        <div class="vaga-main-info">
-                            <img class="empresa-logo" src="images/logo/others/nubank.png" alt="Nubank" />
-                            <div class="textos-vaga">
-                                <h2 class="vaga-titulo-purple">Product Designer</h2>
-                                <span class="empresa-nome">Nubank</span>
-                            </div>
-                        </div>
-                        <div class="vaga-meta-info">
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização" />
-                                <span class="meta-text">Remoto</span>
-                            </div>
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/mala.png" alt="Salário" />
-                                <span class="meta-text">R$ 2300 - 2800</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vaga-card-item">
-                        <div class="vaga-main-info">
-                            <img class="empresa-logo" src="images/logo/others/itau.png" alt="Itaú" />
-                            <div class="textos-vaga">
-                                <h2 class="vaga-titulo-purple">Software Engineer (Backend)</h2>
-                                <span class="empresa-nome">Itaú</span>
-                            </div>
-                        </div>
-                        <div class="vaga-meta-info">
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização" />
-                                <span class="meta-text">Híbrido</span>
-                            </div>
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/mala.png" alt="Salário" />
-                                <span class="meta-text">R$ 4000 - 4300</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vaga-card-item">
-                        <div class="vaga-main-info">
-                            <img class="empresa-logo" src="images/logo/others/samsung.png" alt="Samsung" />
-                            <div class="textos-vaga">
-                                <h2 class="vaga-titulo-purple">Analista de Dados</h2>
-                                <span class="empresa-nome">Samsung</span>
-                            </div>
-                        </div>
-                        <div class="vaga-meta-info">
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização" />
-                                <span class="meta-text">Presencial</span>
-                            </div>
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/mala.png" alt="Salário" />
-                                <span class="meta-text">R$ 5000 - 5400</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vaga-card-item">
-                        <div class="vaga-main-info">
-                            <img class="empresa-logo" src="images/logo/others/ifood.png" alt="Ifood" />
-                            <div class="textos-vaga">
-                                <h2 class="vaga-titulo-purple">Analista de Testes</h2>
-                                <span class="empresa-nome">Ifood</span>
-                            </div>
-                        </div>
-                        <div class="vaga-meta-info">
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização" />
-                                <span class="meta-text">Presencial</span>
-                            </div>
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/mala.png" alt="Salário" />
-                                <span class="meta-text">R$ 2300 - 2500</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="vaga-card-item">
-                        <div class="vaga-main-info">
-                            <img class="empresa-logo" src="images/logo/others/c6.png" alt="C6 Bank" />
-                            <div class="textos-vaga">
-                                <h2 class="vaga-titulo-purple">Desenvolvedor Front-End Júnior</h2>
-                                <span class="empresa-nome">C6 Bank</span>
-                            </div>
-                        </div>
-                        <div class="vaga-meta-info">
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização" />
-                                <span class="meta-text">Remoto</span>
-                            </div>
-                            <div class="meta-item">
-                                <img class="meta-icon" src="images/icons/mala.png" alt="Salário" />
-                                <span class="meta-text">R$ 3500 - 3700</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="lista-card" id="jobs-container"></div>
             </section>
         </main>
     </div>
-
-    <script src="../../js/sidebar-active.js"></script>
+    <!-- JAVA SCRIPT SECTION -->
+    <script src="js/mock.js"></script>
+    <!--Renderizar vagas-->
     <script>
-        document.querySelector(".log-out-btn").addEventListener("click", function() {
-            window.location.href = "../../auth/login.html";
-        });
+    function renderHomeJobs() {
+
+        const container = document.getElementById("jobs-container");
+        if (!container) return;
+
+        container.innerHTML = candidateData.jobs.map(job => `
+            <div class="vaga-card-item">
+                <div class="vaga-main-info">
+                    <img class="empresa-logo" src="${job.logo}" alt="${job.company}">
+                    <div class="textos-vaga">
+                        <h2 class="vaga-titulo-purple"> ${job.title} </h2>
+                        <span class="empresa-nome">${job.company}</span>
+                    </div>
+                </div>
+                <div class="vaga-meta-info">
+                    <div class="meta-item">
+                        <img class="meta-icon" src="images/icons/MapPin.png" alt="Localização">
+                        <span class="meta-text"> ${job.location}</span>
+                    </div>
+                    <div class="meta-item">
+                        <img class="meta-icon" src="images/icons/mala.png" alt="Salário">
+                        <span class="meta-text">${job.salary}</span>
+                    </div>
+                </div>
+            </div>
+        `).join("");
+    }
+    renderHomeJobs();
     </script>
+    <!--Animação da sidebar-->
+    <script src="../../js/sidebar-active.js"></script>
+
     <script src="../../js/app.js"></script>
 </body>
 </html>
