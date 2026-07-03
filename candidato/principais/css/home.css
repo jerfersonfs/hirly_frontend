@@ -219,8 +219,16 @@ body {
 }
 
 /* SEÇÃO DE CONTEÚDO DAS VAGAS */
+.home-vagas-container {
+  display: flex;
+  padding: var(--hirly-page-padding);
+  background-color: #ffffff;
+  min-height: calc(100vh - 90px);
+  width: 100%;
+  max-width: none !important;
+}
+
 .vagas-section {
-  padding: 40px;
   width: 100%;
   max-width: none !important;
 }
