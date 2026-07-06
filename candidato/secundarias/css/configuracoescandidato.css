@@ -37,7 +37,10 @@ body {
 
 .menu-item img { width: 28px; }
 
-.menu-item:hover, .menu-item.active { background-color: rgba(121, 12, 230, 0.1); color: #790ce6; }
+.menu-item:hover, .menu-item.active { 
+  background-color: rgba(121, 12, 230, 0.1) ;
+  color: #790ce6;
+}
 
 .menu-divider { height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 15px 10px; }
 

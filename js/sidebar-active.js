@@ -13,3 +13,4 @@ function setActiveSidebarItem() {
 }
 
 document.addEventListener('DOMContentLoaded', setActiveSidebarItem);
+''

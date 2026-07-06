@@ -52,7 +52,7 @@ a {
 }
 
 .side-bar .logo {
-    width: 76.77px;
+    width: 76.77px !important;
     height: 77px;
     object-fit: contain;
 }
