@@ -87,14 +87,14 @@
                 <div class="config-card">
 
                     <div class="config-tabs">
-                        <div class="tab-item active">Conta</div>
-                        <div class="tab-item">Segurança</div>
-                        <div class="tab-item">Notificações</div>
-                        <div class="tab-item">Privacidade</div>
+                        <div class="tab-item active" data-tab="conta">Conta</div>
+                        <div class="tab-item" data-tab="seguranca">Segurança</div>
+                        <div class="tab-item" data-tab="notificacoes">Notificações</div>
+                        <div class="tab-item" data-tab="privacidade">Privacidade</div>
                     </div>
 
                     <div class="config-body">
-
+                        <div class="tab-content active" id="conta">
                         <div class="body-header">
                             <h2 class="section-title">Editar Perfil (Dados de acesso)</h2>
                             <p class="section-subtitle">Altere suas informações básicas de login na plataforma.</p>
@@ -131,13 +131,54 @@
                             </div>
                             <button class="btn-danger-outline">Desativar conta</button>
                         </div>
-
                     </div>
+                    <div class="tab-content" id="seguranca">
+                    <h2>Configurações de Segurança</h2>
+                    <p>Aqui ficarão as opções de autenticação e proteção da conta.</p>
                 </div>
 
+                <div class="tab-content" id="notificacoes">
+                    <h2>Notificações</h2>
+                    <p>Aqui ficarão as preferências de e-mail e alertas.</p>
+                </div>
+
+                <div class="tab-content" id="privacidade">
+                    <h2>Privacidade</h2>
+                    <p>Aqui ficarão as opções de privacidade.</p>
+                    </div>
+                </div>
+                </div>
             </div>
         </main>
     </div>
     <script src="../../js/sidebar-active.js"></script>
+    <script>
+const tabs = document.querySelectorAll('.tab-item');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+
+    tab.addEventListener('click', () => {
+
+        tabs.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        tab.classList.add('active');
+
+        const id = tab.dataset.tab;
+
+        document
+            .getElementById(id)
+            .classList.add('active');
+
+    });
+
+});
+</script>
 </body>
 </html>
