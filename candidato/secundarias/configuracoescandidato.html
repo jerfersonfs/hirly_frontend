@@ -1,59 +1,62 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hirly - Configurações</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="css/configuracoescandidato.css">
 </head>
+
 <body>
     <div class="app-container">
 
         <aside class="side-bar">
             <div class="sidebar-top">
                 <a href="/auth/landingpage.html">
-                    <img class="logo" src="images/logo/hirly/logo.png" alt="Hirly Logo" />
+                    <img class="logo" src="../../assets/brand/logo.png" alt="Hirly Logo" />
                 </a>
             </div>
 
             <nav class="sidebar-menu">
                 <span class="menu-title">Principal</span>
                 <a href="../principais/home.html" class="menu-item">
-                    <img src="images/icons/Home.png" alt="Início" /> <span>Início</span>
+                    <img src="../../assets/icons/Home.png" alt="Início" /> <span>Início</span>
                 </a>
                 <a href="../principais/buscarcandidatos.html" class="menu-item">
-                    <img src="images/icons/icone_lupa.png" alt="Pesquisar" /> <span>Pesquisar</span>
+                    <img src="../../assets/icons/icone_lupa.png" alt="Pesquisar" /> <span>Pesquisar</span>
                 </a>
                 <a href="../principais/insightscadidato.html" class="menu-item">
-                    <img src="images/icons/icone_dashboard.png" alt="Insights" /> <span>Insights</span>
+                    <img src="../../assets/icons/icone_dashboard.png" alt="Insights" /> <span>Insights</span>
                 </a>
 
                 <div class="menu-divider"></div>
 
                 <span class="menu-title">Serviços</span>
-                    <a href="../principais/curriculo.html" class="menu-item">
-                    <img src="images/icons/icone-Pasta.png" alt="Documento" /> <span>Documento</span>
+                <a href="../principais/curriculo.html" class="menu-item">
+                    <img src="../../assets/icons/icone-Pasta.png" alt="Documento" /> <span>Documento</span>
                 </a>
-                
+
                 <div class="menu-divider"></div>
-                
+
                 <span class="menu-title">Outros</span>
                 <a href="#" class="menu-item active">
-                    <img src="images/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
+                    <img src="../../assets/icons/Gear.png" alt="Configurações" /> <span>Configurações</span>
                 </a>
             </nav>
 
             <div class="sidebar-footer">
                 <div class="card-usu">
                     <a href="../principais/perfilcandidato.html">
-                        <img class="usuario-foto" src="images/user/Usuariofoto.png" alt="Foto do Usuário" />
+                        <img class="usuario-foto" src="../../assets/utils/Usuariofoto.png" alt="Foto do Usuário" />
                     </a>
                     <div class="nome-usuario">Marcelo</div>
                 </div>
                 <a href="../../auth/login.html" class="log-out-btn">
-                    <img src="images/icons/SignOut.png" alt="Sair" /> <span>Log out</span>
+                    <img src="../../assets/icons/SignOut.png" alt="Sair" /> <span>Log out</span>
                 </a>
             </div>
         </aside>
@@ -63,17 +66,17 @@
             <header class="top-search-bar">
                 <div class="pesquisa-wrapper">
                     <div class="search-input-container">
-                        <img class="icone-lupa-input" src="images/icons/icone_lupa.png" alt="Lupa" />
+                        <img class="icone-lupa-input" src="../../assets/icons/icone_lupa.png" alt="Lupa" />
                         <input type="text" placeholder="Encontre uma vaga" class="input-busca-real">
                     </div>
                     <button class="btn-filtrar">
-                        <img class="icone-filtro" src="images/icons/filtro.png" alt="Filtro" />
+                        <img class="icone-filtro" src="../../assets/icons/filtro.png" alt="Filtro" />
                         <span>Filtrar</span>
-                        <img class="seta-selecao" src="images/icons/seta_selecao.png" alt="Seta" />
+                        <img class="seta-selecao" src="../../assets/icons/seta_selecao.png" alt="Seta" />
                     </button>
                 </div>
                 <div class="user-avatar-top">
-                    <img class="usuario-foto-top" src="images/user/Usuariofoto.png" alt="Avatar Usuário" />
+                    <img class="usuario-foto-top" src="../../assets/utils/Usuariofoto.png" alt="Avatar Usuário" />
                 </div>
             </header>
 
@@ -95,90 +98,93 @@
 
                     <div class="config-body">
                         <div class="tab-content active" id="conta">
-                        <div class="body-header">
-                            <h2 class="section-title">Editar Perfil (Dados de acesso)</h2>
-                            <p class="section-subtitle">Altere suas informações básicas de login na plataforma.</p>
+                            <div class="body-header">
+                                <h2 class="section-title">Editar Perfil (Dados de acesso)</h2>
+                                <p class="section-subtitle">Altere suas informações básicas de login na plataforma.</p>
+                            </div>
+
+                            <div class="form-inputs-col">
+                                <div class="form-group">
+                                    <label>E-mail Cadastrado</label>
+                                    <input type="email" value="pedro.dsm@fatec.sp.gov.br" readonly>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Nova Senha</label>
+                                    <input type="password" value="************" readonly>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Confirmar Nova Senha</label>
+                                    <input type="password" value="************" readonly>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button class="btn-primary">Salvar alterações</button>
+                                <button class="btn-secondary">Cancelar</button>
+                            </div>
+
+                            <div class="config-divider"></div>
+
+                            <div class="danger-zone">
+                                <div class="danger-textos">
+                                    <h3 class="danger-title">Excluir Conta</h3>
+                                    <p class="danger-desc">Deseja desativar seu perfil</p>
+                                </div>
+                                <button class="btn-danger-outline">Desativar conta</button>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="seguranca">
+                            <h2>Configurações de Segurança</h2>
+                            <p>Aqui ficarão as opções de autenticação e proteção da conta.</p>
                         </div>
 
-                        <div class="form-inputs-col">
-                            <div class="form-group">
-                                <label>E-mail Cadastrado</label>
-                                <input type="email" value="pedro.dsm@fatec.sp.gov.br" readonly>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Nova Senha</label>
-                                <input type="password" value="************" readonly>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Confirmar Nova Senha</label>
-                                <input type="password" value="************" readonly>
-                            </div>
+                        <div class="tab-content" id="notificacoes">
+                            <h2>Notificações</h2>
+                            <p>Aqui ficarão as preferências de e-mail e alertas.</p>
                         </div>
 
-                        <div class="form-actions">
-                            <button class="btn-primary">Salvar alterações</button>
-                            <button class="btn-secondary">Cancelar</button>
-                        </div>
-
-                        <div class="config-divider"></div>
-
-                        <div class="danger-zone">
-                            <div class="danger-textos">
-                                <h3 class="danger-title">Excluir Conta</h3>
-                                <p class="danger-desc">Deseja desativar seu perfil</p>
-                            </div>
-                            <button class="btn-danger-outline">Desativar conta</button>
+                        <div class="tab-content" id="privacidade">
+                            <h2>Privacidade</h2>
+                            <p>Aqui ficarão as opções de privacidade.</p>
                         </div>
                     </div>
-                    <div class="tab-content" id="seguranca">
-                    <h2>Configurações de Segurança</h2>
-                    <p>Aqui ficarão as opções de autenticação e proteção da conta.</p>
-                </div>
-
-                <div class="tab-content" id="notificacoes">
-                    <h2>Notificações</h2>
-                    <p>Aqui ficarão as preferências de e-mail e alertas.</p>
-                </div>
-
-                <div class="tab-content" id="privacidade">
-                    <h2>Privacidade</h2>
-                    <p>Aqui ficarão as opções de privacidade.</p>
-                    </div>
-                </div>
                 </div>
             </div>
         </main>
     </div>
+    <!-- JAVA SCRIPT SECTION-->
     <script src="../../js/sidebar-active.js"></script>
+    <!-- Mudança de tabs-->
     <script>
-const tabs = document.querySelectorAll('.tab-item');
-const contents = document.querySelectorAll('.tab-content');
+        const tabs = document.querySelectorAll('.tab-item');
+        const contents = document.querySelectorAll('.tab-content');
 
-tabs.forEach(tab => {
+        tabs.forEach(tab => {
 
-    tab.addEventListener('click', () => {
+            tab.addEventListener('click', () => {
 
-        tabs.forEach(item => {
-            item.classList.remove('active');
+                tabs.forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                tab.classList.add('active');
+
+                const id = tab.dataset.tab;
+
+                document
+                    .getElementById(id)
+                    .classList.add('active');
+
+            });
+
         });
-
-        contents.forEach(content => {
-            content.classList.remove('active');
-        });
-
-        tab.classList.add('active');
-
-        const id = tab.dataset.tab;
-
-        document
-            .getElementById(id)
-            .classList.add('active');
-
-    });
-
-});
-</script>
+    </script>
 </body>
+
 </html>

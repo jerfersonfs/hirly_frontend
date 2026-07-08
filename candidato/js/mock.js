@@ -2,7 +2,7 @@ const candidateData = {
   user: {
     id: 1,
     name: "Marcelo",
-    avatar: "images/user/Usuariofoto.png"
+    avatar: "../../assets/utils/Usuariofoto.png"
   },
 
   jobs: [
@@ -13,7 +13,7 @@ const candidateData = {
       company: "Nubank",
       location: "Remoto",
       salary: "R$ 2300 - 2800",
-      logo: "images/logo/others/nubank.png"
+      logo: "../../assets/logos/enterprise/nubank.png"
     },
 
     {
@@ -22,7 +22,7 @@ const candidateData = {
       company: "Itaú",
       location: "Híbrido",
       salary: "R$ 4000 - 4300",
-      logo: "images/logo/others/itau.png"
+      logo: "../../assets/logos/enterprise/itau.png"
     },
 
     {
@@ -31,7 +31,7 @@ const candidateData = {
       company: "Samsung",
       location: "Presencial",
       salary: "R$ 5000 - 5400",
-      logo: "images/logo/others/samsung.png"
+      logo: "../../assets/logos/enterprise/samsung.png"
     },
 
     {
@@ -40,7 +40,7 @@ const candidateData = {
       company: "Ifood",
       location: "Presencial",
       salary: "R$ 2300 - 2500",
-      logo: "images/logo/others/ifood.png"
+      logo: "../../assets/logos/enterprise/ifood.png"
     },
 
     {
@@ -49,7 +49,7 @@ const candidateData = {
       company: "C6 Bank",
       location: "Remoto",
       salary: "R$ 3500 - 3700",
-      logo: "images/logo/others/c6.png"
+      logo: "../../assets/logos/enterprise/c6.png"
     }
 
   ],
